@@ -1,49 +1,57 @@
-# CribbNotes
+# Cribb Notes
 
-Hands-on AI demos and teaching notebooks by **Mark Cribb** (Manager of AI Solutions & Applications, Marcus Theatres).
+**Feels like magic, but it's math.**
 
-Each notebook is built for a specific teaching context: short wall time, heavily commented for speaker narration, runs on Colab's free tier, requires no Python or AI knowledge to use. Click a badge below and you're inside the demo in two clicks.
+Short, plain-language notes on AI, the enterprise, and the human side of technology —
+by [Mark Cribb](https://www.linkedin.com/in/mark-cribb). Cliff's Notes, by Cribb.
 
----
-
-## Currently featured in
-
-### Demystifying AI: Separating Architecture from the Hype
-*SIM industry event · May 2026 · co-presented with Ken Garfinkel (CIO, Broan-NuTone)*
-
-In 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier — and run the demos themselves.
+This repo is the source for the Cribb Notes website (built with [Quarto](https://quarto.org))
+and the home of the hands-on Colab demo notebooks.
 
 ---
 
-## Notebooks
+## What's here
 
-### Line Fitting — Watch a Model Learn From Data
-*Act 1 of Demystifying AI. CPU-only, ~30 seconds to render.*
+| Path | What it is |
+|------|------------|
+| `index.qmd` | Home page — listing of the latest Notes |
+| `notes/` | The Notes themselves (one folder per issue) |
+| `demos.qmd` | The runnable Colab notebooks |
+| `about.qmd` | About the publication and the author |
+| `_quarto.yml` | Site configuration |
+| `styles.css` | Brand styling |
+| `_templates/` | The Note template |
+| `New-CribbNote.ps1` | Scaffolds a new Note from the template |
+| `.github/workflows/publish.yml` | Auto-renders + deploys to GitHub Pages on push to `main` |
+| `*.ipynb` | The Colab demo notebooks |
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/line_fitting_colab.ipynb)
+## Writing a new Note
 
-A line redraws itself as data grows from 2 to 1,000 points (Phase 1), then gets tilted by anomalies — with a robust alternative algorithm sitting right beside it (Phase 2). Five minutes of pixels that make "training" feel mechanical instead of magical.
+```powershell
+./New-CribbNote.ps1 -Title "What a Token Actually Is" -Categories AI,Demystified
+quarto preview                 # live local preview at http://localhost:port
+# edit notes/<slug>/index.qmd, then delete the `draft: true` line when ready
+git add . ; git commit -m "Note: what a token actually is" ; git push
+```
 
-### nanoGPT — Train a Transformer From Scratch in ~10 Minutes
-*Act 3 of Demystifying AI. Needs free T4 GPU runtime.*
+Pushing to `main` triggers the GitHub Action, which renders the site and publishes it.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/nanogpt_colab.ipynb)
+## Local preview
 
-A ~10-million-parameter character-level transformer trained on Mark Twain's *Tom Sawyer* and *Huckleberry Finn*. Watch the loss fall from random to coherent Twain-style prose. The procedure is the same one that built GPT-4 — 200,000× smaller, four orders of magnitude less data, same procedure.
+```powershell
+quarto preview        # hot-reloading local server
+quarto render         # one-off build into ./_site
+```
 
-**Important:** before running, set `Runtime → Change runtime type → T4 GPU → Save`.
+## Going live (one-time setup)
 
----
-
-## How to use
-
-1. Click the **Open in Colab** badge above for whichever notebook
-2. Read the welcome cell at the top — it explains what notebooks and Colab are if you've never used either
-3. Click `Runtime → Run all` and watch the output
-
-You don't need to read or understand any of the code. Every block is heavily commented for the curious, but the point of each demo is to *watch* the model do its thing.
-
----
+1. **Push this repo to `main`.**
+2. In **GitHub → Settings → Pages**, set the source to the **`gh-pages` branch**
+   (the workflow creates it on first run).
+3. The site goes live at `https://mierkoles.github.io/CribbNotes/`.
+4. **Custom domain (optional, later):** once you own a domain (e.g. `cribbnotes.io`),
+   add a file named `CNAME` at the repo root containing just the domain, point the
+   domain's DNS at GitHub Pages, and set it under Settings → Pages.
 
 ## License
 

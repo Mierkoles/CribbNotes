@@ -1,0 +1,35 @@
+---
+title: "TITLE HERE"
+subtitle: "Note 00X — one-line hook that makes someone want to read on."
+description: "The one-sentence promise: exactly what the reader walks away knowing."
+date: YYYY-MM-DD
+categories: [AI]
+author: "Mark Cribb"
+draft: true
+---
+
+<!--
+  HOW THIS WORKS
+  - One idea per note. ~600-900 words. ~3-minute read.
+  - `draft: true` keeps it off the live site until you remove this line.
+  - Generate a fresh copy with:  ./New-CribbNote.ps1 -Title "Your Title"
+-->
+
+Open with the question, the moment, or the misconception that made this worth writing.
+
+## The one idea
+
+State it plainly. The reader should be able to repeat it in a sentence afterward.
+
+## Why it matters
+
+Connect it to a decision someone actually makes — a meeting, a budget, a bet.
+
+## Show the gears
+
+The part that turns "magic" into "oh, that's all it is." A small example, a diagram,
+or a link to a runnable [demo](demos.qmd).
+
+*Feels like magic. It's math.*
+
+— Mark

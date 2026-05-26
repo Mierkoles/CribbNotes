@@ -1,0 +1,59 @@
+---
+title: "Demos"
+description: "Hands-on, run-them-yourself notebooks. The thing nobody else writing about AI can hand you."
+---
+
+Reading about AI is fine. **Running it yourself is better.** These are live
+notebooks built for a specific teaching context: short wall time, heavily commented
+for narration, runs on Google Colab's free tier, and requires no Python or AI
+knowledge to use. Click a badge and you're inside the demo in two clicks.
+
+---
+
+## Demystifying AI: Separating Architecture from the Hype
+
+*SIM industry event · May 2026 · co-presented with Ken Garfinkel (CIO, Broan-NuTone)*
+
+In 75 minutes, attendees go from the simplest possible machine-learning model to the
+architectural frontier — and run the demos themselves.
+
+### Line Fitting — Watch a Model Learn From Data
+
+*Act 1. CPU-only, ~30 seconds to render.*
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/line_fitting_colab.ipynb)
+
+A line redraws itself as data grows from 2 to 1,000 points, then gets tilted by
+anomalies — with a robust alternative algorithm sitting right beside it. A few
+minutes of pixels that make "training" feel mechanical instead of magical.
+
+### nanoGPT — Train a Transformer From Scratch in ~10 Minutes
+
+*Act 3. Needs the free T4 GPU runtime.*
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/nanogpt_colab.ipynb)
+
+A ~10-million-parameter character-level transformer, trained from scratch on free
+cloud hardware. Watch the loss fall from random noise to recognizable prose. It's the
+same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less
+data, identical idea.
+
+There's a **dropdown at the top: pick Shakespeare or Mark Twain.** Run it, then come
+back, switch authors, and run it again. *Every other line of code is identical* — only
+the data changes, and a completely different writer comes out. That's the whole point:
+the architecture is general; the data is what gives a model its voice.
+
+**Before running:** set `Runtime → Change runtime type → T4 GPU → Save`.
+
+---
+
+## How to use
+
+1. Click an **Open in Colab** badge above.
+2. Read the welcome cell at the top — it explains notebooks and Colab if you've never touched either.
+3. Click `Runtime → Run all` and watch the output.
+
+You don't need to read or understand the code. Every block is commented for the
+curious, but the point is to *watch* the model do its thing.
+
+*Feels like magic, but it's math.*

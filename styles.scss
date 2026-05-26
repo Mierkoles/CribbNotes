@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+
+// Cribb Notes brand palette — navy + gold, matched to the logo
+$cn-navy:      #0A1F41;   // deep brand navy
+$cn-gold:      #F8B922;   // brand gold
+$cn-amber:     #b35900;   // readable gold-family accent (links/buttons on white)
+
+$primary:      $cn-amber;
+$link-color:   $cn-amber;
+$navbar-bg:    $cn-navy;
+$navbar-fg:    #ffffff;
+$footer-bg:    #faf6eb;   // warm cream
+$body-color:   #1c1c28;
+
+/*-- scss:rules --*/
+
+.navbar .navbar-brand { font-weight: 700; letter-spacing: 0.01em; }
+.navbar .nav-link:hover { color: $cn-gold !important; }
+
+// Tagline under the title banner
+.quarto-title-block .subtitle { font-style: italic; opacity: 0.92; }
+
+// Listing cards
+.quarto-listing-default .listing-title { font-weight: 700; }
+.quarto-listing-category .category { border-radius: 999px; }
+
+// Long-form readability
+.page-columns .content { font-size: 1.05rem; line-height: 1.7; }
+
+// Blockquotes — the "what is AI actually doing?" asides
+blockquote {
+  border-left: 4px solid $cn-gold;
+  color: $cn-navy;
+  font-size: 1.1rem;
+}

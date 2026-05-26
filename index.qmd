@@ -1,0 +1,27 @@
+---
+title: "Cribb Notes"
+subtitle: "Feels like magic, but it's math."
+title-block-banner: "#0A1F41"
+title-block-banner-color: "white"
+page-layout: full
+listing:
+  id: latest
+  contents: "notes"
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, reading-time, categories]
+---
+
+Short, plain-language notes on the stuff everyone in tech pretends to already
+understand — AI mostly, plus the enterprise systems we actually run companies on,
+the way IT, the movie business, and education are getting rewired in real time,
+and the occasional detour through the human side of it all.
+
+One idea per note. About a three-minute read. No prerequisites, no jargon, no *"well, actually."*
+
+::: {#latest}
+:::

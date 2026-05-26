@@ -1,0 +1,51 @@
+---
+title: "About"
+---
+
+Cribb Notes is written by **Mark Cribb** — and the whole premise is in the name.
+Cliff's Notes, by Cribb: short, honest explainers for the parts of technology
+everyone pretends to already understand.
+
+## The angle
+
+Most people with AI opinions do exactly one of three things. I happen to do all
+three, which is the only reason I think this is worth your inbox:
+
+- **I build it** — real software, shipped, much of it on weekends with AI as a co-pilot.
+- **I govern it** — I authored my organization's enterprise AI governance framework.
+- **I teach it** — thousands of university students a year, plus a doctorate in progress.
+
+The view from the intersection — where the hype meets the budget meets the actual
+code — is where these notes are written from.
+
+## The longer version
+
+Mark Cribb is a technology leader and educator with 25+ years in enterprise platform
+architecture and data strategy, now focused on driving enterprise AI adoption. He
+serves as AI Solutions and Applications Manager at Marcus Theatres, leading enterprise
+AI governance and AI-assisted development across the organization. He teaches Data
+Analysis at MSOE's Rader School of Business and cloud computing at Western Governors
+University, and has previously taught Business Law & Ethics at Bryant & Stratton
+College and technology leadership in UWM's Executive MBA program. He is working on a
+Doctorate of Information Technology, holds multiple Microsoft and AWS certifications
+(AI Engineer, Data Scientist, Solutions Architect), and speaks on AI governance,
+AI-assisted development, and quantum readiness. He serves as Co-Chair of United Way's
+Technology United Council, chairs the planning committee for the 2027 Milwaukee CIO
+Forum, and sits on the board of the BUILD Moto Mentor Program.
+
+## The human layer
+
+Cribb Notes isn't only AI block diagrams. Mark is a black belt in Kenpo Karate and
+Tae Kwon Do and has coached martial arts and wrestling for thirty years; he plays
+drums and produces music; he collects movie memorabilia (ask him about Godzilla),
+reads philosophy and historical fiction, leans Stoic, and is training for a sprint
+triathlon out of Oak Creek, Wisconsin. Those threads show up here on purpose — the
+best explanations of hard technical ideas usually come from somewhere human.
+
+## Stay in the loop
+
+- Subscribe via [RSS](index.xml)
+- Follow on [LinkedIn](https://www.linkedin.com/in/mark-cribb)
+- Code and live demos on [GitHub](https://github.com/Mierkoles/CribbNotes)
+
+*(Email subscription coming soon.)*

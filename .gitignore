@@ -4,3 +4,10 @@ Thumbs.db
 __pycache__/
 .venv/
 .ipynb_checkpoints/
+
+# Quarto build artifacts
+/_site/
+/.quarto/
+*_files/
+
+**/*.quarto_ipynb

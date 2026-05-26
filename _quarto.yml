@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "notes/**/*.qmd"
+
+website:
+  title: "Cribb Notes"
+  description: "Feels like magic, but it's math. Short, plain-language notes on AI, the enterprise, and the human side of technology — by Mark Cribb."
+  site-url: "https://cribbnotes.io"
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+  navbar:
+    logo: CribbNotesLogo.png
+    pinned: true
+    left:
+      - text: "Notes"
+        href: index.qmd
+      - text: "Demos"
+        href: demos.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - icon: rss
+        href: index.xml
+        aria-label: RSS feed
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/mark-cribb"
+        aria-label: LinkedIn
+      - icon: github
+        href: "https://github.com/Mierkoles/CribbNotes"
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Mark Cribb · *Feels like magic, but it's math.*"
+    right:
+      - icon: rss
+        href: index.xml
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/mark-cribb"
+      - icon: github
+        href: "https://github.com/Mierkoles/CribbNotes"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    reading-time: true
+    anchor-sections: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap

@@ -1,0 +1,83 @@
+---
+title: "Feels Like Magic, But It's Math"
+subtitle: "Note 001 — why this exists, and what you'll get out of it."
+description: "Every week someone senior leans in and quietly asks me what AI is *actually* doing. Cribb Notes is my answer — Cliff's Notes for the stuff everyone pretends to understand."
+date: 2026-05-23
+categories: [Meta, AI, Demystified]
+author: "Mark Cribb"
+---
+
+Once a week, somebody senior and genuinely smart leans across a table, drops their
+voice so the room won't hear, and asks me the same question:
+
+> *"Okay... but what is AI **actually** doing?"*
+
+They're never embarrassed without reason. They run departments. They sign the
+contracts. And somewhere along the way the technology got wrapped in so much hype,
+jargon, and vendor theater that asking the basic question started to feel risky.
+
+Here's the secret I tell every one of them: **the question isn't dumb, and the
+answer isn't magic.** It's math — often surprisingly simple math, dressed up in
+intimidating clothes.
+
+That conversation, on repeat, is why Cribb Notes exists.
+
+## What this is
+
+Cribb Notes is Cliff's Notes, by Cribb — short, plain-language notes on the things
+everyone in tech pretends to already understand. AI, mostly. But also the broader
+enterprise: the systems we actually run companies on, the IT decisions that quietly
+cost millions, the way the movie business and higher ed are getting rewired in real
+time. And every so often, the human side — what coaching martial arts for thirty
+years, or chasing a drum fill I still can't quite land, taught me about how people
+(and machines) actually learn.
+
+One idea per note. About a three-minute read. No homework, no prerequisites, no
+*"well, actually."*
+
+## Why me
+
+Fair question. The internet is not short on AI takes. Most of the people writing
+them do exactly **one** of these three things. The reason I think this is worth your
+inbox is that I'm stubborn enough to do all three:
+
+- **I build it.** I ship real software — an enterprise platform and a stack of
+  working systems, a lot of it on weekends, with AI riding shotgun.
+- **I govern it.** I wrote my company's enterprise AI governance framework and chair
+  the hard conversations about what we're actually allowed to point this stuff at.
+- **I teach it.** I teach cloud and data to thousands of university students a year,
+  and I'm grinding through a doctorate on the side because apparently I hate sleep.
+
+The interesting view is at the intersection — where the hype meets the budget meets
+the actual code. That's the seat these notes are written from.
+
+## The one promise
+
+I will not waste your time, and I will not make you feel stupid.
+
+Every note has a single job: hand you one clear idea you can use in a meeting on
+Monday — whether you're an executive deciding where to place a bet, a student trying
+to break in, or just a curious human who's tired of nodding along.
+
+You won't leave here an engineer. You'll leave here **un-foolable** — able to tell
+the real thing from the sales pitch, and to ask the next sharp question instead of
+the safe one.
+
+## "Feels like magic, but it's math"
+
+That line is on the front door for a reason. Almost everything that looks like
+sorcery in this field — a model that writes, a system that predicts, a chatbot that
+*seems* to understand — comes apart into steps you can follow, once somebody bothers
+to show you the gears. And here's the part nobody mentions: **seeing the gears
+doesn't ruin the wonder. It upgrades it.** Fear turns into judgment. Judgment is the
+thing this whole moment has been missing.
+
+So that's the deal. Every week: one idea, gears exposed.
+
+Pull up a chair. And if there's something out there that's been quietly confusing
+you — the thing you keep nodding along to in meetings — tell me. Odds are you're not
+the only one, and odds are it makes a better note than whatever I had planned.
+
+*Feels like magic. It's math. Let's go.*
+
+— Mark
