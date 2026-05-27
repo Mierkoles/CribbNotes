@@ -9,8 +9,8 @@
 <link>https://cribbnotes.io/</link>
 <atom:link href="https://cribbnotes.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Feels like magic, but it&#39;s math. Short, plain-language notes on AI, the enterprise, and the human side of technology — by Mark Cribb.</description>
-<generator>quarto-1.9.37</generator>
-<lastBuildDate>Sat, 23 May 2026 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Sat, 23 May 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Feels Like Magic, But It’s Math</title>
   <dc:creator>Mark Cribb</dc:creator>
@@ -64,7 +64,7 @@
   <category>AI</category>
   <category>Demystified</category>
   <guid>https://cribbnotes.io/notes/welcome/</guid>
-  <pubDate>Sat, 23 May 2026 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
