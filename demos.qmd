@@ -17,15 +17,16 @@ knowledge to use. Click a badge and you're inside the demo in two clicks.
 In 75 minutes, attendees go from the simplest possible machine-learning model to the
 architectural frontier — and run the demos themselves.
 
-### Line Fitting — Watch a Model Learn From Data
+### Mine the Room — Watch a Model Learn From Your Data
 
 *Act 1. CPU-only, ~30 seconds to render.*
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/line_fitting_colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/mine_the_room_colab.ipynb)
 
-A line redraws itself as data grows from 2 to 1,000 points, then gets tilted by
-anomalies — with a robust alternative algorithm sitting right beside it. A few
-minutes of pixels that make "training" feel mechanical instead of magical.
+Call out ten numbers and watch a model **search them for the pattern** — settling on
+the two numbers that fit, sharpening as the data grows, then getting knocked off course
+by a few bad points (with a robust alternative sitting right beside it). A few minutes
+of pixels that make "training" feel mechanical instead of magical.
 
 ### nanoGPT — Train a Transformer From Scratch in ~10 Minutes
 

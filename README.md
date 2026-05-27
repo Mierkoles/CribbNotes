@@ -1,3 +1,5 @@
+<p align="center"><img src="CribbNotesLogo.png" alt="Cribb Notes" width="200"></p>
+
 # Cribb Notes
 
 **Feels like magic, but it's math.**
