@@ -51,9 +51,11 @@ quarto render         # one-off build into ./_site
 2. In **GitHub → Settings → Pages**, set the source to the **`gh-pages` branch**
    (the workflow creates it on first run).
 3. The site goes live at `https://mierkoles.github.io/CribbNotes/`.
-4. **Custom domain (optional, later):** once you own a domain (e.g. `cribbnotes.io`),
-   add a file named `CNAME` at the repo root containing just the domain, point the
-   domain's DNS at GitHub Pages, and set it under Settings → Pages.
+4. **Custom domain:** the site serves at `https://cribbnotes.ai`. The `CNAME` file at
+   the repo root holds the domain (copied into the build via `resources:` in
+   `_quarto.yml`), the domain's DNS points at GitHub Pages (four apex `A` records to
+   `185.199.108–111.153`, plus `www` CNAME to `mierkoles.github.io`), and the domain is
+   set under Settings → Pages with **Enforce HTTPS** enabled.
 
 ## License
 

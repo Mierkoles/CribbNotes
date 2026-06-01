@@ -4,11 +4,13 @@ project:
   render:
     - "*.qmd"
     - "notes/**/*.qmd"
+  resources:
+    - CNAME
 
 website:
   title: "Cribb Notes"
   description: "Feels like magic, but it's math. Short, plain-language notes on AI, the enterprise, and the human side of technology — by Mark Cribb."
-  site-url: "https://cribbnotes.io"
+  site-url: "https://cribbnotes.ai"
   favicon: assets/favicon.svg
   open-graph: true
   twitter-card: true
