@@ -1,1 +1,1 @@
-Sitemap: https://cribbnotes.io/sitemap.xml
+Sitemap: https://cribbnotes.ai/sitemap.xml
