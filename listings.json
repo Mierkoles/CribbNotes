@@ -6,20 +6,25 @@
     ]
   },
   {
-    "listing": "/labs/index.html",
+    "listing": "/index.html",
     "items": [
-      "/labs/mine-the-room.html",
-      "/labs/nanogpt.html"
+      "/notes/culture/small-is-not-slight/index.html",
+      "/notes/culture/the-case-for-re-enchantment/index.html",
+      "/notes/tech/welcome/index.html"
     ]
   },
   {
     "listing": "/culture.html",
-    "items": []
+    "items": [
+      "/notes/culture/small-is-not-slight/index.html",
+      "/notes/culture/the-case-for-re-enchantment/index.html"
+    ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/labs/index.html",
     "items": [
-      "/notes/tech/welcome/index.html"
+      "/labs/mine-the-room.html",
+      "/labs/nanogpt.html"
     ]
   },
   {
