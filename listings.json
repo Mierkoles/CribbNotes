@@ -6,9 +6,10 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/labs/index.html",
     "items": [
-      "/notes/tech/welcome/index.html"
+      "/labs/mine-the-room.html",
+      "/labs/nanogpt.html"
     ]
   },
   {
@@ -16,11 +17,14 @@
     "items": []
   },
   {
-    "listing": "/labs/index.html",
+    "listing": "/index.html",
     "items": [
-      "/labs/mine-the-room.html",
-      "/labs/nanogpt.html"
+      "/notes/tech/welcome/index.html"
     ]
+  },
+  {
+    "listing": "/shelf.html",
+    "items": []
   },
   {
     "listing": "/speaking/index.html",

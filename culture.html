@@ -76,6 +76,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-currently .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-creator','listing-type','listing-rating',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-creator","listing-type","listing-year","listing-rating","listing-status","listing-date","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-currently'] = new List('listing-currently', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-culture-notes .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -189,6 +217,10 @@ window.Quarto = {
 <span class="menu-text">Culture</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./shelf.html"> 
+<span class="menu-text">Shelf</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./labs/index.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
@@ -250,8 +282,15 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#currently" id="toc-currently" class="nav-link active" data-scroll-target="#currently">Currently</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Qm9vaw==">Book <span class="quarto-category-count">(7)</span></div><div class="category" data-category="R2FtZQ==">Game <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW4lMjBwcm9ncmVzcw==">In progress <span class="quarto-category-count">(8)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -260,6 +299,337 @@ window.Quarto = {
 
 
 <p>The other half of the masthead. Movies and the business behind them, music, martial arts, philosophy — and what thirty years of coaching and a stubborn drum fill taught me about how people (and machines) actually learn.</p>
+<section id="currently" class="level2">
+<h2 class="anchored" data-anchor-id="currently">Currently</h2>
+<p>What I’m in the middle of right now. The full log — books, movies, TV, and games, rated — lives on <a href="./shelf.html">the Shelf</a>.</p>
+<div id="listing-currently" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="https://openlibrary.org/isbn/9780525561729" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mark Twain
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+Ron Chernow
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+8/10
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="https://openlibrary.org/isbn/9780060652920" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mere Christianity
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+C. S. Lewis
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="https://openlibrary.org/isbn/9781804290446" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+A Philosophy of Walking
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+Frédéric Gros
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="https://openlibrary.org/isbn/9780593311660" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+El arquero
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+Paulo Coelho
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The Secret Network of Nature
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+Peter Wohlleben
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="https://openlibrary.org/isbn/014044923X" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Beyond Good and Evil
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+Friedrich Nietzsche
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="R2FtZSUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Metroid Prime 4: Beyond
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+Retro Studios
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Game
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+8/10
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="">
+<a href="https://openlibrary.org/isbn/9781523006588" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Leadership and Self Deception
+</h5>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+creator
+</td>
+<td class="creator">
+The Arbinger Institute
+</td>
+</tr>
+
+<tr>
+<td>
+type
+</td>
+<td class="type">
+Book
+</td>
+</tr>
+
+<tr>
+<td>
+rating
+</td>
+<td class="rating">
+7/10
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
 <div id="listing-culture-notes" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 
@@ -269,6 +639,7 @@ window.Quarto = {
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

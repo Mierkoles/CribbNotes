@@ -21,18 +21,81 @@
     "text": "The demos\nThe talk is built around two hands-on labs the audience runs live. Both live in the Labs library and are reusable beyond this event:\n\nAct 1 — Mine the Room\nWatch a model learn from your data. Call out ten numbers and watch it search them for the pattern — the simplest possible model, and the foundation everything else is built on. CPU-only, ~30 seconds to render.\n\n\nAct 3 — nanoGPT\nTrain a transformer from scratch in ~10 minutes on free cloud hardware. Same procedure that built GPT-4, 200,000× smaller. Switch the training data from Shakespeare to Mark Twain and a completely different writer comes out — proof that the architecture is general and the data is what gives a model its voice. Needs the free T4 GPU runtime."
   },
   {
-    "objectID": "labs/mine-the-room.html",
-    "href": "labs/mine-the-room.html",
-    "title": "Mine the Room",
+    "objectID": "notes/tech/welcome/index.html",
+    "href": "notes/tech/welcome/index.html",
+    "title": "Feels Like Magic, But It’s Math",
     "section": "",
-    "text": "Open In Colab\n\n\nCPU-only, ~30 seconds to render. No GPU needed.\nCall out ten numbers and watch a model search them for the pattern — settling on the two numbers that fit, sharpening as the data grows, then getting knocked off course by a few bad points (with a robust alternative sitting right beside it). A few minutes of pixels that make “training” feel mechanical instead of magical.\nIt’s the simplest possible machine-learning model, and it’s the foundation everything else is built on. Start here.\n\nFirst presented in Demystifying AI: Separating Architecture from the Hype (SIM, May 2026)."
+    "text": "Once a week, somebody senior and genuinely smart leans across a table, drops their voice so the room won’t hear, and asks me the same question:\nThey’re never embarrassed without reason. They run departments. They sign the contracts. And somewhere along the way the technology got wrapped in so much hype, jargon, and vendor theater that asking the basic question started to feel risky.\nHere’s the secret I tell every one of them: the question isn’t dumb, and the answer isn’t magic. It’s math — often surprisingly simple math, dressed up in intimidating clothes.\nThat conversation, on repeat, is why Cribb Notes exists."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Cribb Notes",
+    "objectID": "notes/tech/welcome/index.html#what-this-is",
+    "href": "notes/tech/welcome/index.html#what-this-is",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "What this is",
+    "text": "What this is\nCribb Notes is Cliff’s Notes, by Cribb — short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side — what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.\nOne idea per note. About a three-minute read. No homework, no prerequisites, no “well, actually.”"
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#why-me",
+    "href": "notes/tech/welcome/index.html#why-me",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "Why me",
+    "text": "Why me\nFair question. The internet is not short on AI takes. Most of the people writing them do exactly one of these three things. The reason I think this is worth your inbox is that I’m stubborn enough to do all three:\n\nI build it. I ship real software — an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.\nI govern it. I wrote my company’s enterprise AI governance framework and chair the hard conversations about what we’re actually allowed to point this stuff at.\nI teach it. I teach cloud and data to thousands of university students a year, and I’m grinding through a doctorate on the side because apparently I hate sleep.\n\nThe interesting view is at the intersection — where the hype meets the budget meets the actual code. That’s the seat these notes are written from."
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#the-one-promise",
+    "href": "notes/tech/welcome/index.html#the-one-promise",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "The one promise",
+    "text": "The one promise\nI will not waste your time, and I will not make you feel stupid.\nEvery note has a single job: hand you one clear idea you can use in a meeting on Monday — whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.\nYou won’t leave here an engineer. You’ll leave here un-foolable — able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one."
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#feels-like-magic-but-its-math",
+    "href": "notes/tech/welcome/index.html#feels-like-magic-but-its-math",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "“Feels like magic, but it’s math”",
+    "text": "“Feels like magic, but it’s math”\nThat line is on the front door for a reason. Almost everything that looks like sorcery in this field — a model that writes, a system that predicts, a chatbot that seems to understand — comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: seeing the gears doesn’t ruin the wonder. It upgrades it. Fear turns into judgment. Judgment is the thing this whole moment has been missing.\nSo that’s the deal. Every week: one idea, gears exposed.\nPull up a chair. And if there’s something out there that’s been quietly confusing you — the thing you keep nodding along to in meetings — tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.\nFeels like magic. It’s math. Let’s go.\n— Mark"
+  },
+  {
+    "objectID": "labs/nanogpt.html",
+    "href": "labs/nanogpt.html",
+    "title": "nanoGPT",
     "section": "",
-    "text": "Short, plain-language notes on the stuff everyone in tech pretends to already understand — AI mostly, plus the enterprise systems we actually run companies on, the way IT, the movie business, and education are getting rewired in real time, and the occasional detour through the human side of it all.\nOne idea per note. About a three-minute read. No prerequisites, no jargon, no “well, actually.”\n\n\n\n\n\nFeels Like Magic, But It’s Math\n\n\n\nMeta\n\nAI\n\nDemystified\n\n\n\nEvery week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.\n\n\n\n\n\nMay 23, 2026\n\n3 min\n\n\n\n\nNo matching items"
+    "text": "Open In Colab\n\n\nNeeds the free T4 GPU runtime. Set Runtime → Change runtime type → T4 GPU → Save before running.\nA ~10-million-parameter character-level transformer, trained from scratch on free cloud hardware. Watch the loss fall from random noise to recognizable prose. It’s the same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less data, identical idea.\nThere’s a dropdown at the top: pick Shakespeare or Mark Twain. Run it, then come back, switch authors, and run it again. Every other line of code is identical — only the data changes, and a completely different writer comes out. That’s the whole point: the architecture is general; the data is what gives a model its voice.\n\nFirst presented in Demystifying AI: Separating Architecture from the Hype (SIM, May 2026)."
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Reading about AI is fine. Running it yourself is better. These are live notebooks built to teach: short wall time, heavily commented for narration, runs on Google Colab’s free tier, and requires no Python or AI knowledge to use. Click a card, then a badge, and you’re inside the demo.\nEvery lab is self-contained and reusable — the same notebooks power the talks."
+  },
+  {
+    "objectID": "labs/index.html#how-to-use",
+    "href": "labs/index.html#how-to-use",
+    "title": "Labs",
+    "section": "How to use",
+    "text": "How to use\n\nOpen a lab, then click its Open in Colab badge.\nRead the welcome cell at the top — it explains notebooks and Colab if you’ve never touched either.\nClick Runtime → Run all and watch the output.\n\nYou don’t need to read or understand the code. Every block is commented for the curious, but the point is to watch the model do its thing.\nFeels like magic, but it’s math."
+  },
+  {
+    "objectID": "culture.html",
+    "href": "culture.html",
+    "title": "Culture",
+    "section": "",
+    "text": "The other half of the masthead. Movies and the business behind them, music, martial arts, philosophy — and what thirty years of coaching and a stubborn drum fill taught me about how people (and machines) actually learn."
+  },
+  {
+    "objectID": "culture.html#currently",
+    "href": "culture.html#currently",
+    "title": "Culture",
+    "section": "Currently",
+    "text": "Currently\nWhat I’m in the middle of right now. The full log — books, movies, TV, and games, rated — lives on the Shelf.\n\n\n\n\n\n\n\nMark Twain\n\n\n\n\n\ncreator\n\n\nRon Chernow\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n8/10\n\n\n\n\n\n\n\n\n\n\n\n\nMere Christianity\n\n\n\n\n\ncreator\n\n\nC. S. Lewis\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nA Philosophy of Walking\n\n\n\n\n\ncreator\n\n\nFrédéric Gros\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nEl arquero\n\n\n\n\n\ncreator\n\n\nPaulo Coelho\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nThe Secret Network of Nature\n\n\n\n\n\ncreator\n\n\nPeter Wohlleben\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nBeyond Good and Evil\n\n\n\n\n\ncreator\n\n\nFriedrich Nietzsche\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nMetroid Prime 4: Beyond\n\n\n\n\n\ncreator\n\n\nRetro Studios\n\n\n\n\n\ntype\n\n\nGame\n\n\n\n\n\nrating\n\n\n8/10\n\n\n\n\n\n\n\n\n\n\n\n\nLeadership and Self Deception\n\n\n\n\n\ncreator\n\n\nThe Arbinger Institute\n\n\n\n\n\ntype\n\n\nBook\n\n\n\n\n\nrating\n\n\n7/10\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "culture.html#notes",
+    "href": "culture.html#notes",
+    "title": "Culture",
+    "section": "Notes",
+    "text": "Notes\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -70,67 +133,25 @@
     "text": "Stay in the loop\n\nEmail mark@cribbnotes.ai\nSubscribe via RSS\nFollow on LinkedIn\nCode and live demos on GitHub\n\n(Email subscription coming soon.)"
   },
   {
-    "objectID": "culture.html",
-    "href": "culture.html",
-    "title": "Culture",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cribb Notes",
     "section": "",
-    "text": "The other half of the masthead. Movies and the business behind them, music, martial arts, philosophy — and what thirty years of coaching and a stubborn drum fill taught me about how people (and machines) actually learn.\n\n\n\n\nNo matching items"
+    "text": "Short, plain-language notes on the stuff everyone in tech pretends to already understand — AI mostly, plus the enterprise systems we actually run companies on, the way IT, the movie business, and education are getting rewired in real time, and the occasional detour through the human side of it all.\nOne idea per note. About a three-minute read. No prerequisites, no jargon, no “well, actually.”\n\n\n\n\n\nFeels Like Magic, But It’s Math\n\n\n\nMeta\n\nAI\n\nDemystified\n\n\n\nEvery week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.\n\n\n\n\n\nMay 23, 2026\n\n3 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Labs",
+    "objectID": "labs/mine-the-room.html",
+    "href": "labs/mine-the-room.html",
+    "title": "Mine the Room",
     "section": "",
-    "text": "Reading about AI is fine. Running it yourself is better. These are live notebooks built to teach: short wall time, heavily commented for narration, runs on Google Colab’s free tier, and requires no Python or AI knowledge to use. Click a card, then a badge, and you’re inside the demo.\nEvery lab is self-contained and reusable — the same notebooks power the talks."
+    "text": "Open In Colab\n\n\nCPU-only, ~30 seconds to render. No GPU needed.\nCall out ten numbers and watch a model search them for the pattern — settling on the two numbers that fit, sharpening as the data grows, then getting knocked off course by a few bad points (with a robust alternative sitting right beside it). A few minutes of pixels that make “training” feel mechanical instead of magical.\nIt’s the simplest possible machine-learning model, and it’s the foundation everything else is built on. Start here.\n\nFirst presented in Demystifying AI: Separating Architecture from the Hype (SIM, May 2026)."
   },
   {
-    "objectID": "labs/index.html#how-to-use",
-    "href": "labs/index.html#how-to-use",
-    "title": "Labs",
-    "section": "How to use",
-    "text": "How to use\n\nOpen a lab, then click its Open in Colab badge.\nRead the welcome cell at the top — it explains notebooks and Colab if you’ve never touched either.\nClick Runtime → Run all and watch the output.\n\nYou don’t need to read or understand the code. Every block is commented for the curious, but the point is to watch the model do its thing.\nFeels like magic, but it’s math."
-  },
-  {
-    "objectID": "labs/nanogpt.html",
-    "href": "labs/nanogpt.html",
-    "title": "nanoGPT",
+    "objectID": "shelf.html",
+    "href": "shelf.html",
+    "title": "The Shelf",
     "section": "",
-    "text": "Open In Colab\n\n\nNeeds the free T4 GPU runtime. Set Runtime → Change runtime type → T4 GPU → Save before running.\nA ~10-million-parameter character-level transformer, trained from scratch on free cloud hardware. Watch the loss fall from random noise to recognizable prose. It’s the same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less data, identical idea.\nThere’s a dropdown at the top: pick Shakespeare or Mark Twain. Run it, then come back, switch authors, and run it again. Every other line of code is identical — only the data changes, and a completely different writer comes out. That’s the whole point: the architecture is general; the data is what gives a model its voice.\n\nFirst presented in Demystifying AI: Separating Architecture from the Hype (SIM, May 2026)."
-  },
-  {
-    "objectID": "notes/tech/welcome/index.html",
-    "href": "notes/tech/welcome/index.html",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "",
-    "text": "Once a week, somebody senior and genuinely smart leans across a table, drops their voice so the room won’t hear, and asks me the same question:\nThey’re never embarrassed without reason. They run departments. They sign the contracts. And somewhere along the way the technology got wrapped in so much hype, jargon, and vendor theater that asking the basic question started to feel risky.\nHere’s the secret I tell every one of them: the question isn’t dumb, and the answer isn’t magic. It’s math — often surprisingly simple math, dressed up in intimidating clothes.\nThat conversation, on repeat, is why Cribb Notes exists."
-  },
-  {
-    "objectID": "notes/tech/welcome/index.html#what-this-is",
-    "href": "notes/tech/welcome/index.html#what-this-is",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "What this is",
-    "text": "What this is\nCribb Notes is Cliff’s Notes, by Cribb — short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side — what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.\nOne idea per note. About a three-minute read. No homework, no prerequisites, no “well, actually.”"
-  },
-  {
-    "objectID": "notes/tech/welcome/index.html#why-me",
-    "href": "notes/tech/welcome/index.html#why-me",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "Why me",
-    "text": "Why me\nFair question. The internet is not short on AI takes. Most of the people writing them do exactly one of these three things. The reason I think this is worth your inbox is that I’m stubborn enough to do all three:\n\nI build it. I ship real software — an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.\nI govern it. I wrote my company’s enterprise AI governance framework and chair the hard conversations about what we’re actually allowed to point this stuff at.\nI teach it. I teach cloud and data to thousands of university students a year, and I’m grinding through a doctorate on the side because apparently I hate sleep.\n\nThe interesting view is at the intersection — where the hype meets the budget meets the actual code. That’s the seat these notes are written from."
-  },
-  {
-    "objectID": "notes/tech/welcome/index.html#the-one-promise",
-    "href": "notes/tech/welcome/index.html#the-one-promise",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "The one promise",
-    "text": "The one promise\nI will not waste your time, and I will not make you feel stupid.\nEvery note has a single job: hand you one clear idea you can use in a meeting on Monday — whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.\nYou won’t leave here an engineer. You’ll leave here un-foolable — able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one."
-  },
-  {
-    "objectID": "notes/tech/welcome/index.html#feels-like-magic-but-its-math",
-    "href": "notes/tech/welcome/index.html#feels-like-magic-but-its-math",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "“Feels like magic, but it’s math”",
-    "text": "“Feels like magic, but it’s math”\nThat line is on the front door for a reason. Almost everything that looks like sorcery in this field — a model that writes, a system that predicts, a chatbot that seems to understand — comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: seeing the gears doesn’t ruin the wonder. It upgrades it. Fear turns into judgment. Judgment is the thing this whole moment has been missing.\nSo that’s the deal. Every week: one idea, gears exposed.\nPull up a chair. And if there’s something out there that’s been quietly confusing you — the thing you keep nodding along to in meetings — tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.\nFeels like magic. It’s math. Let’s go.\n— Mark"
+    "text": "The whole shelf — books, movies, TV, and games — with my own ratings, no apologies. Sort it, filter it, or search it. Titles with a link jump to the source (IMDb, Open Library). Some of these turn into Culture notes; most are just here because I spent time with them.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        By\n      \n      \n        type\n      \n      \n        year\n      \n      \n        Rating\n      \n      \n        Status\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nBy\n\n\n\ntype\n\n\n\nyear\n\n\n\nRating\n\n\n\nStatus\n\n\n\n\n\n\n\n\nThe Mandalorian and Grogu\n\n\nJon Favreau\n\n\nMovie\n\n\n2026\n\n\n \n\n\nFinished\n\n\n\n\n\n\nThe Oxford Inklings\n\n\nColin Duriez\n\n\nBook\n\n\n2015\n\n\n10/10\n\n\nFinished\n\n\n\n\n\n\nAssassin’s Creed Odyssey\n\n\nUbisoft Quebec\n\n\nGame\n\n\n2018\n\n\n10/10\n\n\nFinished\n\n\n\n\n\n\nAnaconda\n\n\nTom Gormican\n\n\nMovie\n\n\n2025\n\n\n6/10\n\n\nFinished\n\n\n\n\n\n\nFellowship of the Ring\n\n\nJ.R.R. Tolkien\n\n\nBook\n\n\n1954\n\n\n10/10\n\n\nFinished\n\n\n\n\n\n\nPredator: Badlands\n\n\nDan Trachtenberg\n\n\nMovie\n\n\n2025\n\n\n8/10\n\n\nFinished\n\n\n\n\n\n\nRight Thing, Right Now: Good Values. Good Character. Good Deeds\n\n\nRyan Holiday\n\n\nBook\n\n\n2024\n\n\n7/10\n\n\nFinished\n\n\n\n\n\n\nReacher — Season 2\n\n\nNick Santora\n\n\nTV\n\n\n2023\n\n\n8/10\n\n\nFinished\n\n\n\n\n\n\nAssassin’s Creed Shadows\n\n\nUbisoft Quebec\n\n\nGame\n\n\n2025\n\n\n7/10\n\n\nFinished\n\n\n\n\n\n\nThe Happiness Advantage\n\n\nShawn Achor\n\n\nBook\n\n\n2010\n\n\n8/10\n\n\nFinished\n\n\n\n\n\n\nWisdom Takes Work\n\n\nRyan Holiday\n\n\nBook\n\n\n2025\n\n\n \n\n\nWant to\n\n\n\n\n\n\nMark Twain\n\n\nRon Chernow\n\n\nBook\n\n\n2025\n\n\n8/10\n\n\nIn progress\n\n\n\n\n\n\nMere Christianity\n\n\nC. S. Lewis\n\n\nBook\n\n\n1952\n\n\n \n\n\nIn progress\n\n\n\n\n\n\nA Philosophy of Walking\n\n\nFrédéric Gros\n\n\nBook\n\n\n2023\n\n\n \n\n\nIn progress\n\n\n\n\n\n\nEl arquero\n\n\nPaulo Coelho\n\n\nBook\n\n\n2021\n\n\n \n\n\nIn progress\n\n\n\n\n\n\nThe Secret Network of Nature\n\n\nPeter Wohlleben\n\n\nBook\n\n\n2018\n\n\n \n\n\nIn progress\n\n\n\n\n\n\nBeyond Good and Evil\n\n\nFriedrich Nietzsche\n\n\nBook\n\n\n2003\n\n\n \n\n\nIn progress\n\n\n\n\n\n\nMetroid Prime 4: Beyond\n\n\nRetro Studios\n\n\nGame\n\n\n2025\n\n\n8/10\n\n\nIn progress\n\n\n\n\n\n\nLeadership and Self Deception\n\n\nThe Arbinger Institute\n\n\nBook\n\n\n2000\n\n\n7/10\n\n\nIn progress\n\n\n\n\n\n\nMeditations\n\n\nMarcus Aurelius\n\n\nBook\n\n\n180\n\n\n10/10\n\n\nWant to\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "speaking/index.html",

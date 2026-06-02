@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Everything I’ve been reading, watching, and playing — with honest ratings. A working log, not a curated brag.">
 
-<title>Cribb Notes</title>
+<title>The Shelf – Cribb Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,20 +76,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest .list');
+    const listingTargetEl = window.document.querySelector('#listing-shelf .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-creator','listing-type','listing-year','listing-rating','listing-status',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-creator","listing-type","listing-year","listing-rating","listing-status","listing-date","listing-categories","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest'] = new List('listing-latest', options);
+    window['quarto-listings']['listing-shelf'] = new List('listing-shelf', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -150,11 +151,11 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Cribb Notes" href="index.xml" data-external="1"><meta property="og:title" content="Cribb Notes">
-<meta property="og:description" content="Tech and culture, demystified.">
+<meta property="og:title" content="The Shelf – Cribb Notes">
+<meta property="og:description" content="Everything I’ve been reading, watching, and playing — with honest ratings. A working log, not a curated brag.">
 <meta property="og:site_name" content="Cribb Notes">
-<meta name="twitter:title" content="Cribb Notes">
-<meta name="twitter:description" content="Tech and culture, demystified.">
+<meta name="twitter:title" content="The Shelf – Cribb Notes">
+<meta name="twitter:description" content="Everything I’ve been reading, watching, and playing — with honest ratings. A working log, not a curated brag.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -188,7 +189,7 @@ window.Quarto = {
 <span class="menu-text">Culture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./shelf.html"> 
+    <a class="nav-link active" href="./shelf.html" aria-current="page"> 
 <span class="menu-text">Shelf</span></a>
   </li>  
   <li class="nav-item">
@@ -231,9 +232,13 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Cribb Notes</h1>
-            <p class="subtitle lead">Tech and culture, demystified.</p>
-                      </div>
+      <h1 class="title">The Shelf</h1>
+                  <div>
+        <div class="description">
+          Everything I’ve been reading, watching, and playing — with honest ratings. A working log, not a curated brag.
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -250,7 +255,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVteXN0aWZpZWQ=">Demystified <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWV0YQ==">Meta <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(20)</span></div><div class="category" data-category="Qm9vaw==">Book <span class="quarto-category-count">(13)</span></div><div class="category" data-category="RmluaXNoZWQ=">Finished <span class="quarto-category-count">(10)</span></div><div class="category" data-category="R2FtZQ==">Game <span class="quarto-category-count">(3)</span></div><div class="category" data-category="SW4lMjBwcm9ncmVzcw==">In progress <span class="quarto-category-count">(8)</span></div><div class="category" data-category="TW92aWU=">Movie <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VFY=">TV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V2FudCUyMHRv">Want to <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -258,38 +263,513 @@ window.Quarto = {
 
 
 
-<p>Short, plain-language notes on the stuff everyone in tech pretends to already understand — AI mostly, plus the enterprise systems we actually run companies on, the way IT, the movie business, and education are getting rewired in real time, and the occasional detour through the human side of it all.</p>
-<p>One idea per note. About a three-minute read. No prerequisites, no jargon, no <em>“well, actually.”</em></p>
-<div id="listing-latest" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TWV0YSUyQ0FJJTJDRGVteXN0aWZpZWQ=" data-listing-date-sort="1779494400000" data-listing-file-modified-sort="1780376353287" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="577">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./notes/tech/welcome/index.html" class="no-external">Feels Like Magic, But It’s Math</a>
-</h3>
-<div class="listing-categories">
+<p>The whole shelf — books, movies, TV, and games — with my own ratings, no apologies. Sort it, filter it, or search it. Titles with a link jump to the source (IMDb, Open Library). Some of these turn into <a href="./culture.html">Culture</a> notes; most are just here because I spent time with them.</p>
+<div id="listing-shelf" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-shelf-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-shelf'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-creator" data-direction="asc">
+        By
+      </option>
+      <option value="listing-type" data-direction="asc">
+        type
+      </option>
+      <option value="listing-year" data-direction="asc">
+        year
+      </option>
+      <option value="listing-rating" data-direction="asc">
+        Rating
+      </option>
+      <option value="listing-status" data-direction="asc">
+        Status
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('TWV0YQ=='); return false;">Meta</div>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
+<th>
+<a class="sort" data-sort="listing-creator" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">By</a>
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGVteXN0aWZpZWQ='); return false;">Demystified</div>
+<th>
+<a class="sort" data-sort="listing-type" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">type</a>
+</th>
 
-</div>
-<div class="delink listing-description"><a href="./notes/tech/welcome/index.html" class="no-external">
-<p>Every week someone senior leans in and quietly asks me what AI is <em>actually</em> doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./notes/tech/welcome/index.html" class="no-external">
-<div class="listing-date">
-May 23, 2026
-</div>
-<div class="listing-reading-time">3 min</div>
-</a>
-</div>
-</div>
-</div>
+<th>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">year</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-rating" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Rating</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-status" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Status</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="TW92aWUlMkNGaW5pc2hlZA==" data-listing-date-sort="1780099200000" data-listing-title-sort="The Mandalorian and Grogu">
+<td>
+<a href="https://www.imdb.com/title/tt30825738/" class="title listing-title">The Mandalorian and Grogu</a>
+</td>
+<td>
+<span class="listing-creator">Jon Favreau</span>
+</td>
+<td>
+<span class="listing-type">Movie</span>
+</td>
+<td>
+<span class="listing-year">2026</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="Qm9vayUyQ0ZpbmlzaGVk" data-listing-date-sort="1768176000000" data-listing-title-sort="The Oxford Inklings">
+<td>
+<a href="https://openlibrary.org/isbn/9780745956022" class="title listing-title">The Oxford Inklings</a>
+</td>
+<td>
+<span class="listing-creator">Colin Duriez</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2015</span>
+</td>
+<td>
+<span class="listing-rating">10/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-categories="R2FtZSUyQ0ZpbmlzaGVk" data-listing-date-sort="1768176000000" data-listing-title-sort="Assassin's Creed Odyssey">
+<td>
+<span class="listing-title">Assassin’s Creed Odyssey</span>
+</td>
+<td>
+<span class="listing-creator">Ubisoft Quebec</span>
+</td>
+<td>
+<span class="listing-type">Game</span>
+</td>
+<td>
+<span class="listing-year">2018</span>
+</td>
+<td>
+<span class="listing-rating">10/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="TW92aWUlMkNGaW5pc2hlZA==" data-listing-date-sort="1767225600000" data-listing-title-sort="Anaconda">
+<td>
+<a href="https://www.imdb.com/title/tt15671028/" class="title listing-title">Anaconda</a>
+</td>
+<td>
+<span class="listing-creator">Tom Gormican</span>
+</td>
+<td>
+<span class="listing-type">Movie</span>
+</td>
+<td>
+<span class="listing-year">2025</span>
+</td>
+<td>
+<span class="listing-rating">6/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="Qm9vayUyQ0ZpbmlzaGVk" data-listing-date-sort="1766966400000" data-listing-title-sort="Fellowship of the Ring">
+<td>
+<a href="https://openlibrary.org/isbn/9780547928210" class="title listing-title">Fellowship of the Ring</a>
+</td>
+<td>
+<span class="listing-creator">J.R.R. Tolkien</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">1954</span>
+</td>
+<td>
+<span class="listing-rating">10/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="TW92aWUlMkNGaW5pc2hlZA==" data-listing-date-sort="1762646400000" data-listing-title-sort="Predator: Badlands">
+<td>
+<a href="https://www.imdb.com/title/tt30766650/" class="title listing-title">Predator: Badlands</a>
+</td>
+<td>
+<span class="listing-creator">Dan Trachtenberg</span>
+</td>
+<td>
+<span class="listing-type">Movie</span>
+</td>
+<td>
+<span class="listing-year">2025</span>
+</td>
+<td>
+<span class="listing-rating">8/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-categories="Qm9vayUyQ0ZpbmlzaGVk" data-listing-date-sort="1761955200000" data-listing-title-sort="Right Thing, Right Now: Good Values. Good Character. Good Deeds">
+<td>
+<a href="https://openlibrary.org/isbn/9780593191712" class="title listing-title">Right Thing, Right Now: Good Values. Good Character. Good Deeds</a>
+</td>
+<td>
+<span class="listing-creator">Ryan Holiday</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2024</span>
+</td>
+<td>
+<span class="listing-rating">7/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-categories="VFYlMkNGaW5pc2hlZA==" data-listing-date-sort="1761868800000" data-listing-title-sort="Reacher — Season 2">
+<td>
+<a href="https://www.imdb.com/title/tt17663930/" class="title listing-title">Reacher — Season 2</a>
+</td>
+<td>
+<span class="listing-creator">Nick Santora</span>
+</td>
+<td>
+<span class="listing-type">TV</span>
+</td>
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-rating">8/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-categories="R2FtZSUyQ0ZpbmlzaGVk" data-listing-date-sort="1756684800000" data-listing-title-sort="Assassin’s Creed Shadows">
+<td>
+<span class="listing-title">Assassin’s Creed Shadows</span>
+</td>
+<td>
+<span class="listing-creator">Ubisoft Quebec</span>
+</td>
+<td>
+<span class="listing-type">Game</span>
+</td>
+<td>
+<span class="listing-year">2025</span>
+</td>
+<td>
+<span class="listing-rating">7/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-categories="Qm9vayUyQ0ZpbmlzaGVk" data-listing-date-sort="1748131200000" data-listing-title-sort="The Happiness Advantage">
+<td>
+<a href="https://openlibrary.org/isbn/9780307591548" class="title listing-title">The Happiness Advantage</a>
+</td>
+<td>
+<span class="listing-creator">Shawn Achor</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2010</span>
+</td>
+<td>
+<span class="listing-rating">8/10</span>
+</td>
+<td>
+<span class="listing-status">Finished</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-categories="Qm9vayUyQ1dhbnQlMjB0bw==" data-listing-date-sort="" data-listing-title-sort="Wisdom Takes Work">
+<td>
+<a href="https://openlibrary.org/isbn/9780593191736" class="title listing-title">Wisdom Takes Work</a>
+</td>
+<td>
+<span class="listing-creator">Ryan Holiday</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2025</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">Want to</span>
+</td>
+
+</tr>
+
+<tr data-index="11" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="Mark Twain">
+<td>
+<a href="https://openlibrary.org/isbn/9780525561729" class="title listing-title">Mark Twain</a>
+</td>
+<td>
+<span class="listing-creator">Ron Chernow</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2025</span>
+</td>
+<td>
+<span class="listing-rating">8/10</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="12" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="Mere Christianity">
+<td>
+<a href="https://openlibrary.org/isbn/9780060652920" class="title listing-title">Mere Christianity</a>
+</td>
+<td>
+<span class="listing-creator">C. S. Lewis</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">1952</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="13" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="A Philosophy of Walking">
+<td>
+<a href="https://openlibrary.org/isbn/9781804290446" class="title listing-title">A Philosophy of Walking</a>
+</td>
+<td>
+<span class="listing-creator">Frédéric Gros</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="14" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="El arquero">
+<td>
+<a href="https://openlibrary.org/isbn/9780593311660" class="title listing-title">El arquero</a>
+</td>
+<td>
+<span class="listing-creator">Paulo Coelho</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="15" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="The Secret Network of Nature">
+<td>
+<span class="listing-title">The Secret Network of Nature</span>
+</td>
+<td>
+<span class="listing-creator">Peter Wohlleben</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2018</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="16" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="Beyond Good and Evil">
+<td>
+<a href="https://openlibrary.org/isbn/014044923X" class="title listing-title">Beyond Good and Evil</a>
+</td>
+<td>
+<span class="listing-creator">Friedrich Nietzsche</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2003</span>
+</td>
+<td>
+<span class="listing-rating">&nbsp;</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="17" data-categories="R2FtZSUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="Metroid Prime 4: Beyond">
+<td>
+<span class="listing-title">Metroid Prime 4: Beyond</span>
+</td>
+<td>
+<span class="listing-creator">Retro Studios</span>
+</td>
+<td>
+<span class="listing-type">Game</span>
+</td>
+<td>
+<span class="listing-year">2025</span>
+</td>
+<td>
+<span class="listing-rating">8/10</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="18" data-categories="Qm9vayUyQ0luJTIwcHJvZ3Jlc3M=" data-listing-date-sort="" data-listing-title-sort="Leadership and Self Deception">
+<td>
+<a href="https://openlibrary.org/isbn/9781523006588" class="title listing-title">Leadership and Self Deception</a>
+</td>
+<td>
+<span class="listing-creator">The Arbinger Institute</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">2000</span>
+</td>
+<td>
+<span class="listing-rating">7/10</span>
+</td>
+<td>
+<span class="listing-status">In progress</span>
+</td>
+
+</tr>
+
+<tr data-index="19" data-categories="Qm9vayUyQ1dhbnQlMjB0bw==" data-listing-date-sort="" data-listing-title-sort="Meditations">
+<td>
+<span class="listing-title">Meditations</span>
+</td>
+<td>
+<span class="listing-creator">Marcus Aurelius</span>
+</td>
+<td>
+<span class="listing-type">Book</span>
+</td>
+<td>
+<span class="listing-year">180</span>
+</td>
+<td>
+<span class="listing-rating">10/10</span>
+</td>
+<td>
+<span class="listing-status">Want to</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
