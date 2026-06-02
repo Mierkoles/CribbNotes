@@ -5,7 +5,6 @@ description: "The critics graded a story and found it minor. I watched a film â€
 date: 2026-06-01
 categories: [Movies, Star Wars, Wonder]
 author: "Mark Cribb"
-draft: true
 ---
 
 There's a bar these two set, and I've been carrying it for years. At the end of the

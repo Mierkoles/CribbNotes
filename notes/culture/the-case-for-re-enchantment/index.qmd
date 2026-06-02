@@ -5,7 +5,6 @@ description: "I read The Fellowship of the Ring and The Oxford Inklings back to 
 date: 2026-06-01
 categories: [Books, Myth, Faith]
 author: "Mark Cribb"
-draft: true
 ---
 
 I read *The Fellowship of the Ring* and *The Oxford Inklings* back to back over a
