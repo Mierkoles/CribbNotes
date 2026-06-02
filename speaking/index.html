@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Talks that demystify AI for the people who have to make decisions about it — executives, boards, and IT leaders.">
 
-<title>About – Cribb Notes</title>
+<title>Speaking – Cribb Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +27,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7b122981b3ae3c526205dd7ae54bdbf1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7b122981b3ae3c526205dd7ae54bdbf1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,14 +73,72 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-past-talks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-past-talks'] = new List('listing-past-talks', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="About – Cribb Notes">
-<meta property="og:description" content="Feels like magic, but it’s math. Short, plain-language notes on AI, the enterprise, and the human side of technology — by Mark Cribb.">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Speaking – Cribb Notes">
+<meta property="og:description" content="Talks that demystify AI for the people who have to make decisions about it — executives, boards, and IT leaders.">
 <meta property="og:site_name" content="Cribb Notes">
-<meta name="twitter:title" content="About – Cribb Notes">
-<meta name="twitter:description" content="Feels like magic, but it’s math. Short, plain-language notes on AI, the enterprise, and the human side of technology — by Mark Cribb.">
+<meta name="twitter:title" content="Speaking – Cribb Notes">
+<meta name="twitter:description" content="Talks that demystify AI for the people who have to make decisions about it — executives, boards, and IT leaders.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -88,11 +149,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo light-content">
-    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../CribbNotesLogo.png" alt="" class="navbar-logo light-content">
+    <img src="../CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Cribb Notes</span>
     </a>
   </div>
@@ -103,29 +164,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./tech.html"> 
+    <a class="nav-link" href="../tech.html"> 
 <span class="menu-text">Tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./culture.html"> 
+    <a class="nav-link" href="../culture.html"> 
 <span class="menu-text">Culture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html"> 
+    <a class="nav-link" href="../labs/index.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./speaking/index.html"> 
+    <a class="nav-link active" href="../speaking/index.html" aria-current="page"> 
 <span class="menu-text">Speaking</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -155,10 +216,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-angle" id="toc-the-angle" class="nav-link active" data-scroll-target="#the-angle">The angle</a></li>
-  <li><a href="#the-longer-version" id="toc-the-longer-version" class="nav-link" data-scroll-target="#the-longer-version">The longer version</a></li>
-  <li><a href="#the-human-layer" id="toc-the-human-layer" class="nav-link" data-scroll-target="#the-human-layer">The human layer</a></li>
-  <li><a href="#stay-in-the-loop" id="toc-stay-in-the-loop" class="nav-link" data-scroll-target="#stay-in-the-loop">Stay in the loop</a></li>
+  <li><a href="#topics-i-speak-on" id="toc-topics-i-speak-on" class="nav-link active" data-scroll-target="#topics-i-speak-on">Topics I speak on</a></li>
+  <li><a href="#book-a-talk" id="toc-book-a-talk" class="nav-link" data-scroll-target="#book-a-talk">Book a talk</a></li>
+  <li><a href="#past-talks" id="toc-past-talks" class="nav-link" data-scroll-target="#past-talks">Past talks</a></li>
   </ul>
 </nav>
     </div>
@@ -167,9 +227,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Speaking</h1>
 </div>
 
+<div>
+  <div class="description">
+    Talks that demystify AI for the people who have to make decisions about it — executives, boards, and IT leaders.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -184,34 +249,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Cribb Notes is written by <strong>Mark Cribb</strong> — and the whole premise is in the name. Cliff’s Notes, by Cribb: short, honest explainers for the parts of technology everyone pretends to already understand.</p>
-<section id="the-angle" class="level2">
-<h2 class="anchored" data-anchor-id="the-angle">The angle</h2>
-<p>Most people with AI opinions do exactly one of three things. I happen to do all three, which is the only reason I think this is worth your inbox:</p>
+<p>I give talks that make AI <strong>un-foolable</strong> for the people who have to make decisions about it — executives, boards, CIOs, and the IT leaders who carry the budget. No vendor theater, no jargon. Just the gears, exposed, with demos the room runs themselves.</p>
+<p>The view comes from the intersection most speakers only stand at one corner of: I <strong>build</strong> real software, <strong>govern</strong> it (I authored my organization’s enterprise AI governance framework), and <strong>teach</strong> it to thousands of students a year. See <a href="../about.html">more about that</a>.</p>
+<section id="topics-i-speak-on" class="level2">
+<h2 class="anchored" data-anchor-id="topics-i-speak-on">Topics I speak on</h2>
 <ul>
-<li><strong>I build it</strong> — real software, shipped, much of it on weekends with AI as a co-pilot.</li>
-<li><strong>I govern it</strong> — I authored my organization’s enterprise AI governance framework.</li>
-<li><strong>I teach it</strong> — thousands of university students a year, plus a doctorate in progress.</li>
+<li><strong>Demystifying AI</strong> — from the simplest machine-learning model to the architectural frontier, in plain language, with <a href="../labs/index.html">run-it-yourself demos</a>.</li>
+<li><strong>Enterprise AI governance</strong> — building a framework that lets an organization move fast without betting the company.</li>
+<li><strong>AI-assisted development</strong> — what it actually changes for how software gets built.</li>
+<li><strong>Quantum readiness</strong> — what leaders should be doing now, separated from the hype.</li>
 </ul>
-<p>The view from the intersection — where the hype meets the budget meets the actual code — is where these notes are written from.</p>
+<p>Formats range from a 60–75 minute keynote with live demos to half-day executive workshops. Talks can be tailored to a board, an IT org, or a general business audience.</p>
 </section>
-<section id="the-longer-version" class="level2">
-<h2 class="anchored" data-anchor-id="the-longer-version">The longer version</h2>
-<p>Mark Cribb is a technology leader and educator with 25+ years in enterprise platform architecture and data strategy, now focused on driving enterprise AI adoption. He serves as AI Solutions and Applications Manager at Marcus Theatres, leading enterprise AI governance and AI-assisted development across the organization. He teaches Data Analysis at MSOE’s Rader School of Business and cloud computing at Western Governors University, and has previously taught Business Law &amp; Ethics at Bryant &amp; Stratton College and technology leadership in UWM’s Executive MBA program. He is working on a Doctorate of Information Technology, holds multiple Microsoft and AWS certifications (AI Engineer, Data Scientist, Solutions Architect), and speaks on AI governance, AI-assisted development, and quantum readiness. He serves as Co-Chair of United Way’s Technology United Council, chairs the planning committee for the 2027 Milwaukee CIO Forum, and sits on the board of the BUILD Moto Mentor Program.</p>
+<section id="book-a-talk" class="level2">
+<h2 class="anchored" data-anchor-id="book-a-talk">Book a talk</h2>
+<p>Interested in having me speak at your event? Email <strong><a href="mailto:mark@cribbnotes.ai?subject=Speaking%20inquiry">mark@cribbnotes.ai</a></strong> with your event, date, and audience — or reach out on <a href="https://www.linkedin.com/in/mark-cribb">LinkedIn</a> — and I’ll follow up.</p>
 </section>
-<section id="the-human-layer" class="level2">
-<h2 class="anchored" data-anchor-id="the-human-layer">The human layer</h2>
-<p>Cribb Notes isn’t only AI block diagrams. Mark is a black belt in Kenpo Karate and Tae Kwon Do and has coached martial arts and wrestling for thirty years; he plays drums and produces music; he collects movie memorabilia (ask him about Godzilla), reads philosophy and historical fiction, leans Stoic, and is training for a sprint triathlon out of Oak Creek, Wisconsin. Those threads show up here on purpose — the best explanations of hard technical ideas usually come from somewhere human.</p>
-</section>
-<section id="stay-in-the-loop" class="level2">
-<h2 class="anchored" data-anchor-id="stay-in-the-loop">Stay in the loop</h2>
-<ul>
-<li>Email <a href="mailto:mark@cribbnotes.ai">mark@cribbnotes.ai</a></li>
-<li>Subscribe via <a href="index.xml">RSS</a></li>
-<li>Follow on <a href="https://www.linkedin.com/in/mark-cribb">LinkedIn</a></li>
-<li>Code and live demos on <a href="https://github.com/Mierkoles/CribbNotes">GitHub</a></li>
-</ul>
-<p><em>(Email subscription coming soon.)</em></p>
+<section id="past-talks" class="level2">
+<h2 class="anchored" data-anchor-id="past-talks">Past talks</h2>
+<div id="listing-past-talks" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="VGFsayUyQ0FJJTJDRGVteXN0aWZpZWQ=" data-listing-date-sort="1779235200000" data-listing-file-modified-sort="1780372074460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../speaking/demystifying-ai-sim-2026.html" class="no-external">Demystifying AI: Separating Architecture from the Hype</a>
+</h3>
+<div class="delink listing-description"><a href="../speaking/demystifying-ai-sim-2026.html" class="no-external">
+<p>In 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier — and run the demos themselves.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../speaking/demystifying-ai-sim-2026.html" class="no-external">
+<div class="listing-date">
+May 20, 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -629,7 +707,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml">
+    <a class="nav-link" href="../index.xml">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
@@ -654,5 +732,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

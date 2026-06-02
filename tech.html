@@ -6,11 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Mark Cribb">
-<meta name="dcterms.date" content="2026-05-23">
-<meta name="description" content="Every week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.">
+<meta name="description" content="AI, the enterprise systems we actually run companies on, and the IT decisions that quietly cost millions — demystified.">
 
-<title>Feels Like Magic, But It’s Math – Cribb Notes</title>
+<title>Tech – Cribb Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +27,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7b122981b3ae3c526205dd7ae54bdbf1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7b122981b3ae3c526205dd7ae54bdbf1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,29 +73,104 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-tech-notes .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-tech-notes'] = new List('listing-tech-notes', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
+<style>
 
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
 
-<meta property="og:title" content="Feels Like Magic, But It’s Math – Cribb Notes">
-<meta property="og:description" content="Every week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.">
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #0A1F41;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Cribb Notes" href="tech.xml" data-external="1"><meta property="og:title" content="Tech – Cribb Notes">
+<meta property="og:description" content="AI, the enterprise systems we actually run companies on, and the IT decisions that quietly cost millions — demystified.">
 <meta property="og:site_name" content="Cribb Notes">
-<meta name="twitter:title" content="Feels Like Magic, But It’s Math – Cribb Notes">
-<meta name="twitter:description" content="Every week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.">
+<meta name="twitter:title" content="Tech – Cribb Notes">
+<meta name="twitter:description" content="AI, the enterprise systems we actually run companies on, and the IT decisions that quietly cost millions — demystified.">
 <meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../CribbNotesLogo.png" alt="" class="navbar-logo light-content">
-    <img src="../../CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo light-content">
+    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Cribb Notes</span>
     </a>
   </div>
@@ -106,21 +181,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Notes</span></a>
+    <a class="nav-link active" href="./tech.html" aria-current="page"> 
+<span class="menu-text">Tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../demos.html"> 
-<span class="menu-text">Demos</span></a>
+    <a class="nav-link" href="./culture.html"> 
+<span class="menu-text">Culture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./labs/index.html"> 
+<span class="menu-text">Labs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./speaking/index.html"> 
+<span class="menu-text">Speaking</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -142,104 +225,76 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Tech</h1>
+                  <div>
+        <div class="description">
+          AI, the enterprise systems we actually run companies on, and the IT decisions that quietly cost millions — demystified.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#what-this-is" id="toc-what-this-is" class="nav-link active" data-scroll-target="#what-this-is">What this is</a></li>
-  <li><a href="#why-me" id="toc-why-me" class="nav-link" data-scroll-target="#why-me">Why me</a></li>
-  <li><a href="#the-one-promise" id="toc-the-one-promise" class="nav-link" data-scroll-target="#the-one-promise">The one promise</a></li>
-  <li><a href="#feels-like-magic-but-its-math" id="toc-feels-like-magic-but-its-math" class="nav-link" data-scroll-target="#feels-like-magic-but-its-math">“Feels like magic, but it’s math”</a></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVteXN0aWZpZWQ=">Demystified <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWV0YQ==">Meta <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Feels Like Magic, But It’s Math</h1>
-<p class="subtitle lead">Note 001 — why this exists, and what you’ll get out of it.</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Meta</div>
-    <div class="quarto-category">AI</div>
-    <div class="quarto-category">Demystified</div>
-  </div>
-  </div>
 
-<div>
-  <div class="description">
-    Every week someone senior leans in and quietly asks me what AI is <em>actually</em> doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.
-  </div>
+
+
+
+<p>The half of the masthead everyone expects: artificial intelligence, the platforms enterprises run on, and the architecture decisions hiding under the hype. One idea per note, gears exposed.</p>
+<div id="listing-tech-notes" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="TWV0YSUyQ0FJJTJDRGVteXN0aWZpZWQ=" data-listing-date-sort="1779494400000" data-listing-file-modified-sort="1780372074460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="577">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./notes/tech/welcome/index.html" class="no-external">Feels Like Magic, But It’s Math</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWV0YQ=='); return false;">Meta</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVteXN0aWZpZWQ='); return false;">Demystified</div>
+
+</div>
+<div class="delink listing-description"><a href="./notes/tech/welcome/index.html" class="no-external">
+<p>Every week someone senior leans in and quietly asks me what AI is <em>actually</em> doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./notes/tech/welcome/index.html" class="no-external">
+<div class="listing-date">
+May 23, 2026
+</div>
+<div class="listing-reading-time">3 min</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Mark Cribb </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">May 23, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Once a week, somebody senior and genuinely smart leans across a table, drops their voice so the room won’t hear, and asks me the same question:</p>
-<blockquote class="blockquote">
-<p><em>“Okay… but what is AI <strong>actually</strong> doing?”</em></p>
-</blockquote>
-<p>They’re never embarrassed without reason. They run departments. They sign the contracts. And somewhere along the way the technology got wrapped in so much hype, jargon, and vendor theater that asking the basic question started to feel risky.</p>
-<p>Here’s the secret I tell every one of them: <strong>the question isn’t dumb, and the answer isn’t magic.</strong> It’s math — often surprisingly simple math, dressed up in intimidating clothes.</p>
-<p>That conversation, on repeat, is why Cribb Notes exists.</p>
-<section id="what-this-is" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-is">What this is</h2>
-<p>Cribb Notes is Cliff’s Notes, by Cribb — short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side — what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.</p>
-<p>One idea per note. About a three-minute read. No homework, no prerequisites, no <em>“well, actually.”</em></p>
-</section>
-<section id="why-me" class="level2">
-<h2 class="anchored" data-anchor-id="why-me">Why me</h2>
-<p>Fair question. The internet is not short on AI takes. Most of the people writing them do exactly <strong>one</strong> of these three things. The reason I think this is worth your inbox is that I’m stubborn enough to do all three:</p>
-<ul>
-<li><strong>I build it.</strong> I ship real software — an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.</li>
-<li><strong>I govern it.</strong> I wrote my company’s enterprise AI governance framework and chair the hard conversations about what we’re actually allowed to point this stuff at.</li>
-<li><strong>I teach it.</strong> I teach cloud and data to thousands of university students a year, and I’m grinding through a doctorate on the side because apparently I hate sleep.</li>
-</ul>
-<p>The interesting view is at the intersection — where the hype meets the budget meets the actual code. That’s the seat these notes are written from.</p>
-</section>
-<section id="the-one-promise" class="level2">
-<h2 class="anchored" data-anchor-id="the-one-promise">The one promise</h2>
-<p>I will not waste your time, and I will not make you feel stupid.</p>
-<p>Every note has a single job: hand you one clear idea you can use in a meeting on Monday — whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.</p>
-<p>You won’t leave here an engineer. You’ll leave here <strong>un-foolable</strong> — able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one.</p>
-</section>
-<section id="feels-like-magic-but-its-math" class="level2">
-<h2 class="anchored" data-anchor-id="feels-like-magic-but-its-math">“Feels like magic, but it’s math”</h2>
-<p>That line is on the front door for a reason. Almost everything that looks like sorcery in this field — a model that writes, a system that predicts, a chatbot that <em>seems</em> to understand — comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: <strong>seeing the gears doesn’t ruin the wonder. It upgrades it.</strong> Fear turns into judgment. Judgment is the thing this whole moment has been missing.</p>
-<p>So that’s the deal. Every week: one idea, gears exposed.</p>
-<p>Pull up a chair. And if there’s something out there that’s been quietly confusing you — the thing you keep nodding along to in meetings — tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.</p>
-<p><em>Feels like magic. It’s math. Let’s go.</em></p>
-<p>— Mark</p>
-
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -654,7 +709,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml">
+    <a class="nav-link" href="./index.xml">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
@@ -679,5 +734,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

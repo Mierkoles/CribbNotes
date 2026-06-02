@@ -1,59 +1,38 @@
 [
   {
-    "objectID": "notes/welcome/index.html",
-    "href": "notes/welcome/index.html",
-    "title": "Feels Like Magic, But It’s Math",
+    "objectID": "tech.html",
+    "href": "tech.html",
+    "title": "Tech",
     "section": "",
-    "text": "Once a week, somebody senior and genuinely smart leans across a table, drops their voice so the room won’t hear, and asks me the same question:\nThey’re never embarrassed without reason. They run departments. They sign the contracts. And somewhere along the way the technology got wrapped in so much hype, jargon, and vendor theater that asking the basic question started to feel risky.\nHere’s the secret I tell every one of them: the question isn’t dumb, and the answer isn’t magic. It’s math — often surprisingly simple math, dressed up in intimidating clothes.\nThat conversation, on repeat, is why Cribb Notes exists."
+    "text": "The half of the masthead everyone expects: artificial intelligence, the platforms enterprises run on, and the architecture decisions hiding under the hype. One idea per note, gears exposed.\n\n\n\n\n\nFeels Like Magic, But It’s Math\n\n\n\nMeta\n\nAI\n\nDemystified\n\n\n\nEvery week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.\n\n\n\n\n\nMay 23, 2026\n\n3 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "notes/welcome/index.html#what-this-is",
-    "href": "notes/welcome/index.html#what-this-is",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "What this is",
-    "text": "What this is\nCribb Notes is Cliff’s Notes, by Cribb — short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side — what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.\nOne idea per note. About a three-minute read. No homework, no prerequisites, no “well, actually.”"
-  },
-  {
-    "objectID": "notes/welcome/index.html#why-me",
-    "href": "notes/welcome/index.html#why-me",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "Why me",
-    "text": "Why me\nFair question. The internet is not short on AI takes. Most of the people writing them do exactly one of these three things. The reason I think this is worth your inbox is that I’m stubborn enough to do all three:\n\nI build it. I ship real software — an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.\nI govern it. I wrote my company’s enterprise AI governance framework and chair the hard conversations about what we’re actually allowed to point this stuff at.\nI teach it. I teach cloud and data to thousands of university students a year, and I’m grinding through a doctorate on the side because apparently I hate sleep.\n\nThe interesting view is at the intersection — where the hype meets the budget meets the actual code. That’s the seat these notes are written from."
-  },
-  {
-    "objectID": "notes/welcome/index.html#the-one-promise",
-    "href": "notes/welcome/index.html#the-one-promise",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "The one promise",
-    "text": "The one promise\nI will not waste your time, and I will not make you feel stupid.\nEvery note has a single job: hand you one clear idea you can use in a meeting on Monday — whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.\nYou won’t leave here an engineer. You’ll leave here un-foolable — able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one."
-  },
-  {
-    "objectID": "notes/welcome/index.html#feels-like-magic-but-its-math",
-    "href": "notes/welcome/index.html#feels-like-magic-but-its-math",
-    "title": "Feels Like Magic, But It’s Math",
-    "section": "“Feels like magic, but it’s math”",
-    "text": "“Feels like magic, but it’s math”\nThat line is on the front door for a reason. Almost everything that looks like sorcery in this field — a model that writes, a system that predicts, a chatbot that seems to understand — comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: seeing the gears doesn’t ruin the wonder. It upgrades it. Fear turns into judgment. Judgment is the thing this whole moment has been missing.\nSo that’s the deal. Every week: one idea, gears exposed.\nPull up a chair. And if there’s something out there that’s been quietly confusing you — the thing you keep nodding along to in meetings — tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.\nFeels like magic. It’s math. Let’s go.\n— Mark"
-  },
-  {
-    "objectID": "demos.html",
-    "href": "demos.html",
-    "title": "Demos",
+    "objectID": "speaking/demystifying-ai-sim-2026.html",
+    "href": "speaking/demystifying-ai-sim-2026.html",
+    "title": "Demystifying AI: Separating Architecture from the Hype",
     "section": "",
-    "text": "Reading about AI is fine. Running it yourself is better. These are live notebooks built for a specific teaching context: short wall time, heavily commented for narration, runs on Google Colab’s free tier, and requires no Python or AI knowledge to use. Click a badge and you’re inside the demo in two clicks."
+    "text": "SIM industry event · May 2026 · co-presented with Ken Garfinkel (CIO, Broan-NuTone)\nIn 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier — and run the demos themselves. The whole arc is built to turn “AI feels like magic” into “oh, that’s all it is.”"
   },
   {
-    "objectID": "demos.html#demystifying-ai-separating-architecture-from-the-hype",
-    "href": "demos.html#demystifying-ai-separating-architecture-from-the-hype",
-    "title": "Demos",
-    "section": "Demystifying AI: Separating Architecture from the Hype",
-    "text": "Demystifying AI: Separating Architecture from the Hype\nSIM industry event · May 2026 · co-presented with Ken Garfinkel (CIO, Broan-NuTone)\nIn 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier — and run the demos themselves.\n\nMine the Room — Watch a Model Learn From Your Data\nAct 1. CPU-only, ~30 seconds to render.\n\n\n\nOpen In Colab\n\n\nCall out ten numbers and watch a model search them for the pattern — settling on the two numbers that fit, sharpening as the data grows, then getting knocked off course by a few bad points (with a robust alternative sitting right beside it). A few minutes of pixels that make “training” feel mechanical instead of magical.\n\n\nnanoGPT — Train a Transformer From Scratch in ~10 Minutes\nAct 3. Needs the free T4 GPU runtime.\n\n\n\nOpen In Colab\n\n\nA ~10-million-parameter character-level transformer, trained from scratch on free cloud hardware. Watch the loss fall from random noise to recognizable prose. It’s the same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less data, identical idea.\nThere’s a dropdown at the top: pick Shakespeare or Mark Twain. Run it, then come back, switch authors, and run it again. Every other line of code is identical — only the data changes, and a completely different writer comes out. That’s the whole point: the architecture is general; the data is what gives a model its voice.\nBefore running: set Runtime → Change runtime type → T4 GPU → Save."
+    "objectID": "speaking/demystifying-ai-sim-2026.html#the-demos",
+    "href": "speaking/demystifying-ai-sim-2026.html#the-demos",
+    "title": "Demystifying AI: Separating Architecture from the Hype",
+    "section": "The demos",
+    "text": "The demos\nThe talk is built around two hands-on labs the audience runs live. Both live in the Labs library and are reusable beyond this event:\n\nAct 1 — Mine the Room\nWatch a model learn from your data. Call out ten numbers and watch it search them for the pattern — the simplest possible model, and the foundation everything else is built on. CPU-only, ~30 seconds to render.\n\n\nAct 3 — nanoGPT\nTrain a transformer from scratch in ~10 minutes on free cloud hardware. Same procedure that built GPT-4, 200,000× smaller. Switch the training data from Shakespeare to Mark Twain and a completely different writer comes out — proof that the architecture is general and the data is what gives a model its voice. Needs the free T4 GPU runtime."
   },
   {
-    "objectID": "demos.html#how-to-use",
-    "href": "demos.html#how-to-use",
-    "title": "Demos",
-    "section": "How to use",
-    "text": "How to use\n\nClick an Open in Colab badge above.\nRead the welcome cell at the top — it explains notebooks and Colab if you’ve never touched either.\nClick Runtime → Run all and watch the output.\n\nYou don’t need to read or understand the code. Every block is commented for the curious, but the point is to watch the model do its thing.\nFeels like magic, but it’s math."
+    "objectID": "labs/mine-the-room.html",
+    "href": "labs/mine-the-room.html",
+    "title": "Mine the Room",
+    "section": "",
+    "text": "Open In Colab\n\n\nCPU-only, ~30 seconds to render. No GPU needed.\nCall out ten numbers and watch a model search them for the pattern — settling on the two numbers that fit, sharpening as the data grows, then getting knocked off course by a few bad points (with a robust alternative sitting right beside it). A few minutes of pixels that make “training” feel mechanical instead of magical.\nIt’s the simplest possible machine-learning model, and it’s the foundation everything else is built on. Start here.\n\nFirst presented in Demystifying AI: Separating Architecture from the Hype (SIM, May 2026)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cribb Notes",
+    "section": "",
+    "text": "Short, plain-language notes on the stuff everyone in tech pretends to already understand — AI mostly, plus the enterprise systems we actually run companies on, the way IT, the movie business, and education are getting rewired in real time, and the occasional detour through the human side of it all.\nOne idea per note. About a three-minute read. No prerequisites, no jargon, no “well, actually.”\n\n\n\n\n\nFeels Like Magic, But It’s Math\n\n\n\nMeta\n\nAI\n\nDemystified\n\n\n\nEvery week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.\n\n\n\n\n\nMay 23, 2026\n\n3 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -88,13 +67,97 @@
     "href": "about.html#stay-in-the-loop",
     "title": "About",
     "section": "Stay in the loop",
-    "text": "Stay in the loop\n\nSubscribe via RSS\nFollow on LinkedIn\nCode and live demos on GitHub\n\n(Email subscription coming soon.)"
+    "text": "Stay in the loop\n\nEmail mark@cribbnotes.ai\nSubscribe via RSS\nFollow on LinkedIn\nCode and live demos on GitHub\n\n(Email subscription coming soon.)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Cribb Notes",
+    "objectID": "culture.html",
+    "href": "culture.html",
+    "title": "Culture",
     "section": "",
-    "text": "Short, plain-language notes on the stuff everyone in tech pretends to already understand — AI mostly, plus the enterprise systems we actually run companies on, the way IT, the movie business, and education are getting rewired in real time, and the occasional detour through the human side of it all.\nOne idea per note. About a three-minute read. No prerequisites, no jargon, no “well, actually.”\n\n\n\n\n\nFeels Like Magic, But It’s Math\n\n\n\nMeta\n\nAI\n\nDemystified\n\n\n\nEvery week someone senior leans in and quietly asks me what AI is actually doing. Cribb Notes is my answer — Cliff’s Notes for the stuff everyone pretends to understand.\n\n\n\n\n\nMay 23, 2026\n\n3 min\n\n\n\n\nNo matching items"
+    "text": "The other half of the masthead. Movies and the business behind them, music, martial arts, philosophy — and what thirty years of coaching and a stubborn drum fill taught me about how people (and machines) actually learn.\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Reading about AI is fine. Running it yourself is better. These are live notebooks built to teach: short wall time, heavily commented for narration, runs on Google Colab’s free tier, and requires no Python or AI knowledge to use. Click a card, then a badge, and you’re inside the demo.\nEvery lab is self-contained and reusable — the same notebooks power the talks."
+  },
+  {
+    "objectID": "labs/index.html#how-to-use",
+    "href": "labs/index.html#how-to-use",
+    "title": "Labs",
+    "section": "How to use",
+    "text": "How to use\n\nOpen a lab, then click its Open in Colab badge.\nRead the welcome cell at the top — it explains notebooks and Colab if you’ve never touched either.\nClick Runtime → Run all and watch the output.\n\nYou don’t need to read or understand the code. Every block is commented for the curious, but the point is to watch the model do its thing.\nFeels like magic, but it’s math."
+  },
+  {
+    "objectID": "labs/nanogpt.html",
+    "href": "labs/nanogpt.html",
+    "title": "nanoGPT",
+    "section": "",
+    "text": "Open In Colab\n\n\nNeeds the free T4 GPU runtime. Set Runtime → Change runtime type → T4 GPU → Save before running.\nA ~10-million-parameter character-level transformer, trained from scratch on free cloud hardware. Watch the loss fall from random noise to recognizable prose. It’s the same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less data, identical idea.\nThere’s a dropdown at the top: pick Shakespeare or Mark Twain. Run it, then come back, switch authors, and run it again. Every other line of code is identical — only the data changes, and a completely different writer comes out. That’s the whole point: the architecture is general; the data is what gives a model its voice.\n\nFirst presented in Demystifying AI: Separating Architecture from the Hype (SIM, May 2026)."
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html",
+    "href": "notes/tech/welcome/index.html",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "",
+    "text": "Once a week, somebody senior and genuinely smart leans across a table, drops their voice so the room won’t hear, and asks me the same question:\nThey’re never embarrassed without reason. They run departments. They sign the contracts. And somewhere along the way the technology got wrapped in so much hype, jargon, and vendor theater that asking the basic question started to feel risky.\nHere’s the secret I tell every one of them: the question isn’t dumb, and the answer isn’t magic. It’s math — often surprisingly simple math, dressed up in intimidating clothes.\nThat conversation, on repeat, is why Cribb Notes exists."
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#what-this-is",
+    "href": "notes/tech/welcome/index.html#what-this-is",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "What this is",
+    "text": "What this is\nCribb Notes is Cliff’s Notes, by Cribb — short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side — what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.\nOne idea per note. About a three-minute read. No homework, no prerequisites, no “well, actually.”"
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#why-me",
+    "href": "notes/tech/welcome/index.html#why-me",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "Why me",
+    "text": "Why me\nFair question. The internet is not short on AI takes. Most of the people writing them do exactly one of these three things. The reason I think this is worth your inbox is that I’m stubborn enough to do all three:\n\nI build it. I ship real software — an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.\nI govern it. I wrote my company’s enterprise AI governance framework and chair the hard conversations about what we’re actually allowed to point this stuff at.\nI teach it. I teach cloud and data to thousands of university students a year, and I’m grinding through a doctorate on the side because apparently I hate sleep.\n\nThe interesting view is at the intersection — where the hype meets the budget meets the actual code. That’s the seat these notes are written from."
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#the-one-promise",
+    "href": "notes/tech/welcome/index.html#the-one-promise",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "The one promise",
+    "text": "The one promise\nI will not waste your time, and I will not make you feel stupid.\nEvery note has a single job: hand you one clear idea you can use in a meeting on Monday — whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.\nYou won’t leave here an engineer. You’ll leave here un-foolable — able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one."
+  },
+  {
+    "objectID": "notes/tech/welcome/index.html#feels-like-magic-but-its-math",
+    "href": "notes/tech/welcome/index.html#feels-like-magic-but-its-math",
+    "title": "Feels Like Magic, But It’s Math",
+    "section": "“Feels like magic, but it’s math”",
+    "text": "“Feels like magic, but it’s math”\nThat line is on the front door for a reason. Almost everything that looks like sorcery in this field — a model that writes, a system that predicts, a chatbot that seems to understand — comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: seeing the gears doesn’t ruin the wonder. It upgrades it. Fear turns into judgment. Judgment is the thing this whole moment has been missing.\nSo that’s the deal. Every week: one idea, gears exposed.\nPull up a chair. And if there’s something out there that’s been quietly confusing you — the thing you keep nodding along to in meetings — tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.\nFeels like magic. It’s math. Let’s go.\n— Mark"
+  },
+  {
+    "objectID": "speaking/index.html",
+    "href": "speaking/index.html",
+    "title": "Speaking",
+    "section": "",
+    "text": "I give talks that make AI un-foolable for the people who have to make decisions about it — executives, boards, CIOs, and the IT leaders who carry the budget. No vendor theater, no jargon. Just the gears, exposed, with demos the room runs themselves.\nThe view comes from the intersection most speakers only stand at one corner of: I build real software, govern it (I authored my organization’s enterprise AI governance framework), and teach it to thousands of students a year. See more about that."
+  },
+  {
+    "objectID": "speaking/index.html#topics-i-speak-on",
+    "href": "speaking/index.html#topics-i-speak-on",
+    "title": "Speaking",
+    "section": "Topics I speak on",
+    "text": "Topics I speak on\n\nDemystifying AI — from the simplest machine-learning model to the architectural frontier, in plain language, with run-it-yourself demos.\nEnterprise AI governance — building a framework that lets an organization move fast without betting the company.\nAI-assisted development — what it actually changes for how software gets built.\nQuantum readiness — what leaders should be doing now, separated from the hype.\n\nFormats range from a 60–75 minute keynote with live demos to half-day executive workshops. Talks can be tailored to a board, an IT org, or a general business audience."
+  },
+  {
+    "objectID": "speaking/index.html#book-a-talk",
+    "href": "speaking/index.html#book-a-talk",
+    "title": "Speaking",
+    "section": "Book a talk",
+    "text": "Book a talk\nInterested in having me speak at your event? Email mark@cribbnotes.ai with your event, date, and audience — or reach out on LinkedIn — and I’ll follow up."
+  },
+  {
+    "objectID": "speaking/index.html#past-talks",
+    "href": "speaking/index.html#past-talks",
+    "title": "Speaking",
+    "section": "Past talks",
+    "text": "Past talks\n\n\n\n\n\nDemystifying AI: Separating Architecture from the Hype\n\n\nIn 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier — and run the demos themselves.\n\n\n\n\n\nMay 20, 2026\n\n\n\n\n\nNo matching items"
   }
 ]

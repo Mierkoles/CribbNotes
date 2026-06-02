@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cribbnotes.ai/notes/welcome/index.html</loc>
-    <lastmod>2026-06-01T20:41:42.830Z</lastmod>
+    <loc>https://cribbnotes.ai/tech.html</loc>
+    <lastmod>2026-06-02T03:47:54.460Z</lastmod>
   </url>
   <url>
-    <loc>https://cribbnotes.ai/demos.html</loc>
-    <lastmod>2026-06-01T20:41:42.829Z</lastmod>
+    <loc>https://cribbnotes.ai/speaking/demystifying-ai-sim-2026.html</loc>
+    <lastmod>2026-06-02T03:47:54.460Z</lastmod>
   </url>
   <url>
-    <loc>https://cribbnotes.ai/about.html</loc>
-    <lastmod>2026-06-01T20:41:42.829Z</lastmod>
+    <loc>https://cribbnotes.ai/labs/mine-the-room.html</loc>
+    <lastmod>2026-06-02T03:47:54.459Z</lastmod>
   </url>
   <url>
     <loc>https://cribbnotes.ai/index.html</loc>
-    <lastmod>2026-06-01T20:41:42.829Z</lastmod>
+    <lastmod>2026-06-02T03:47:54.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cribbnotes.ai/about.html</loc>
+    <lastmod>2026-06-02T03:47:54.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cribbnotes.ai/culture.html</loc>
+    <lastmod>2026-06-02T03:47:54.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cribbnotes.ai/labs/index.html</loc>
+    <lastmod>2026-06-02T03:47:54.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cribbnotes.ai/labs/nanogpt.html</loc>
+    <lastmod>2026-06-02T03:47:54.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cribbnotes.ai/notes/tech/welcome/index.html</loc>
+    <lastmod>2026-06-02T03:47:54.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cribbnotes.ai/speaking/index.html</loc>
+    <lastmod>2026-06-02T03:47:54.460Z</lastmod>
   </url>
 </urlset>

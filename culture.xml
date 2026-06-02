@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Cribb Notes</title>
+<link>https://cribbnotes.ai/culture.html</link>
+<atom:link href="https://cribbnotes.ai/culture.xml" rel="self" type="application/rss+xml"/>
+<description>Movies, music, martial arts, and the human side of technology — the other half of the masthead.</description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Tue, 02 Jun 2026 03:48:10 GMT</lastBuildDate>
+</channel>
+</rss>

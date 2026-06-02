@@ -1,8 +1,31 @@
 [
   {
+    "listing": "/tech.html",
+    "items": [
+      "/notes/tech/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
-      "/notes/welcome/index.html"
+      "/notes/tech/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/culture.html",
+    "items": []
+  },
+  {
+    "listing": "/labs/index.html",
+    "items": [
+      "/labs/mine-the-room.html",
+      "/labs/nanogpt.html"
+    ]
+  },
+  {
+    "listing": "/speaking/index.html",
+    "items": [
+      "/speaking/demystifying-ai-sim-2026.html"
     ]
   }
 ]
