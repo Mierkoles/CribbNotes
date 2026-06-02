@@ -1,6 +1,6 @@
 ---
 title: "Cribb Notes"
-subtitle: "Feels like magic, but it's math."
+subtitle: "Tech and culture, demystified."
 title-block-banner: "#0A1F41"
 title-block-banner-color: "white"
 page-layout: full
