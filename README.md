@@ -16,9 +16,11 @@ and the home of the hands-on Colab demo notebooks.
 
 | Path | What it is |
 |------|------------|
-| `index.qmd` | Home page — listing of the latest Notes |
-| `notes/` | The Notes themselves (one folder per issue) |
-| `demos.qmd` | The runnable Colab notebooks |
+| `index.qmd` | Home page — listing of the latest Notes across both streams |
+| `tech.qmd` / `culture.qmd` | The two content streams (Tech · Culture, per the logo) |
+| `notes/tech/`, `notes/culture/` | The Notes themselves (one folder per issue, filed by stream) |
+| `labs/` | The runnable Colab notebooks (evergreen, reusable) |
+| `speaking/` | Talks — booking pitch + a per-event archive linking its Labs/Notes |
 | `about.qmd` | About the publication and the author |
 | `_quarto.yml` | Site configuration |
 | `styles.css` | Brand styling |

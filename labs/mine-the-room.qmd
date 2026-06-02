@@ -1,0 +1,23 @@
+---
+title: "Mine the Room"
+subtitle: "Watch a model learn from your data."
+description: "Call out ten numbers and watch a model search them for the pattern. A few minutes of pixels that make 'training' feel mechanical instead of magical."
+date: 2026-05-23
+categories: [AI, Demystified, Interactive]
+---
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/mine_the_room_colab.ipynb)
+
+*CPU-only, ~30 seconds to render. No GPU needed.*
+
+Call out ten numbers and watch a model **search them for the pattern** — settling on
+the two numbers that fit, sharpening as the data grows, then getting knocked off course
+by a few bad points (with a robust alternative sitting right beside it). A few minutes
+of pixels that make "training" feel mechanical instead of magical.
+
+It's the simplest possible machine-learning model, and it's the foundation everything
+else is built on. Start here.
+
+---
+
+*First presented in [Demystifying AI: Separating Architecture from the Hype](/speaking/demystifying-ai-sim-2026.qmd) (SIM, May 2026).*

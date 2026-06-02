@@ -1,0 +1,25 @@
+---
+title: "nanoGPT"
+subtitle: "Train a transformer from scratch in ~10 minutes."
+description: "A ~10-million-parameter transformer, trained from scratch on free cloud hardware. Watch the loss fall from random noise to recognizable prose."
+date: 2026-05-23
+categories: [AI, Demystified, Interactive]
+---
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mierkoles/CribbNotes/blob/main/nanogpt_colab.ipynb)
+
+*Needs the free T4 GPU runtime. Set `Runtime → Change runtime type → T4 GPU → Save` before running.*
+
+A ~10-million-parameter character-level transformer, trained from scratch on free
+cloud hardware. Watch the loss fall from random noise to recognizable prose. It's the
+same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less
+data, identical idea.
+
+There's a **dropdown at the top: pick Shakespeare or Mark Twain.** Run it, then come
+back, switch authors, and run it again. *Every other line of code is identical* — only
+the data changes, and a completely different writer comes out. That's the whole point:
+the architecture is general; the data is what gives a model its voice.
+
+---
+
+*First presented in [Demystifying AI: Separating Architecture from the Hype](/speaking/demystifying-ai-sim-2026.qmd) (SIM, May 2026).*

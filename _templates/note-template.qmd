@@ -28,7 +28,7 @@ Connect it to a decision someone actually makes — a meeting, a budget, a bet.
 ## Show the gears
 
 The part that turns "magic" into "oh, that's all it is." A small example, a diagram,
-or a link to a runnable [demo](demos.qmd).
+or a link to a runnable [lab](/labs/index.qmd).
 
 *Feels like magic. It's math.*
 

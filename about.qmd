@@ -44,6 +44,7 @@ best explanations of hard technical ideas usually come from somewhere human.
 
 ## Stay in the loop
 
+- Email [mark@cribbnotes.ai](mailto:mark@cribbnotes.ai)
 - Subscribe via [RSS](index.xml)
 - Follow on [LinkedIn](https://www.linkedin.com/in/mark-cribb)
 - Code and live demos on [GitHub](https://github.com/Mierkoles/CribbNotes)

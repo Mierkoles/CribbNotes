@@ -1,0 +1,44 @@
+---
+title: "Speaking"
+description: "Talks that demystify AI for the people who have to make decisions about it — executives, boards, and IT leaders."
+listing:
+  id: past-talks
+  contents:
+    - demystifying-ai-sim-2026.qmd
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+---
+
+I give talks that make AI **un-foolable** for the people who have to make decisions
+about it — executives, boards, CIOs, and the IT leaders who carry the budget. No vendor
+theater, no jargon. Just the gears, exposed, with demos the room runs themselves.
+
+The view comes from the intersection most speakers only stand at one corner of: I
+**build** real software, **govern** it (I authored my organization's enterprise AI
+governance framework), and **teach** it to thousands of students a year. See [more
+about that](/about.qmd).
+
+## Topics I speak on
+
+- **Demystifying AI** — from the simplest machine-learning model to the architectural
+  frontier, in plain language, with [run-it-yourself demos](/labs/index.qmd).
+- **Enterprise AI governance** — building a framework that lets an organization move
+  fast without betting the company.
+- **AI-assisted development** — what it actually changes for how software gets built.
+- **Quantum readiness** — what leaders should be doing now, separated from the hype.
+
+Formats range from a 60–75 minute keynote with live demos to half-day executive
+workshops. Talks can be tailored to a board, an IT org, or a general business audience.
+
+## Book a talk
+
+Interested in having me speak at your event? Email
+**[mark@cribbnotes.ai](mailto:mark@cribbnotes.ai?subject=Speaking%20inquiry)**
+with your event, date, and audience — or reach out on
+[LinkedIn](https://www.linkedin.com/in/mark-cribb) — and I'll follow up.
+
+## Past talks
+
+::: {#past-talks}
+:::

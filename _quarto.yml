@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "notes/**/*.qmd"
+    - "labs/**/*.qmd"
+    - "speaking/**/*.qmd"
   resources:
     - CNAME
 
@@ -18,10 +20,14 @@ website:
     logo: CribbNotesLogo.png
     pinned: true
     left:
-      - text: "Notes"
-        href: index.qmd
-      - text: "Demos"
-        href: demos.qmd
+      - text: "Tech"
+        href: tech.qmd
+      - text: "Culture"
+        href: culture.qmd
+      - text: "Labs"
+        href: labs/index.qmd
+      - text: "Speaking"
+        href: speaking/index.qmd
       - text: "About"
         href: about.qmd
     right:

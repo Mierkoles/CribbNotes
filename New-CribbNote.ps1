@@ -11,11 +11,16 @@
   ./New-CribbNote.ps1 -Title "What a Token Actually Is"
 
 .EXAMPLE
+  ./New-CribbNote.ps1 -Title "Why Godzilla Keeps Coming Back" -Stream Culture -Categories Movies
+
+.EXAMPLE
   ./New-CribbNote.ps1 -Title "RAG, Without the Hand-Waving" -Categories AI,Demystified -WhatIf
 #>
 [CmdletBinding(SupportsShouldProcess = $true)]
 param(
     [Parameter(Mandatory)] [string]   $Title,
+    [ValidateSet('Tech', 'Culture')]
+    [string]   $Stream = 'Tech',
     [string]   $Slug,
     [string[]] $Categories = @('AI'),
     [datetime] $Date = (Get-Date)
@@ -28,7 +33,7 @@ if (-not $Slug) {
     $Slug = ($Title.ToLower() -replace "[^a-z0-9\s-]", "" -replace "\s+", "-").Trim('-')
 }
 
-$dir  = Join-Path $root "notes/$Slug"
+$dir  = Join-Path $root "notes/$($Stream.ToLower())/$Slug"
 $file = Join-Path $dir 'index.qmd'
 
 if (Test-Path $file) { throw "A note already exists at: $file" }

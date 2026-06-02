@@ -1,0 +1,35 @@
+---
+title: "Labs"
+description: "Hands-on, run-them-yourself notebooks. The thing nobody else writing about AI can hand you."
+listing:
+  id: labs
+  contents:
+    - mine-the-room.qmd
+    - nanogpt.qmd
+  type: grid
+  sort: false
+  image-placeholder: /CribbNotesLogo.png
+  fields: [title, description]
+---
+
+Reading about AI is fine. **Running it yourself is better.** These are live notebooks
+built to teach: short wall time, heavily commented for narration, runs on Google
+Colab's free tier, and requires no Python or AI knowledge to use. Click a card, then a
+badge, and you're inside the demo.
+
+Every lab is self-contained and reusable — the same notebooks power the
+[talks](/speaking/index.qmd).
+
+::: {#labs}
+:::
+
+## How to use
+
+1. Open a lab, then click its **Open in Colab** badge.
+2. Read the welcome cell at the top — it explains notebooks and Colab if you've never touched either.
+3. Click `Runtime → Run all` and watch the output.
+
+You don't need to read or understand the code. Every block is commented for the
+curious, but the point is to *watch* the model do its thing.
+
+*Feels like magic, but it's math.*
