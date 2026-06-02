@@ -1,0 +1,86 @@
+- title: Mark Twain
+  creator: Ron Chernow
+  type: Book
+  year: 2025
+  rating: 8/10
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9780525561729
+- title: Mere Christianity
+  creator: C. S. Lewis
+  type: Book
+  year: 1952
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9780060652920
+- title: A Philosophy of Walking
+  creator: Frédéric Gros
+  type: Book
+  year: 2023
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9781804290446
+- title: El arquero
+  creator: Paulo Coelho
+  type: Book
+  year: 2021
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9780593311660
+- title: The Secret Network of Nature
+  creator: Peter Wohlleben
+  type: Book
+  year: 2018
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+- title: Beyond Good and Evil
+  creator: Friedrich Nietzsche
+  type: Book
+  year: 2003
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/014044923X
+- title: 'Metroid Prime 4: Beyond'
+  creator: Retro Studios
+  type: Game
+  year: 2025
+  rating: 8/10
+  status: In progress
+  date: ''
+  categories:
+  - Game
+  - In progress
+- title: Leadership and Self Deception
+  creator: The Arbinger Institute
+  type: Book
+  year: 2000
+  rating: 7/10
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9781523006588

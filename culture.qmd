@@ -5,20 +5,35 @@ title-block-banner: "#0A1F41"
 title-block-banner-color: "white"
 page-layout: full
 listing:
-  id: culture-notes
-  contents: "notes/culture"
-  sort: "date desc"
-  type: default
-  categories: true
-  feed: true
-  sort-ui: false
-  filter-ui: false
-  fields: [date, title, description, reading-time, categories]
+  - id: currently
+    contents: currently.yml
+    type: grid
+    sort: false
+    fields: [title, creator, type, rating]
+  - id: culture-notes
+    contents: "notes/culture"
+    sort: "date desc"
+    type: default
+    categories: true
+    feed: true
+    sort-ui: false
+    filter-ui: false
+    fields: [date, title, description, reading-time, categories]
 ---
 
 The other half of the masthead. Movies and the business behind them, music, martial
 arts, philosophy — and what thirty years of coaching and a stubborn drum fill taught
 me about how people (and machines) actually learn.
+
+## Currently
+
+What I'm in the middle of right now. The full log — books, movies, TV, and games,
+rated — lives on [the Shelf](shelf.qmd).
+
+::: {#currently}
+:::
+
+## Notes
 
 ::: {#culture-notes}
 :::

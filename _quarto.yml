@@ -24,6 +24,8 @@ website:
         href: tech.qmd
       - text: "Culture"
         href: culture.qmd
+      - text: "Shelf"
+        href: shelf.qmd
       - text: "Labs"
         href: labs/index.qmd
       - text: "Speaking"

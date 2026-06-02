@@ -1,0 +1,217 @@
+- title: The Mandalorian and Grogu
+  creator: Jon Favreau
+  type: Movie
+  year: 2026
+  rating: ''
+  status: Finished
+  date: '2026-05-30'
+  categories:
+  - Movie
+  - Finished
+  path: https://www.imdb.com/title/tt30825738/
+- title: The Oxford Inklings
+  creator: Colin Duriez
+  type: Book
+  year: 2015
+  rating: 10/10
+  status: Finished
+  date: '2026-01-12'
+  categories:
+  - Book
+  - Finished
+  path: https://openlibrary.org/isbn/9780745956022
+- title: Assassin's Creed Odyssey
+  creator: Ubisoft Quebec
+  type: Game
+  year: 2018
+  rating: 10/10
+  status: Finished
+  date: '2026-01-12'
+  categories:
+  - Game
+  - Finished
+  description: Finished for the 5th time.  Awesome game!
+- title: Anaconda
+  creator: Tom Gormican
+  type: Movie
+  year: 2025
+  rating: 6/10
+  status: Finished
+  date: '2026-01-01'
+  categories:
+  - Movie
+  - Finished
+  path: https://www.imdb.com/title/tt15671028/
+- title: Fellowship of the Ring
+  creator: J.R.R. Tolkien
+  type: Book
+  year: 1954
+  rating: 10/10
+  status: Finished
+  date: '2025-12-29'
+  categories:
+  - Book
+  - Finished
+  path: https://openlibrary.org/isbn/9780547928210
+- title: 'Predator: Badlands'
+  creator: Dan Trachtenberg
+  type: Movie
+  year: 2025
+  rating: 8/10
+  status: Finished
+  date: '2025-11-09'
+  categories:
+  - Movie
+  - Finished
+  path: https://www.imdb.com/title/tt30766650/
+- title: 'Right Thing, Right Now: Good Values. Good Character. Good Deeds'
+  creator: Ryan Holiday
+  type: Book
+  year: 2024
+  rating: 7/10
+  status: Finished
+  date: '2025-11-01'
+  categories:
+  - Book
+  - Finished
+  path: https://openlibrary.org/isbn/9780593191712
+- title: Reacher — Season 2
+  creator: Nick Santora
+  type: TV
+  year: 2023
+  rating: 8/10
+  status: Finished
+  date: '2025-10-31'
+  categories:
+  - TV
+  - Finished
+  path: https://www.imdb.com/title/tt17663930/
+- title: Assassin’s Creed Shadows
+  creator: Ubisoft Quebec
+  type: Game
+  year: 2025
+  rating: 7/10
+  status: Finished
+  date: '2025-09-01'
+  categories:
+  - Game
+  - Finished
+- title: The Happiness Advantage
+  creator: Shawn Achor
+  type: Book
+  year: 2010
+  rating: 8/10
+  status: Finished
+  date: '2025-05-25'
+  categories:
+  - Book
+  - Finished
+  path: https://openlibrary.org/isbn/9780307591548
+- title: Wisdom Takes Work
+  creator: Ryan Holiday
+  type: Book
+  year: 2025
+  rating: ''
+  status: Want to
+  date: ''
+  categories:
+  - Book
+  - Want to
+  path: https://openlibrary.org/isbn/9780593191736
+- title: Mark Twain
+  creator: Ron Chernow
+  type: Book
+  year: 2025
+  rating: 8/10
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9780525561729
+- title: Mere Christianity
+  creator: C. S. Lewis
+  type: Book
+  year: 1952
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9780060652920
+- title: A Philosophy of Walking
+  creator: Frédéric Gros
+  type: Book
+  year: 2023
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9781804290446
+- title: El arquero
+  creator: Paulo Coelho
+  type: Book
+  year: 2021
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9780593311660
+- title: The Secret Network of Nature
+  creator: Peter Wohlleben
+  type: Book
+  year: 2018
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+- title: Beyond Good and Evil
+  creator: Friedrich Nietzsche
+  type: Book
+  year: 2003
+  rating: ''
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/014044923X
+- title: 'Metroid Prime 4: Beyond'
+  creator: Retro Studios
+  type: Game
+  year: 2025
+  rating: 8/10
+  status: In progress
+  date: ''
+  categories:
+  - Game
+  - In progress
+- title: Leadership and Self Deception
+  creator: The Arbinger Institute
+  type: Book
+  year: 2000
+  rating: 7/10
+  status: In progress
+  date: ''
+  categories:
+  - Book
+  - In progress
+  path: https://openlibrary.org/isbn/9781523006588
+- title: Meditations
+  creator: Marcus Aurelius
+  type: Book
+  year: 180
+  rating: 10/10
+  status: Want to
+  date: ''
+  categories:
+  - Book
+  - Want to
+  description: By Marcus Aurelius
