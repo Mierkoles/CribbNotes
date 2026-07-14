@@ -6,11 +6,14 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/shelf.html",
+    "items": []
+  },
+  {
+    "listing": "/labs/index.html",
     "items": [
-      "/notes/culture/judge-a-film-by-its-size/index.html",
-      "/notes/culture/the-case-for-re-enchantment/index.html",
-      "/notes/tech/welcome/index.html"
+      "/labs/mine-the-room.html",
+      "/labs/nanogpt.html"
     ]
   },
   {
@@ -21,19 +24,17 @@
     ]
   },
   {
-    "listing": "/labs/index.html",
+    "listing": "/index.html",
     "items": [
-      "/labs/mine-the-room.html",
-      "/labs/nanogpt.html"
+      "/notes/culture/judge-a-film-by-its-size/index.html",
+      "/notes/culture/the-case-for-re-enchantment/index.html",
+      "/notes/tech/welcome/index.html"
     ]
-  },
-  {
-    "listing": "/shelf.html",
-    "items": []
   },
   {
     "listing": "/speaking/index.html",
     "items": [
+      "/speaking/icta-cinema-ai-2026.html",
       "/speaking/demystifying-ai-sim-2026.html"
     ]
   }
