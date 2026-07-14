@@ -5,6 +5,7 @@ listing:
   id: past-talks
   contents:
     - demystifying-ai-sim-2026.qmd
+    - icta-cinema-ai-2026.qmd
   sort: "date desc"
   type: default
   fields: [date, title, description]

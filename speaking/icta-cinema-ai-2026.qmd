@@ -1,0 +1,51 @@
+---
+title: "AI & Automation in Cinema Operations"
+subtitle: "ICTA Summer Convention · Milwaukee · July 14, 2026 · invited session"
+description: "Where AI actually pays in cinema exhibition, on the revenue side and the expense side, and how to adopt it without burning money or trust. Operator to operator."
+date: 2026-07-14
+categories: [Talk, AI, Cinema]
+---
+
+*International Cinema Technology Association Summer Convention · Miller High Life
+Theatre, Milwaukee · July 14, 2026 · invited session*
+
+A 45-minute session for the international cinema technology community: exhibitors,
+integrators, and manufacturers. No hype, no doom. The premise: everyone in the room
+already runs AI somewhere. Almost nobody can say, in dollars, what it made them or
+what it cost them. That gap was the talk.
+
+## The arc
+
+- **Governed AI, measured value.** Every use case gets an owner, a guardrail, and a
+  number. Experimentation feeds the discipline; the discipline pays for the
+  experimentation.
+- **It starts with the data, not the model.** A rebuilt overnight pipeline that moved
+  finished box-office numbers from mid-morning to 5 AM, and confirmed Toy Story 5's
+  record weekend hours early. Plumbing, not magic.
+- **The revenue side and the expense side.** Demand-based pricing, showtime
+  optimization, and loyalty personalization on one line; labor and F&B forecasting,
+  energy, predictive maintenance, and support triage on the other. Most of it is
+  classical machine learning, not generative AI.
+- **Vibe coding is not AI-assisted software engineering.** A superpower for
+  experimentation, fatal in production. The difference is the practice: requirements,
+  tests, review, and documentation, with AI doing the heavy lifting. (In the room
+  where a 50-page speech once stopped a bullet, thick documentation needs no defense.)
+- **Frontier − N.** The frontier is real, and it's rented. The 2026 cost reckoning,
+  the case for classical models where they still win, and the rungs you can now own:
+  open-weight models in your own tenant and datacenter-class inference on a desk.
+- **One peek over the horizon: energy-based reasoning.** Models that score how wrong
+  an answer is and descend toward a better one. For this audience, the honest analogy
+  was already in the booth: autofocus. Iterate until the picture is sharp, and know
+  exactly how blurry it still is.
+- **The close.** Everyone can buy the same tools. The lasting advantage is the people
+  you develop to use them.
+
+## Sources cited
+
+- Gladstone et al., [Energy-Based Transformers are Scalable Learners and Thinkers](https://arxiv.org/abs/2507.02092) (2025)
+- TechCrunch, [The token bill comes due](https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/) (June 2026)
+- Fortune, [Microsoft reports are exposing AI's real cost problem](https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/) (May 2026)
+- RAND Corporation research on enterprise AI project outcomes
+- [NVIDIA DGX Spark](https://www.nvidia.com/en-us/products/workstations/dgx-spark/) and the Surface Laptop Ultra (Computex 2026)
+
+<!-- TODO: add slides and/or photos once available. -->
