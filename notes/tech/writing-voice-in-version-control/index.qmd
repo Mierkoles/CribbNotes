@@ -35,7 +35,7 @@ The system is invoked rather than ambient. I type a short command and a specific
 
 `/speaking` goes on before a live room. In July I gave a 45-minute solo session on AI in cinema operations at a convention in Milwaukee. Whether a live demo is worth the risk, and what the first question in Q&A is likely to be. Neither is the same problem as how the slides should read, so it lives in a skill of its own.
 
-This note loaded `explainer`, the register for taking a mechanism apart for a reader who uses the technology daily and could not define a single term inside it.
+This note loaded `explainer`, the register for taking a mechanism apart so you can see how it works.
 
 ## Why it matters
 
@@ -68,7 +68,32 @@ teaching/       doctrine, checklists, three context profiles
 speaking/       audience analysis, room handling, production
 ```
 
-Each folder holds a `SKILL.md` that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context. Installing is a set of symlinks from these folders into the assistant's skills directory, directory junctions on Windows, which means the repo stays the one copy that matters and an edit is live in the next session. Updating is `git pull`. There is nothing to reinstall, and no second copy to drift.
+Each folder holds a `SKILL.md` that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context.
+
+Installing is where it gets interesting, because the skills directory does not belong to this repo. It belongs to a different one.
+
+There are three, split by the question each answers. `dotclaude` carries the machine's own configuration: its settings and hooks, plus the memory that is about this laptop rather than about me. `MarkOS` is the six skills. The third holds what the assistant has learned working on each individual project, which picks up live employer and client detail as it goes.
+
+Sensitivity is what splits them. The first two are dull enough to hand to anyone. The third is not, so it stays where it is instead of travelling with the rest.
+
+`~/.claude/skills/` lives inside `dotclaude`. The installer creates six directory junctions inside it, each pointing into the MarkOS working tree:
+
+```
+me          ->  the MarkOS repo root
+record      ->  MarkOS/record
+values      ->  MarkOS/values
+voice       ->  MarkOS/voice
+teaching    ->  MarkOS/teaching
+speaking    ->  MarkOS/speaking
+orient          a real folder, owned by dotclaude
+send-email      a real folder, owned by dotclaude
+```
+
+Two independently versioned repos share one directory and neither swallows the other. A `git pull` in either updates its own half. The skill called `me` points at the repo root, so the umbrella and the repo are the same folder.
+
+Junctions on Windows, symlinks on macOS and Linux. Junctions need no administrator rights, which is why the Windows install needs no elevation. Nothing is copied, so there is no second version to drift, and an edit is live in the next session.
+
+The project memory connects a different way, with no junction at all. A hook fires when a session ends cleanly, syncs the store, commits it, and pushes. Nothing to remember and nothing to run.
 
 Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.
 
