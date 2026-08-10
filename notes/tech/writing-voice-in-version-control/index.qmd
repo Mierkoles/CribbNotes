@@ -1,21 +1,23 @@
 ---
 title: "I Put My Writing Voice in Version Control"
 subtitle: "Note 002: what happens when your own style rules stop living in your head and start living in a repo."
-description: "My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting."
+description: "My writing rules live in a git repo that an AI loads before it drafts anything in my name. How it is wired, and the filing rule that keeps it from rotting."
 date: 2026-08-10
 categories: [AI, Tools, Demystified]
 author: "Mark Cribb"
 ---
 
-I set up a new Mac this week. Homebrew, git, the usual afternoon of pulling things back down out of the cloud. One of the repos I cloned was me.
+I was deep in curriculum development when I went looking for a rule I knew I had already written down. I found it in the memory of a different machine, in a form that worked only there. The rules were real, earned one correction at a time. What they lacked was a structure, and any way to travel.
+
+They are a repo now. That repo is me.
 
 It is six skills that an AI coding assistant loads before it writes anything in my name. Two of them hold substrate: a record of what is verifiably true about my career, down to the phrasing I use for each claim, and a file describing what I optimize for when a decision comes down to judgment rather than rule. Above those sit nine writing voices, because the register for an incident report has almost nothing in common with the register for a keynote. Teaching gets a skill of its own. The sixth covers how I handle a live room.
 
-It caught me the same afternoon I installed it.
+It caught me that same afternoon.
 
 ## The one idea
 
-Rules about a person are not a stack. They are rings.
+The mental model that works for me is concentric rings rather than a stack.
 
 The obvious build is a stack: general rules on the bottom, specific rules on top, later layers overriding earlier ones. I tried that first. It falls apart the moment a narrow context wants permission to do something the general rules forbid, because a stack has no way to say no. Override is the whole point of a stack, and override is exactly what you cannot allow.
 
@@ -70,7 +72,7 @@ Each folder holds a `SKILL.md` that opens with a name and a description of when 
 
 Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.
 
-The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.
+The assistant working through the course material with me had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo the machine in front of me had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.
 
 Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.
 
@@ -78,7 +80,7 @@ There is one more piece, and it is the piece I would have left out if I had desi
 
 The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.
 
-That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.
+That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.
 
 ## The part I have not solved
 
