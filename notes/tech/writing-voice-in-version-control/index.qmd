@@ -23,6 +23,18 @@ The obvious build is a stack: general rules on the bottom, specific rules on top
 
 Concentric works. Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.
 
+## What it actually does
+
+The system is invoked rather than ambient. I type a short command and a specific set of files loads.
+
+`/voice exec` goes on before I write to a business leader. That pulls the base layer plus one voice: what to do with a superlative, and the rule that a strong opinion about the business gets owned with "I believe" or cut.
+
+`/teaching wgu` goes on before I review course material as a subject-matter expert. Competency-based education carries constraints that do not transfer to a fifteen-week undergraduate course, which has a profile of its own. I teach roughly four thousand students a year across four institutions, and the assumptions travel badly between them.
+
+`/speaking` goes on before a live room. In July I gave a 45-minute solo session on AI in cinema operations at a convention in Milwaukee. Whether a live demo is worth the risk, and what the first question in Q&A is likely to be. Neither is the same problem as how the slides should read, so it lives in a skill of its own.
+
+This note loaded `explainer`, the register for taking a mechanism apart for a reader who uses the technology daily and could not define a single term inside it.
+
 ## Why it matters
 
 If you have ever written a style guide, a system prompt, or an acceptable-use policy for AI at your company, you have already made this decision. You just may not have noticed you were making it.
@@ -33,13 +45,38 @@ My version of that decision is a filing rule: a correction goes at the innermost
 
 Filing too far out is how a system like this decays. Had I filed "no fabrication" inside the executive voice, where I first caught the problem, it would have covered one kind of document, and my incident reports and my fiction research would have walked out unchecked. Filing too far in is the cheaper mistake, since the rule just fails to fire and I notice.
 
+## What it buys me
+
+The payoff I did not expect is that corrections stop evaporating. A good line-edit used to live for exactly as long as the conversation it happened in. Now it gets written down at the ring that explains it, committed, and it is waiting the next time, on whatever machine I happen to be sitting at. The system sharpens as a byproduct of me being annoyed at it.
+
+Keeping the registers apart is the part I built it for. Nine voices sounds excessive until you watch a runbook and a keynote abstract get drafted in the same afternoon and catch the cadence of one showing up in the other.
+
+The one I would keep if I had to throw the other five away is the record file. It holds what I can say about my own career and the phrasing for each item, so a draft that reaches for a punchier version of something true gets stopped by a file instead of by me on a reread three days later. What I watch for is rarely invention from nothing. The usual failure is a true statement compressed until it stops being true, which reads better than the original and is exactly why it survives review.
+
 ## Show the gears
+
+The repo is six folders and a file.
+
+```
+SKILL.md        the entry point, and the map of the other five
+record/         what is verifiably true, and the explicit do-not-claim list
+values/         what I optimize for when judgment beats rule
+voice/          nine voices, one base layer, and the gate
+teaching/       doctrine, checklists, three context profiles
+speaking/       audience analysis, room handling, production
+```
+
+Each folder holds a `SKILL.md` that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context. Installing is a set of symlinks from these folders into the assistant's skills directory, directory junctions on Windows, which means the repo stays the one copy that matters and an edit is live in the next session. Updating is `git pull`. There is nothing to reinstall, and no second copy to drift.
 
 Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.
 
 The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.
 
 Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.
+
+There is one more piece, and it is the piece I would have left out if I had designed this instead of growing it. Following the rules while drafting turns out to be insufficient. Word-level rules are easy to obey sentence by sentence, and a draft can clear all of them and still read as machine-written, because the giveaways are structural: parallel bullets built on one identical template, or a final line that comments on the document rather than ending it. Those only become visible once the whole thing exists.
+
+The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.
 
 That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.
 
