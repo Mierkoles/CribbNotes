@@ -5,6 +5,8 @@ description: "How I work lives in a git repo that an AI loads before it does any
 date: 2026-08-10
 categories: [AI, Tools, Demystified]
 author: "Mark Cribb"
+aliases:
+  - /notes/tech/writing-voice-in-version-control/
 ---
 
 I was deep in curriculum development when I went looking for a rule I knew I had already written down. I found it in the memory of a different machine, in a form that worked only there. The rules were real, earned one correction at a time. What they lacked was a structure, and any way to travel.
@@ -111,7 +113,7 @@ There is one more piece, and it is the piece I would have left out if I had desi
 
 The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.
 
-That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.
+That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, and checked again at the end regardless of which voice was active.
 
 ## The part I have not solved
 
