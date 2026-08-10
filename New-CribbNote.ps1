@@ -42,7 +42,7 @@ $cats  = ($Categories -join ', ')
 $front = @"
 ---
 title: "$Title"
-subtitle: "Note — one-line hook."
+subtitle: "Note: one-line hook."
 description: "The one-sentence promise: what the reader walks away knowing."
 date: $($Date.ToString('yyyy-MM-dd'))
 categories: [$cats]

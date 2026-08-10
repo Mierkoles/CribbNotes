@@ -1,6 +1,6 @@
 ---
 title: "TITLE HERE"
-subtitle: "Note 00X — one-line hook that makes someone want to read on."
+subtitle: "Note 00X: one-line hook that makes someone want to read on."
 description: "The one-sentence promise: exactly what the reader walks away knowing."
 date: YYYY-MM-DD
 categories: [AI]
@@ -23,7 +23,7 @@ State it plainly. The reader should be able to repeat it in a sentence afterward
 
 ## Why it matters
 
-Connect it to a decision someone actually makes — a meeting, a budget, a bet.
+Connect it to a decision someone actually makes: a meeting, a budget, a bet.
 
 ## Show the gears
 
