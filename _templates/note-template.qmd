@@ -32,4 +32,4 @@ or a link to a runnable [lab](/labs/index.qmd).
 
 *Feels like magic. It's math.*
 
-— Mark
+Mark

@@ -66,7 +66,7 @@ Open with the question, the moment, or the misconception that made this worth wr
 
 *Feels like magic. It's math.*
 
-— Mark
+Mark
 "@
 
 if ($PSCmdlet.ShouldProcess($file, 'Create new Cribb Note')) {
