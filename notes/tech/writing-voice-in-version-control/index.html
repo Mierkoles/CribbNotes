@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mark Cribb">
+<meta name="dcterms.date" content="2026-08-10">
+<meta name="description" content="My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.">
 
-<title>About – Cribb Notes</title>
+<title>I Put My Writing Voice in Version Control – Cribb Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +32,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5470182422da98a5f1a9f30286252eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-5470182422da98a5f1a9f30286252eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,12 +79,16 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="About – Cribb Notes">
-<meta property="og:description" content="Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology — by Mark Cribb.">
+<meta property="og:title" content="I Put My Writing Voice in Version Control – Cribb Notes">
+<meta property="og:description" content="My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.">
+<meta property="og:image" content="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg">
 <meta property="og:site_name" content="Cribb Notes">
-<meta name="twitter:title" content="About – Cribb Notes">
-<meta name="twitter:description" content="Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology — by Mark Cribb.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:alt" content="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them.">
+<meta name="twitter:title" content="I Put My Writing Voice in Version Control – Cribb Notes">
+<meta name="twitter:description" content="My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.">
+<meta name="twitter:image" content="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg">
+<meta name="twitter:image:alt" content="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them.">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -91,11 +98,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo light-content">
-    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../CribbNotesLogo.png" alt="" class="navbar-logo light-content">
+    <img src="../../../CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cribb Notes</span>
     </a>
   </div>
@@ -106,33 +113,33 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./tech.html"> 
+    <a class="nav-link" href="../../../tech.html"> 
 <span class="menu-text">Tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./culture.html"> 
+    <a class="nav-link" href="../../../culture.html"> 
 <span class="menu-text">Culture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./shelf.html"> 
+    <a class="nav-link" href="../../../shelf.html"> 
 <span class="menu-text">Shelf</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html"> 
+    <a class="nav-link" href="../../../labs/index.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./speaking/index.html"> 
+    <a class="nav-link" href="../../../speaking/index.html"> 
 <span class="menu-text">Speaking</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -162,10 +169,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-angle" id="toc-the-angle" class="nav-link active" data-scroll-target="#the-angle">The angle</a></li>
-  <li><a href="#the-longer-version" id="toc-the-longer-version" class="nav-link" data-scroll-target="#the-longer-version">The longer version</a></li>
-  <li><a href="#the-human-layer" id="toc-the-human-layer" class="nav-link" data-scroll-target="#the-human-layer">The human layer</a></li>
-  <li><a href="#stay-in-the-loop" id="toc-stay-in-the-loop" class="nav-link" data-scroll-target="#stay-in-the-loop">Stay in the loop</a></li>
+  <li><a href="#the-one-idea" id="toc-the-one-idea" class="nav-link active" data-scroll-target="#the-one-idea">The one idea</a></li>
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why it matters</a></li>
+  <li><a href="#show-the-gears" id="toc-show-the-gears" class="nav-link" data-scroll-target="#show-the-gears">Show the gears</a></li>
+  <li><a href="#the-part-i-have-not-solved" id="toc-the-part-i-have-not-solved" class="nav-link" data-scroll-target="#the-part-i-have-not-solved">The part I have not solved</a></li>
   </ul>
 </nav>
     </div>
@@ -174,14 +181,37 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
+<h1 class="title">I Put My Writing Voice in Version Control</h1>
+<p class="subtitle lead">Note 002: what happens when your own style rules stop living in your head and start living in a repo.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Tools</div>
+    <div class="quarto-category">Demystified</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mark Cribb </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 10, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -191,34 +221,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Cribb Notes is written by <strong>Mark Cribb</strong> — and the whole premise is in the name. Cliff’s Notes, by Cribb: short, honest explainers for the parts of technology everyone pretends to already understand.</p>
-<section id="the-angle" class="level2">
-<h2 class="anchored" data-anchor-id="the-angle">The angle</h2>
-<p>Most people with AI opinions do exactly one of three things. I happen to do all three, which is the only reason I think this is worth your inbox:</p>
-<ul>
-<li><strong>I build it</strong> — real software, shipped, much of it on weekends with AI as a co-pilot.</li>
-<li><strong>I govern it</strong> — I authored my organization’s enterprise AI governance framework.</li>
-<li><strong>I teach it</strong> — thousands of university students a year, plus a doctorate in progress.</li>
-</ul>
-<p>The view from the intersection — where the hype meets the budget meets the actual code — is where these notes are written from.</p>
+<p>I set up a new Mac this week. Homebrew, git, the usual afternoon of pulling things back down out of the cloud. One of the repos I cloned was me.</p>
+<p>It is six skills that an AI coding assistant loads before it writes anything in my name. Two of them hold substrate: a record of what is verifiably true about my career, down to the phrasing I use for each claim, and a file describing what I optimize for when a decision comes down to judgment rather than rule. Above those sit nine writing voices, because the register for an incident report has almost nothing in common with the register for a keynote. Teaching gets a skill of its own. The sixth covers how I handle a live room.</p>
+<p>It caught me the same afternoon I installed it.</p>
+<section id="the-one-idea" class="level2">
+<h2 class="anchored" data-anchor-id="the-one-idea">The one idea</h2>
+<p>Rules about a person are not a stack. They are rings.</p>
+<p>The obvious build is a stack: general rules on the bottom, specific rules on top, later layers overriding earlier ones. I tried that first. It falls apart the moment a narrow context wants permission to do something the general rules forbid, because a stack has no way to say no. Override is the whole point of a stack, and override is exactly what you cannot allow.</p>
+<p><img src="markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
+<p>Concentric works. Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.</p>
 </section>
-<section id="the-longer-version" class="level2">
-<h2 class="anchored" data-anchor-id="the-longer-version">The longer version</h2>
-<p>Mark Cribb is a technology leader and educator with 25+ years in enterprise platform architecture and data strategy, now focused on driving enterprise AI adoption. He serves as AI Solutions and Applications Manager at Marcus Theatres, leading enterprise AI governance and AI-assisted development across the organization. He teaches Data Analysis at MSOE’s Rader School of Business and cloud computing at Western Governors University, and has previously taught Business Law &amp; Ethics at Bryant &amp; Stratton College and technology leadership in UWM’s Executive MBA program. He is working on a Doctorate of Information Technology, holds multiple Microsoft and AWS certifications (AI Engineer, Data Scientist, Solutions Architect), and speaks on AI governance, AI-assisted development, and quantum readiness. He serves as Co-Chair of United Way’s Technology United Council, chairs the planning committee for the 2027 Milwaukee CIO Forum, and sits on the board of the BUILD Moto Mentor Program.</p>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why it matters</h2>
+<p>If you have ever written a style guide, a system prompt, or an acceptable-use policy for AI at your company, you have already made this decision. You just may not have noticed you were making it.</p>
+<p>Every rule you write lands somewhere in a scope. Get the scope wrong and the rule quietly fails to cover the case you cared about most.</p>
+<p>My version of that decision is a filing rule: a correction goes at the innermost ring that explains it, not the ring where I happened to notice it. “That’s not who I am” is ring 0, values. A wrong date is ring 0, record. “No em dashes” is constitutional, so it binds from ring 1 outward. A ban on a particular piece of jargon is a base-layer style rule at ring 2. Guidance about how I write to one specific executive sits at ring 3, inside that one voice.</p>
+<p>Filing too far out is how a system like this decays. Had I filed “no fabrication” inside the executive voice, where I first caught the problem, it would have covered one kind of document, and my incident reports and my fiction research would have walked out unchecked. Filing too far in is the cheaper mistake, since the rule just fails to fire and I notice.</p>
 </section>
-<section id="the-human-layer" class="level2">
-<h2 class="anchored" data-anchor-id="the-human-layer">The human layer</h2>
-<p>Cribb Notes isn’t only AI block diagrams. Mark is a black belt in Kenpo Karate and Tae Kwon Do and has coached martial arts and wrestling for thirty years; he plays drums and produces music; he collects movie memorabilia (ask him about Godzilla), reads philosophy and historical fiction, leans Stoic, and is training for a sprint triathlon out of Oak Creek, Wisconsin. Those threads show up here on purpose — the best explanations of hard technical ideas usually come from somewhere human.</p>
+<section id="show-the-gears" class="level2">
+<h2 class="anchored" data-anchor-id="show-the-gears">Show the gears</h2>
+<p>Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.</p>
+<p>The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.</p>
+<p>Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.</p>
+<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
 </section>
-<section id="stay-in-the-loop" class="level2">
-<h2 class="anchored" data-anchor-id="stay-in-the-loop">Stay in the loop</h2>
-<ul>
-<li>Email <a href="mailto:mark@cribbnotes.ai">mark@cribbnotes.ai</a></li>
-<li>Subscribe via <a href="index.xml">RSS</a></li>
-<li>Follow on <a href="https://www.linkedin.com/in/mark-cribb">LinkedIn</a></li>
-<li>Code and live demos on <a href="https://github.com/Mierkoles/CribbNotes">GitHub</a></li>
-</ul>
-<p><em>(Email subscription coming soon.)</em></p>
+<section id="the-part-i-have-not-solved" class="level2">
+<h2 class="anchored" data-anchor-id="the-part-i-have-not-solved">The part I have not solved</h2>
+<p>The system is assembled from corrections, so it is sharpest exactly where I have gone wrong before and thin everywhere I have not.</p>
+<p>There is no entry for the things I have never once gotten wrong, because nothing ever generated a correction to file. Read it straight through and you get a clear picture of my failure modes and a vague one of my instincts. The values file is the thinnest of the six for that reason, and my own notes in the repo flag it as the one built mostly from inference.</p>
+<p>More rules will not fix that. It might be what a system built this way is: a portrait assembled entirely from the times someone said “no, not like that.”</p>
+<p><em>Feels like magic. It’s math.</em></p>
+<p>Mark</p>
 
 
 </section>
@@ -636,7 +669,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml">
+    <a class="nav-link" href="../../../index.xml">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
@@ -661,5 +694,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

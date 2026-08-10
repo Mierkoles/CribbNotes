@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-labelledby="t d">
+  <title id="t">MarkOS: five concentric rings</title>
+  <desc id="d">Five concentric rings. Ring 0, the substrate holding record and values, sits at the centre. Moving outward: ring 1 constitution, ring 2 method, ring 3 craft, ring 4 context. Below them a gate labelled tells.md leads to output. Every ring inherits the constraints of every ring inside it.</desc>
+
+  <style>
+    :root {
+      --bg:#ffffff; --ink:#1c1c28; --mute:#5b6b7d; --rule:#d6dce6; --gold:#b35900;
+      --r4:#e8ebf1; --r3:#c2cbda; --r2:#8496b3; --r1:#2f4269; --r0:#f8b922;
+      --n4:#5a6b85; --n3:#3a4a66; --n2:#ffffff; --n1:#ffffff; --n0:#0a1f41;
+      --stroke:#ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:#0d1219; --ink:#e8edf4; --mute:#93a3b5; --rule:#232f3d; --gold:#f8b922;
+        --r4:#141c29; --r3:#1e2a3d; --r2:#2e4160; --r1:#46618f; --r0:#f8b922;
+        --n4:#7e8da3; --n3:#92a2b8; --n2:#c6d2e2; --n1:#ffffff; --n0:#0a1f41;
+        --stroke:#0d1219;
+      }
+    }
+    .bg{fill:var(--bg)}
+    .n{font:600 13px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+    .ttl{font:700 12.5px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--ink);letter-spacing:.09em}
+    .sub{font:400 13.5px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--mute)}
+    .brand{font:700 13px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--gold);letter-spacing:.14em}
+    .foot{font:400 13px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--mute)}
+    .swat{stroke:var(--stroke);stroke-width:1}
+    .rule{stroke:var(--rule);stroke-width:1}
+    .arw{stroke:var(--gold);stroke-width:1.6;fill:none}
+  </style>
+
+  <rect class="bg" width="900" height="620"/>
+
+  <g transform="translate(255,285)">
+    <circle r="222" fill="var(--r4)" stroke="var(--stroke)" stroke-width="2"/>
+    <circle r="181" fill="var(--r3)" stroke="var(--stroke)" stroke-width="2"/>
+    <circle r="140" fill="var(--r2)" stroke="var(--stroke)" stroke-width="2"/>
+    <circle r="99"  fill="var(--r1)" stroke="var(--stroke)" stroke-width="2"/>
+    <circle r="58"  fill="var(--r0)" stroke="var(--stroke)" stroke-width="2"/>
+    <text class="n" x="0" y="-200" text-anchor="middle" fill="var(--n4)">4</text>
+    <text class="n" x="0" y="-159" text-anchor="middle" fill="var(--n3)">3</text>
+    <text class="n" x="0" y="-118" text-anchor="middle" fill="var(--n2)">2</text>
+    <text class="n" x="0" y="-77"  text-anchor="middle" fill="var(--n1)">1</text>
+    <text class="n" x="0" y="5"    text-anchor="middle" fill="var(--n0)">0</text>
+  </g>
+
+  <g transform="translate(548,0)">
+    <text class="brand" x="0" y="86">MARKOS</text>
+    <line class="rule" x1="0" y1="100" x2="316" y2="100"/>
+
+    <g transform="translate(0,132)">
+      <rect class="swat" x="0" y="-12" width="16" height="16" rx="3" fill="var(--r0)"/>
+      <text class="ttl" x="28" y="0">RING 0 · SUBSTRATE</text>
+      <text class="sub" x="28" y="20">record · values</text>
+      <text class="sub" x="28" y="38">what is true, what I hold</text>
+    </g>
+    <g transform="translate(0,212)">
+      <rect class="swat" x="0" y="-12" width="16" height="16" rx="3" fill="var(--r1)"/>
+      <text class="ttl" x="28" y="0">RING 1 · CONSTITUTION</text>
+      <text class="sub" x="28" y="20">four rules, never bent</text>
+    </g>
+    <g transform="translate(0,274)">
+      <rect class="swat" x="0" y="-12" width="16" height="16" rx="3" fill="var(--r2)"/>
+      <text class="ttl" x="28" y="0">RING 2 · METHOD</text>
+      <text class="sub" x="28" y="20">how it sounds, how it is built</text>
+    </g>
+    <g transform="translate(0,336)">
+      <rect class="swat" x="0" y="-12" width="16" height="16" rx="3" fill="var(--r3)"/>
+      <text class="ttl" x="28" y="0">RING 3 · CRAFT</text>
+      <text class="sub" x="28" y="20">nine voices, three teaching profiles</text>
+    </g>
+    <g transform="translate(0,398)">
+      <rect class="swat" x="0" y="-12" width="16" height="16" rx="3" fill="var(--r4)"/>
+      <text class="ttl" x="28" y="0">RING 4 · CONTEXT</text>
+      <text class="sub" x="28" y="20">audience · medium · repo</text>
+      <text class="sub" x="28" y="38">selects, stores nothing</text>
+    </g>
+  </g>
+
+  <text class="foot" x="64" y="524">Every ring inherits the constraints of every ring inside it.</text>
+  <line class="rule" x1="64" y1="548" x2="836" y2="548"/>
+  <g transform="translate(64,584)">
+    <text class="ttl" x="0" y="0">GATE</text>
+    <text class="foot" x="62" y="0">tells.md · four passes on the finished draft</text>
+    <path class="arw" d="M498 -5 h44"/>
+    <path class="arw" d="M536 -10 l7 5 -7 5"/>
+    <text class="ttl" x="558" y="0">OUTPUT</text>
+  </g>
+</svg>
