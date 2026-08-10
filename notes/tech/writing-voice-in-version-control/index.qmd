@@ -1,0 +1,56 @@
+---
+title: "I Put My Writing Voice in Version Control"
+subtitle: "Note 002: what happens when your own style rules stop living in your head and start living in a repo."
+description: "My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting."
+date: 2026-08-10
+categories: [AI, Tools, Demystified]
+author: "Mark Cribb"
+---
+
+I set up a new Mac this week. Homebrew, git, the usual afternoon of pulling things back down out of the cloud. One of the repos I cloned was me.
+
+It is six skills that an AI coding assistant loads before it writes anything in my name. Two of them hold substrate: a record of what is verifiably true about my career, down to the phrasing I use for each claim, and a file describing what I optimize for when a decision comes down to judgment rather than rule. Above those sit nine writing voices, because the register for an incident report has almost nothing in common with the register for a keynote. Teaching gets a skill of its own. The sixth covers how I handle a live room.
+
+It caught me the same afternoon I installed it.
+
+## The one idea
+
+Rules about a person are not a stack. They are rings.
+
+The obvious build is a stack: general rules on the bottom, specific rules on top, later layers overriding earlier ones. I tried that first. It falls apart the moment a narrow context wants permission to do something the general rules forbid, because a stack has no way to say no. Override is the whole point of a stack, and override is exactly what you cannot allow.
+
+![](markos-rings.svg){fig-alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."}
+
+Concentric works. Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.
+
+## Why it matters
+
+If you have ever written a style guide, a system prompt, or an acceptable-use policy for AI at your company, you have already made this decision. You just may not have noticed you were making it.
+
+Every rule you write lands somewhere in a scope. Get the scope wrong and the rule quietly fails to cover the case you cared about most.
+
+My version of that decision is a filing rule: a correction goes at the innermost ring that explains it, not the ring where I happened to notice it. "That's not who I am" is ring 0, values. A wrong date is ring 0, record. "No em dashes" is constitutional, so it binds from ring 1 outward. A ban on a particular piece of jargon is a base-layer style rule at ring 2. Guidance about how I write to one specific executive sits at ring 3, inside that one voice.
+
+Filing too far out is how a system like this decays. Had I filed "no fabrication" inside the executive voice, where I first caught the problem, it would have covered one kind of document, and my incident reports and my fiction research would have walked out unchecked. Filing too far in is the cheaper mistake, since the rule just fails to fire and I notice.
+
+## Show the gears
+
+Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.
+
+The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.
+
+Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.
+
+That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.
+
+## The part I have not solved
+
+The system is assembled from corrections, so it is sharpest exactly where I have gone wrong before and thin everywhere I have not.
+
+There is no entry for the things I have never once gotten wrong, because nothing ever generated a correction to file. Read it straight through and you get a clear picture of my failure modes and a vague one of my instincts. The values file is the thinnest of the six for that reason, and my own notes in the repo flag it as the one built mostly from inference.
+
+More rules will not fix that. It might be what a system built this way is: a portrait assembled entirely from the times someone said "no, not like that."
+
+*Feels like magic. It's math.*
+
+Mark
