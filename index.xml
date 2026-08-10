@@ -8,7 +8,7 @@
 <title>Cribb Notes</title>
 <link>https://cribbnotes.ai/</link>
 <atom:link href="https://cribbnotes.ai/index.xml" rel="self" type="application/rss+xml"/>
-<description>Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology — by Mark Cribb.</description>
+<description>Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology. By Mark Cribb.</description>
 <generator>quarto-1.10.18</generator>
 <lastBuildDate>Mon, 10 Aug 2026 00:00:00 GMT</lastBuildDate>
 <item>
@@ -30,6 +30,14 @@
 <p><img src="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
 <p>Concentric works. Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.</p>
 </section>
+<section id="what-it-actually-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-actually-does">What it actually does</h2>
+<p>The system is invoked rather than ambient. I type a short command and a specific set of files loads.</p>
+<p><code>/voice exec</code> goes on before I write to a business leader. That pulls the base layer plus one voice: what to do with a superlative, and the rule that a strong opinion about the business gets owned with “I believe” or cut.</p>
+<p><code>/teaching wgu</code> goes on before I review course material as a subject-matter expert. Competency-based education carries constraints that do not transfer to a fifteen-week undergraduate course, which has a profile of its own. I teach roughly four thousand students a year across four institutions, and the assumptions travel badly between them.</p>
+<p><code>/speaking</code> goes on before a live room. In July I gave a 45-minute solo session on AI in cinema operations at a convention in Milwaukee. Whether a live demo is worth the risk, and what the first question in Q&amp;A is likely to be. Neither is the same problem as how the slides should read, so it lives in a skill of its own.</p>
+<p>This note loaded <code>explainer</code>, the register for taking a mechanism apart for a reader who uses the technology daily and could not define a single term inside it.</p>
+</section>
 <section id="why-it-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-it-matters">Why it matters</h2>
 <p>If you have ever written a style guide, a system prompt, or an acceptable-use policy for AI at your company, you have already made this decision. You just may not have noticed you were making it.</p>
@@ -37,11 +45,27 @@
 <p>My version of that decision is a filing rule: a correction goes at the innermost ring that explains it, not the ring where I happened to notice it. “That’s not who I am” is ring 0, values. A wrong date is ring 0, record. “No em dashes” is constitutional, so it binds from ring 1 outward. A ban on a particular piece of jargon is a base-layer style rule at ring 2. Guidance about how I write to one specific executive sits at ring 3, inside that one voice.</p>
 <p>Filing too far out is how a system like this decays. Had I filed “no fabrication” inside the executive voice, where I first caught the problem, it would have covered one kind of document, and my incident reports and my fiction research would have walked out unchecked. Filing too far in is the cheaper mistake, since the rule just fails to fire and I notice.</p>
 </section>
+<section id="what-it-buys-me" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-buys-me">What it buys me</h2>
+<p>The payoff I did not expect is that corrections stop evaporating. A good line-edit used to live for exactly as long as the conversation it happened in. Now it gets written down at the ring that explains it, committed, and it is waiting the next time, on whatever machine I happen to be sitting at. The system sharpens as a byproduct of me being annoyed at it.</p>
+<p>Keeping the registers apart is the part I built it for. Nine voices sounds excessive until you watch a runbook and a keynote abstract get drafted in the same afternoon and catch the cadence of one showing up in the other.</p>
+<p>The one I would keep if I had to throw the other five away is the record file. It holds what I can say about my own career and the phrasing for each item, so a draft that reaches for a punchier version of something true gets stopped by a file instead of by me on a reread three days later. What I watch for is rarely invention from nothing. The usual failure is a true statement compressed until it stops being true, which reads better than the original and is exactly why it survives review.</p>
+</section>
 <section id="show-the-gears" class="level2">
 <h2 class="anchored" data-anchor-id="show-the-gears">Show the gears</h2>
+<p>The repo is six folders and a file.</p>
+<pre><code>SKILL.md        the entry point, and the map of the other five
+record/         what is verifiably true, and the explicit do-not-claim list
+values/         what I optimize for when judgment beats rule
+voice/          nine voices, one base layer, and the gate
+teaching/       doctrine, checklists, three context profiles
+speaking/       audience analysis, room handling, production</code></pre>
+<p>Each folder holds a <code>SKILL.md</code> that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context. Installing is a set of symlinks from these folders into the assistant’s skills directory, directory junctions on Windows, which means the repo stays the one copy that matters and an edit is live in the next session. Updating is <code>git pull</code>. There is nothing to reinstall, and no second copy to drift.</p>
 <p>Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.</p>
 <p>The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.</p>
 <p>Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.</p>
+<p>There is one more piece, and it is the piece I would have left out if I had designed this instead of growing it. Following the rules while drafting turns out to be insufficient. Word-level rules are easy to obey sentence by sentence, and a draft can clear all of them and still read as machine-written, because the giveaways are structural: parallel bullets built on one identical template, or a final line that comments on the document rather than ending it. Those only become visible once the whole thing exists.</p>
+<p>The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.</p>
 <p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
 </section>
 <section id="the-part-i-have-not-solved" class="level2">
