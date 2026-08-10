@@ -1,7 +1,7 @@
 ---
 title: "Demystifying AI: Separating Architecture from the Hype"
 subtitle: "SIM industry event · May 2026 · co-presented with Ken Garfinkel (CIO, Broan-NuTone)"
-description: "In 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier — and run the demos themselves."
+description: "In 75 minutes, attendees go from the simplest possible machine-learning model to the architectural frontier, and run the demos themselves."
 date: 2026-05-20  # TODO: set the exact event date
 categories: [Talk, AI, Demystified]
 ---
@@ -9,7 +9,7 @@ categories: [Talk, AI, Demystified]
 *SIM industry event · May 2026 · co-presented with Ken Garfinkel (CIO, Broan-NuTone)*
 
 In 75 minutes, attendees go from the simplest possible machine-learning model to the
-architectural frontier — and **run the demos themselves**. The whole arc is built to
+architectural frontier, and **run the demos themselves**. The whole arc is built to
 turn "AI feels like magic" into "oh, that's all it is."
 
 ## The demos
@@ -17,17 +17,17 @@ turn "AI feels like magic" into "oh, that's all it is."
 The talk is built around two hands-on labs the audience runs live. Both live in the
 [Labs](/labs/index.qmd) library and are reusable beyond this event:
 
-### Act 1 — [Mine the Room](/labs/mine-the-room.qmd)
+### Act 1: [Mine the Room](/labs/mine-the-room.qmd)
 
 Watch a model learn from your data. Call out ten numbers and watch it search them for
-the pattern — the simplest possible model, and the foundation everything else is built
+the pattern: the simplest possible model, and the foundation everything else is built
 on. *CPU-only, ~30 seconds to render.*
 
-### Act 3 — [nanoGPT](/labs/nanogpt.qmd)
+### Act 3: [nanoGPT](/labs/nanogpt.qmd)
 
 Train a transformer from scratch in ~10 minutes on free cloud hardware. Same procedure
 that built GPT-4, 200,000× smaller. Switch the training data from Shakespeare to Mark
-Twain and a completely different writer comes out — proof that the architecture is
+Twain and a completely different writer comes out, proof that the architecture is
 general and the data is what gives a model its voice. *Needs the free T4 GPU runtime.*
 
 <!-- TODO: add slides and/or recording links here once available. -->
