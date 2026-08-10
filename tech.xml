@@ -14,7 +14,7 @@
 <item>
   <title>I Put Myself in Version Control</title>
   <dc:creator>Mark Cribb</dc:creator>
-  <link>https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/</link>
+  <link>https://cribbnotes.ai/notes/tech/markos/</link>
   <description><![CDATA[ 
 
 
@@ -33,7 +33,7 @@
 <section id="the-one-idea" class="level2">
 <h2 class="anchored" data-anchor-id="the-one-idea">The one idea</h2>
 <p>The mental model that works for me is concentric rings.</p>
-<p><img src="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
+<p><img src="https://cribbnotes.ai/notes/tech/markos/markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
 <p>Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.</p>
 </section>
 <section id="what-it-actually-does" class="level2">
@@ -90,7 +90,7 @@ send-email  -&gt;  MarkOS/send-email</code></pre>
 <p>Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.</p>
 <p>There is one more piece, and it is the piece I would have left out if I had designed this instead of growing it. Following the rules while drafting turns out to be insufficient. Word-level rules are easy to obey sentence by sentence, and a draft can clear all of them and still read as machine-written, because the giveaways are structural: parallel bullets built on one identical template, or a final line that comments on the document rather than ending it. Those only become visible once the whole thing exists.</p>
 <p>The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.</p>
-<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
+<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, and checked again at the end regardless of which voice was active.</p>
 </section>
 <section id="the-part-i-have-not-solved" class="level2">
 <h2 class="anchored" data-anchor-id="the-part-i-have-not-solved">The part I have not solved</h2>
@@ -107,7 +107,7 @@ send-email  -&gt;  MarkOS/send-email</code></pre>
   <category>AI</category>
   <category>Tools</category>
   <category>Demystified</category>
-  <guid>https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/</guid>
+  <guid>https://cribbnotes.ai/notes/tech/markos/</guid>
   <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
 </item>
 <item>

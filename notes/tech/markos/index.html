@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mark Cribb">
+<meta name="dcterms.date" content="2026-08-10">
+<meta name="description" content="How I work lives in a git repo that an AI loads before it does anything in my name. How it is wired, and the filing rule that keeps it from rotting.">
 
-<title>About – Cribb Notes</title>
+<title>I Put Myself in Version Control – Cribb Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +32,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5470182422da98a5f1a9f30286252eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-5470182422da98a5f1a9f30286252eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,12 +79,16 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="About – Cribb Notes">
-<meta property="og:description" content="Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology. By Mark Cribb.">
+<meta property="og:title" content="I Put Myself in Version Control – Cribb Notes">
+<meta property="og:description" content="How I work lives in a git repo that an AI loads before it does anything in my name. How it is wired, and the filing rule that keeps it from rotting.">
+<meta property="og:image" content="https://cribbnotes.ai/assets/markos-logo.jpg">
 <meta property="og:site_name" content="Cribb Notes">
-<meta name="twitter:title" content="About – Cribb Notes">
-<meta name="twitter:description" content="Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology. By Mark Cribb.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:alt" content="The MarkOS badge: a gold circular seal on navy, lettered MarkOS above and Mark Operating System below, with a notebook, a checkmark, and a pencil at the centre.">
+<meta name="twitter:title" content="I Put Myself in Version Control – Cribb Notes">
+<meta name="twitter:description" content="How I work lives in a git repo that an AI loads before it does anything in my name. How it is wired, and the filing rule that keeps it from rotting.">
+<meta name="twitter:image" content="https://cribbnotes.ai/assets/markos-logo.jpg">
+<meta name="twitter:image:alt" content="The MarkOS badge: a gold circular seal on navy, lettered MarkOS above and Mark Operating System below, with a notebook, a checkmark, and a pencil at the centre.">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -91,11 +98,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo light-content">
-    <img src="./CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../CribbNotesLogo.png" alt="" class="navbar-logo light-content">
+    <img src="../../../CribbNotesLogo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cribb Notes</span>
     </a>
   </div>
@@ -106,33 +113,33 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./tech.html"> 
+    <a class="nav-link" href="../../../tech.html"> 
 <span class="menu-text">Tech</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./culture.html"> 
+    <a class="nav-link" href="../../../culture.html"> 
 <span class="menu-text">Culture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./shelf.html"> 
+    <a class="nav-link" href="../../../shelf.html"> 
 <span class="menu-text">Shelf</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html"> 
+    <a class="nav-link" href="../../../labs/index.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./speaking/index.html"> 
+    <a class="nav-link" href="../../../speaking/index.html"> 
 <span class="menu-text">Speaking</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -162,10 +169,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-angle" id="toc-the-angle" class="nav-link active" data-scroll-target="#the-angle">The angle</a></li>
-  <li><a href="#the-longer-version" id="toc-the-longer-version" class="nav-link" data-scroll-target="#the-longer-version">The longer version</a></li>
-  <li><a href="#the-human-layer" id="toc-the-human-layer" class="nav-link" data-scroll-target="#the-human-layer">The human layer</a></li>
-  <li><a href="#stay-in-the-loop" id="toc-stay-in-the-loop" class="nav-link" data-scroll-target="#stay-in-the-loop">Stay in the loop</a></li>
+  <li><a href="#the-one-idea" id="toc-the-one-idea" class="nav-link active" data-scroll-target="#the-one-idea">The one idea</a></li>
+  <li><a href="#what-it-actually-does" id="toc-what-it-actually-does" class="nav-link" data-scroll-target="#what-it-actually-does">What it actually does</a></li>
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why it matters</a></li>
+  <li><a href="#what-it-buys-me" id="toc-what-it-buys-me" class="nav-link" data-scroll-target="#what-it-buys-me">What it buys me</a></li>
+  <li><a href="#show-the-gears" id="toc-show-the-gears" class="nav-link" data-scroll-target="#show-the-gears">Show the gears</a></li>
+  <li><a href="#the-part-i-have-not-solved" id="toc-the-part-i-have-not-solved" class="nav-link" data-scroll-target="#the-part-i-have-not-solved">The part I have not solved</a></li>
   </ul>
 </nav>
     </div>
@@ -174,14 +183,37 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
+<h1 class="title">I Put Myself in Version Control</h1>
+<p class="subtitle lead">Note 002: what happens when the rules for how you work stop living in your head and start living in a repo.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Tools</div>
+    <div class="quarto-category">Demystified</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    How I work lives in a git repo that an AI loads before it does anything in my name. How it is wired, and the filing rule that keeps it from rotting.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mark Cribb </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 10, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -191,34 +223,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Cribb Notes is written by <strong>Mark Cribb</strong>, and the whole premise is in the name. Cliff’s Notes, by Cribb: short, honest explainers for the parts of technology everyone pretends to already understand.</p>
-<section id="the-angle" class="level2">
-<h2 class="anchored" data-anchor-id="the-angle">The angle</h2>
-<p>Most people with AI opinions do exactly one of three things. I happen to do all three, which is the only reason I think this is worth your inbox:</p>
-<ul>
-<li><strong>I build it.</strong> Real software, shipped, much of it on weekends with AI as a co-pilot.</li>
-<li><strong>I govern it.</strong> I authored my organization’s enterprise AI governance framework.</li>
-<li><strong>I teach it.</strong> Thousands of university students a year, plus a doctorate in progress.</li>
-</ul>
-<p>The view from the intersection (where the hype meets the budget meets the actual code) is where these notes are written from.</p>
+<p>I was deep in curriculum development when I went looking for a rule I knew I had already written down. I found it in the memory of a different machine, in a form that worked only there. The rules were real, earned one correction at a time. What they lacked was a structure, and any way to travel.</p>
+<p>They are a repo now. I call it MarkOS. That repo is me.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../assets/markos-logo.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="The MarkOS badge: a gold circular seal on navy, lettered MarkOS above and Mark Operating System below, with a notebook, a checkmark, and a pencil at the centre." width="210"></p>
+</figure>
+</div>
+<p>It is eight skills today that an AI coding assistant loads before it does anything in my name, and the number goes up. Two of them hold substrate: a record of what is verifiably true about my career, down to the phrasing I use for each claim, and a file describing what I optimize for when a decision comes down to judgment rather than rule. Above those sit nine writing voices, because the register for an incident report has almost nothing in common with the register for a keynote. Teaching gets a skill of its own, and another covers how I handle a live room.</p>
+<p>The last two do work rather than decide how something reads. One comes up to speed on a repo I have not opened in months and briefs me on what changed. The other composes and sends mail as me, and it lives in here rather than in machine config because the rule that governs it does: nothing goes out without my say-so on that specific draft, in that moment. Keeping a rule and the thing it governs in the same repo is most of the reason this works at all.</p>
+<p>It caught me that same afternoon. Rule two of the constitution is no em dashes, anywhere, in any document. The assistant had been scattering them through long replies all session, because the rule was sitting in a repo this machine had not cloned. Once the install finished, mid-conversation, they stopped.</p>
+<section id="the-one-idea" class="level2">
+<h2 class="anchored" data-anchor-id="the-one-idea">The one idea</h2>
+<p>The mental model that works for me is concentric rings.</p>
+<p><img src="markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
+<p>Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.</p>
 </section>
-<section id="the-longer-version" class="level2">
-<h2 class="anchored" data-anchor-id="the-longer-version">The longer version</h2>
-<p>Mark Cribb is a technology leader and educator with 25+ years in enterprise platform architecture and data strategy, now focused on driving enterprise AI adoption. He serves as AI Solutions and Applications Manager at The Marcus Corporation, where he authored the enterprise AI governance framework and built the AI-literacy training delivered to the Corporate and Theatres Accounting teams. He teaches Database Management at MSOE’s Rader School of Business and cloud computing at Western Governors University, and has previously taught Business Law &amp; Ethics at Bryant &amp; Stratton College and technology leadership in UWM’s Executive MBA program. He is working on a Doctor of Business Administration, holds multiple Microsoft and AWS certifications (AI Engineer, Data Scientist, Solutions Architect), and speaks on AI governance, AI-assisted development, and quantum readiness. He serves as Co-Chair of United Way’s Technology United Council, chairs the planning committee for the 2027 Milwaukee CIO Forum, and serves as Vice President of the board of the BUILD Moto Mentor Program.</p>
+<section id="what-it-actually-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-actually-does">What it actually does</h2>
+<p>The system is invoked rather than ambient. I type a short command and a specific set of files loads.</p>
+<p><code>/voice exec</code> goes on before I write to a business leader. That pulls the base layer plus one voice: what to do with a superlative, and the rule that a strong opinion about the business gets owned with “I believe” or cut.</p>
+<p><code>/teaching wgu</code> goes on before I review course material as a subject-matter expert. Competency-based education carries constraints that do not transfer to a fifteen-week undergraduate course, which has a profile of its own. I teach roughly four thousand students a year across four institutions, and the assumptions travel badly between them.</p>
+<p><code>/speaking</code> goes on before a live room. In July I gave a 45-minute solo session on AI in cinema operations at a convention in Milwaukee. Whether a live demo is worth the risk, and what the first question in Q&amp;A is likely to be. Neither is the same problem as how the slides should read, so it lives in a skill of its own.</p>
+<p><code>/orient</code> goes on when I open a repo I have not touched in months. It reads the rules file, the front door, and the recent history, then tells me where things stand and what is half-finished. Same principle as the voices, pointed at a codebase instead of a paragraph: the knowledge sits in files rather than in my memory of the project.</p>
+<p>This note loaded <code>explainer</code>, the register for taking a mechanism apart so you can see how it works.</p>
 </section>
-<section id="the-human-layer" class="level2">
-<h2 class="anchored" data-anchor-id="the-human-layer">The human layer</h2>
-<p>Cribb Notes isn’t only AI block diagrams. Mark is a black belt in Kenpo Karate and Tae Kwon Do and has coached martial arts and wrestling for thirty years; he plays drums and produces music; he collects movie memorabilia (ask him about Godzilla), reads philosophy and historical fiction, leans Stoic, and is training for a sprint triathlon out of Oak Creek, Wisconsin. Those threads show up here on purpose: the best explanations of hard technical ideas usually come from somewhere human.</p>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why it matters</h2>
+<p>If you have ever written a style guide, a system prompt, or an acceptable-use policy for AI at your company, you have already made this decision. You just may not have noticed you were making it.</p>
+<p>Every rule you write lands somewhere in a scope. Get the scope wrong and the rule quietly fails to cover the case you cared about most.</p>
+<p>My version of that decision is a filing rule: a correction goes at the innermost ring that explains it, not the ring where I happened to notice it. “That’s not who I am” is ring 0, values. A wrong date is ring 0, record. “No em dashes” is constitutional, so it binds from ring 1 outward. A ban on a particular piece of jargon is a base-layer style rule at ring 2. Guidance about how I write to one specific executive sits at ring 3, inside that one voice.</p>
+<p>Filing too far out is how a system like this decays. Had I filed “no fabrication” inside the executive voice, where I first caught the problem, it would have covered one kind of document, and my incident reports and my fiction research would have walked out unchecked. Filing too far in is the cheaper mistake, since the rule just fails to fire and I notice.</p>
 </section>
-<section id="stay-in-the-loop" class="level2">
-<h2 class="anchored" data-anchor-id="stay-in-the-loop">Stay in the loop</h2>
-<ul>
-<li>Email <a href="mailto:mark@cribbnotes.ai">mark@cribbnotes.ai</a></li>
-<li>Subscribe via <a href="index.xml">RSS</a></li>
-<li>Follow on <a href="https://www.linkedin.com/in/mark-cribb">LinkedIn</a></li>
-<li>Code and live demos on <a href="https://github.com/Mierkoles/CribbNotes">GitHub</a></li>
-</ul>
-<p><em>(Email subscription coming soon.)</em></p>
+<section id="what-it-buys-me" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-buys-me">What it buys me</h2>
+<p>The payoff I did not expect is that corrections stop evaporating. A good line-edit used to live for exactly as long as the conversation it happened in. Now it gets written down at the ring that explains it, committed, and it is waiting the next time, on whatever machine I happen to be sitting at. The system sharpens as a byproduct of me being annoyed at it.</p>
+<p>Keeping the registers apart is the part I built it for. Nine voices sounds excessive until you watch a runbook and a keynote abstract get drafted in the same afternoon and catch the cadence of one showing up in the other.</p>
+<p>The one I would keep if I had to throw the other five away is the record file. It holds what I can say about my own career and the phrasing for each item, so a draft that reaches for a punchier version of something true gets stopped by a file instead of by me on a reread three days later. What I watch for is rarely invention from nothing. The usual failure is a true statement compressed until it stops being true, which reads better than the original and is exactly why it survives review.</p>
+</section>
+<section id="show-the-gears" class="level2">
+<h2 class="anchored" data-anchor-id="show-the-gears">Show the gears</h2>
+<p>Seven folders and a file at the root, and the root is itself the eighth skill.</p>
+<pre><code>SKILL.md        the entry point, and the map of the rest
+values/         what I optimize for when judgment beats rule
+record/         what is verifiably true, and the explicit do-not-claim list
+voice/          nine voices, one base layer, and the gate
+teaching/       doctrine, checklists, three context profiles
+speaking/       audience analysis, room handling, production
+orient/         coming up to speed on an unfamiliar repo
+send-email/     mail as me, and the gate it has to clear first</code></pre>
+<p>Each folder holds a <code>SKILL.md</code> that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context.</p>
+<p>Installing is where it gets interesting, because the skills directory does not belong to this repo. It belongs to a different one.</p>
+<p>There are three, split by the question each answers. <code>dotclaude</code> carries the machine’s own configuration: its settings and hooks, plus the memory that is about this laptop rather than about me. <code>MarkOS</code> is the skills. The third holds what the assistant has learned working on each individual project, which picks up live employer and client detail as it goes.</p>
+<p>Sensitivity is what splits them. The first two are dull enough to hand to anyone. The third is not, so it stays where it is instead of travelling with the rest.</p>
+<p><code>~/.claude/skills/</code> lives inside <code>dotclaude</code>. Every entry in it is a junction into the MarkOS working tree:</p>
+<pre><code>me          -&gt;  the MarkOS repo root
+values      -&gt;  MarkOS/values
+record      -&gt;  MarkOS/record
+voice       -&gt;  MarkOS/voice
+teaching    -&gt;  MarkOS/teaching
+speaking    -&gt;  MarkOS/speaking
+orient      -&gt;  MarkOS/orient
+send-email  -&gt;  MarkOS/send-email</code></pre>
+<p>One repo owns the directory and another owns everything inside it. A <code>git pull</code> in either updates its own half, and neither can swallow the other. The skill called <code>me</code> points at the repo root, so the umbrella and the repo are the same folder.</p>
+<p>That line took a revision to get right. Both operations skills started in the config repo, which left <code>send-email</code> in one repo while rule 3, the rule that decides whether it may send anything at all, sat in another. Moving them put each rule back within reach of the thing it governs.</p>
+<p>Junctions on Windows, symlinks on macOS and Linux. Junctions need no administrator rights, which is why the Windows install needs no elevation. Nothing is copied, so there is no second version to drift, and an edit is live in the next session.</p>
+<p>The project memory connects a different way, with no junction at all. A hook fires when a session ends cleanly, syncs the store, commits it, and pushes. Nothing to remember and nothing to run.</p>
+<p>Which is what makes the em-dash catch from that first afternoon worth a second look. I dislike the em dash on its own terms and I consider it a tell, but the rule had no force on that machine until the junctions existed. The moment the symlinks resolved, the habit stopped mid-sentence.</p>
+<p>Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.</p>
+<p>There is one more piece, and it is the piece I would have left out if I had designed this instead of growing it. Following the rules while drafting turns out to be insufficient. Word-level rules are easy to obey sentence by sentence, and a draft can clear all of them and still read as machine-written, because the giveaways are structural: parallel bullets built on one identical template, or a final line that comments on the document rather than ending it. Those only become visible once the whole thing exists.</p>
+<p>The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.</p>
+<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, and checked again at the end regardless of which voice was active.</p>
+</section>
+<section id="the-part-i-have-not-solved" class="level2">
+<h2 class="anchored" data-anchor-id="the-part-i-have-not-solved">The part I have not solved</h2>
+<p>The system is assembled from corrections, so it is sharpest exactly where I have gone wrong before and thin everywhere I have not.</p>
+<p>There is no entry for the things I have never once gotten wrong, because nothing ever generated a correction to file. Read it straight through and you get a clear picture of my failure modes and a vague one of my instincts. The values file is the thinnest of them for that reason, and my own notes in the repo flag it as the one built mostly from inference.</p>
+<p>More rules will not fix that. It might be what a system built this way is: a portrait assembled entirely from the times someone said “no, not like that.”</p>
+<p><em>Feels like magic. It’s math.</em></p>
+<p>Mark</p>
 
 
 </section>
@@ -636,7 +719,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml">
+    <a class="nav-link" href="../../../index.xml">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
@@ -661,5 +744,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
