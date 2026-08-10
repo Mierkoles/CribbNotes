@@ -17,7 +17,7 @@ listing:
 ---
 
 Short, plain-language notes on the stuff everyone in tech pretends to already
-understand — AI mostly, plus the enterprise systems we actually run companies on,
+understand: AI mostly, plus the enterprise systems we actually run companies on,
 the way IT, the movie business, and education are getting rewired in real time,
 and the occasional detour through the human side of it all.
 

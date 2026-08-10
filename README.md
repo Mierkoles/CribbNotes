@@ -4,7 +4,7 @@
 
 **Feels like magic, but it's math.**
 
-Short, plain-language notes on AI, the enterprise, and the human side of technology —
+Short, plain-language notes on AI, the enterprise, and the human side of technology,
 by [Mark Cribb](https://www.linkedin.com/in/mark-cribb). Cliff's Notes, by Cribb.
 
 This repo is the source for the Cribb Notes website (built with [Quarto](https://quarto.org))
@@ -16,11 +16,11 @@ and the home of the hands-on Colab demo notebooks.
 
 | Path | What it is |
 |------|------------|
-| `index.qmd` | Home page — listing of the latest Notes across both streams |
+| `index.qmd` | Home page: listing of the latest Notes across both streams |
 | `tech.qmd` / `culture.qmd` | The two content streams (Tech · Culture, per the logo) |
 | `notes/tech/`, `notes/culture/` | The Notes themselves (one folder per issue, filed by stream) |
 | `labs/` | The runnable Colab notebooks (evergreen, reusable) |
-| `speaking/` | Talks — booking pitch + a per-event archive linking its Labs/Notes |
+| `speaking/` | Talks: booking pitch + a per-event archive linking its Labs/Notes |
 | `about.qmd` | About the publication and the author |
 | `_quarto.yml` | Site configuration |
 | `styles.css` | Brand styling |

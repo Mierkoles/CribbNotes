@@ -1,6 +1,6 @@
 ---
 title: "The Shelf"
-description: "Everything I've been reading, watching, and playing — with honest ratings. A working log, not a curated brag."
+description: "Everything I've been reading, watching, and playing, with honest ratings. A working log, not a curated brag."
 title-block-banner: "#0A1F41"
 title-block-banner-color: "white"
 page-layout: full
@@ -20,7 +20,7 @@ listing:
   page-size: 100
 ---
 
-The whole shelf — books, movies, TV, and games — with my own ratings, no apologies.
+The whole shelf (books, movies, TV, and games) with my own ratings, no apologies.
 Sort it, filter it, or search it. Titles with a link jump to the source (IMDb,
 Open Library). Some of these turn into [Culture](culture.qmd) notes; most are just
 here because I spent time with them.

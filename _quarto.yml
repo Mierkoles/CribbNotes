@@ -11,7 +11,7 @@ project:
 
 website:
   title: "Cribb Notes"
-  description: "Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology — by Mark Cribb."
+  description: "Tech and culture, demystified. Short, plain-language notes on AI, the enterprise, movies, music, and the human side of technology. By Mark Cribb."
   site-url: "https://cribbnotes.ai"
   favicon: assets/favicon.svg
   open-graph: true

@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-Cribb Notes is written by **Mark Cribb** — and the whole premise is in the name.
+Cribb Notes is written by **Mark Cribb**, and the whole premise is in the name.
 Cliff's Notes, by Cribb: short, honest explainers for the parts of technology
 everyone pretends to already understand.
 
@@ -11,12 +11,12 @@ everyone pretends to already understand.
 Most people with AI opinions do exactly one of three things. I happen to do all
 three, which is the only reason I think this is worth your inbox:
 
-- **I build it** — real software, shipped, much of it on weekends with AI as a co-pilot.
-- **I govern it** — I authored my organization's enterprise AI governance framework.
-- **I teach it** — thousands of university students a year, plus a doctorate in progress.
+- **I build it.** Real software, shipped, much of it on weekends with AI as a co-pilot.
+- **I govern it.** I authored my organization's enterprise AI governance framework.
+- **I teach it.** Thousands of university students a year, plus a doctorate in progress.
 
-The view from the intersection — where the hype meets the budget meets the actual
-code — is where these notes are written from.
+The view from the intersection (where the hype meets the budget meets the actual
+code) is where these notes are written from.
 
 ## The longer version
 
@@ -39,7 +39,7 @@ Cribb Notes isn't only AI block diagrams. Mark is a black belt in Kenpo Karate a
 Tae Kwon Do and has coached martial arts and wrestling for thirty years; he plays
 drums and produces music; he collects movie memorabilia (ask him about Godzilla),
 reads philosophy and historical fiction, leans Stoic, and is training for a sprint
-triathlon out of Oak Creek, Wisconsin. Those threads show up here on purpose — the
+triathlon out of Oak Creek, Wisconsin. Those threads show up here on purpose: the
 best explanations of hard technical ideas usually come from somewhere human.
 
 ## Stay in the loop

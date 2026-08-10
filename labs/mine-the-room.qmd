@@ -10,7 +10,7 @@ categories: [AI, Demystified, Interactive]
 
 *CPU-only, ~30 seconds to render. No GPU needed.*
 
-Call out ten numbers and watch a model **search them for the pattern** — settling on
+Call out ten numbers and watch a model **search them for the pattern**, settling on
 the two numbers that fit, sharpening as the data grows, then getting knocked off course
 by a few bad points (with a robust alternative sitting right beside it). A few minutes
 of pixels that make "training" feel mechanical instead of magical.

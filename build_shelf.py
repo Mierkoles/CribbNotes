@@ -59,7 +59,7 @@ def to_item(entry: dict) -> dict:
     t = entry.get("type", "")
     title = str(entry.get("title", "Untitled"))
     if t == "tv_show" and entry.get("season"):
-        title = f"{title} — Season {entry['season']}"
+        title = f"{title}: Season {entry['season']}"
     rating = entry.get("personal_rating")
     item = {
         "title": title,

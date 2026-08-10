@@ -12,11 +12,11 @@ categories: [AI, Demystified, Interactive]
 
 A ~10-million-parameter character-level transformer, trained from scratch on free
 cloud hardware. Watch the loss fall from random noise to recognizable prose. It's the
-same procedure that built GPT-4 — 200,000× smaller, four orders of magnitude less
+same procedure that built GPT-4, 200,000× smaller, four orders of magnitude less
 data, identical idea.
 
 There's a **dropdown at the top: pick Shakespeare or Mark Twain.** Run it, then come
-back, switch authors, and run it again. *Every other line of code is identical* — only
+back, switch authors, and run it again. *Every other line of code is identical*: only
 the data changes, and a completely different writer comes out. That's the whole point:
 the architecture is general; the data is what gives a model its voice.
 

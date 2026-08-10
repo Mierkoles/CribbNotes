@@ -17,7 +17,7 @@ built to teach: short wall time, heavily commented for narration, runs on Google
 Colab's free tier, and requires no Python or AI knowledge to use. Click a card, then a
 badge, and you're inside the demo.
 
-Every lab is self-contained and reusable — the same notebooks power the
+Every lab is self-contained and reusable. The same notebooks power the
 [talks](/speaking/index.qmd).
 
 ::: {#labs}
@@ -26,7 +26,7 @@ Every lab is self-contained and reusable — the same notebooks power the
 ## How to use
 
 1. Open a lab, then click its **Open in Colab** badge.
-2. Read the welcome cell at the top — it explains notebooks and Colab if you've never touched either.
+2. Read the welcome cell at the top. It explains notebooks and Colab if you've never touched either.
 3. Click `Runtime → Run all` and watch the output.
 
 You don't need to read or understand the code. Every block is commented for the
