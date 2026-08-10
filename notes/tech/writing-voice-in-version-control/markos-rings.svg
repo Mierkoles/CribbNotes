@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-labelledby="t d">
   <title id="t">MarkOS: five concentric rings</title>
-  <desc id="d">Five concentric rings. Ring 0, the substrate holding record and values, sits at the centre. Moving outward: ring 1 constitution, ring 2 method, ring 3 craft, ring 4 context. Below them a gate labelled tells.md leads to output. Every ring inherits the constraints of every ring inside it.</desc>
+  <desc id="d">Five concentric rings. Ring 0, the substrate holding values and record, sits at the centre. Moving outward: ring 1 constitution, ring 2 method, ring 3 craft, ring 4 context. Below them a gate labelled tells.md leads to output. Every ring inherits the constraints of every ring inside it.</desc>
 
   <style>
     :root {
@@ -21,7 +21,7 @@
     .n{font:600 13px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
     .ttl{font:700 12.5px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--ink);letter-spacing:.09em}
     .sub{font:400 13.5px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--mute)}
-    .brand{font:700 13px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--gold);letter-spacing:.14em}
+    .brand{font:700 15px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--gold);letter-spacing:.04em}
     .foot{font:400 13px ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--mute)}
     .swat{stroke:var(--stroke);stroke-width:1}
     .rule{stroke:var(--rule);stroke-width:1}
@@ -44,13 +44,13 @@
   </g>
 
   <g transform="translate(548,0)">
-    <text class="brand" x="0" y="86">MARKOS</text>
+    <text class="brand" x="0" y="86">MarkOS</text>
     <line class="rule" x1="0" y1="100" x2="316" y2="100"/>
 
     <g transform="translate(0,132)">
       <rect class="swat" x="0" y="-12" width="16" height="16" rx="3" fill="var(--r0)"/>
       <text class="ttl" x="28" y="0">RING 0 · SUBSTRATE</text>
-      <text class="sub" x="28" y="20">record · values</text>
+      <text class="sub" x="28" y="20">values · record</text>
       <text class="sub" x="28" y="38">what is true, what I hold</text>
     </g>
     <g transform="translate(0,212)">

@@ -20,12 +20,13 @@
 
 
 
-<p>I set up a new Mac this week. Homebrew, git, the usual afternoon of pulling things back down out of the cloud. One of the repos I cloned was me.</p>
+<p>I was deep in curriculum development when I went looking for a rule I knew I had already written down. I found it in the memory of a different machine, in a form that worked only there. The rules were real, earned one correction at a time. What they lacked was a structure, and any way to travel.</p>
+<p>They are a repo now. That repo is me.</p>
 <p>It is six skills that an AI coding assistant loads before it writes anything in my name. Two of them hold substrate: a record of what is verifiably true about my career, down to the phrasing I use for each claim, and a file describing what I optimize for when a decision comes down to judgment rather than rule. Above those sit nine writing voices, because the register for an incident report has almost nothing in common with the register for a keynote. Teaching gets a skill of its own. The sixth covers how I handle a live room.</p>
-<p>It caught me the same afternoon I installed it.</p>
+<p>It caught me that same afternoon.</p>
 <section id="the-one-idea" class="level2">
 <h2 class="anchored" data-anchor-id="the-one-idea">The one idea</h2>
-<p>Rules about a person are not a stack. They are rings.</p>
+<p>The mental model that works for me is concentric rings rather than a stack.</p>
 <p>The obvious build is a stack: general rules on the bottom, specific rules on top, later layers overriding earlier ones. I tried that first. It falls apart the moment a narrow context wants permission to do something the general rules forbid, because a stack has no way to say no. Override is the whole point of a stack, and override is exactly what you cannot allow.</p>
 <p><img src="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
 <p>Concentric works. Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.</p>
@@ -62,11 +63,11 @@ teaching/       doctrine, checklists, three context profiles
 speaking/       audience analysis, room handling, production</code></pre>
 <p>Each folder holds a <code>SKILL.md</code> that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context. Installing is a set of symlinks from these folders into the assistant’s skills directory, directory junctions on Windows, which means the repo stays the one copy that matters and an edit is live in the next session. Updating is <code>git pull</code>. There is nothing to reinstall, and no second copy to drift.</p>
 <p>Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.</p>
-<p>The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.</p>
+<p>The assistant working through the course material with me had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo the machine in front of me had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.</p>
 <p>Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.</p>
 <p>There is one more piece, and it is the piece I would have left out if I had designed this instead of growing it. Following the rules while drafting turns out to be insufficient. Word-level rules are easy to obey sentence by sentence, and a draft can clear all of them and still read as machine-written, because the giveaways are structural: parallel bullets built on one identical template, or a final line that comments on the document rather than ending it. Those only become visible once the whole thing exists.</p>
 <p>The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.</p>
-<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
+<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
 </section>
 <section id="the-part-i-have-not-solved" class="level2">
 <h2 class="anchored" data-anchor-id="the-part-i-have-not-solved">The part I have not solved</h2>
@@ -100,36 +101,36 @@ speaking/       audience analysis, room handling, production</code></pre>
 <p><em>“Okay… but what is AI <strong>actually</strong> doing?”</em></p>
 </blockquote>
 <p>They’re never embarrassed without reason. They run departments. They sign the contracts. And somewhere along the way the technology got wrapped in so much hype, jargon, and vendor theater that asking the basic question started to feel risky.</p>
-<p>Here’s the secret I tell every one of them: <strong>the question isn’t dumb, and the answer isn’t magic.</strong> It’s math — often surprisingly simple math, dressed up in intimidating clothes.</p>
+<p>Here’s the secret I tell every one of them: <strong>the question isn’t dumb, and the answer isn’t magic.</strong> It’s math, often surprisingly simple math, dressed up in intimidating clothes.</p>
 <p>That conversation, on repeat, is why Cribb Notes exists.</p>
 <section id="what-this-is" class="level2">
 <h2 class="anchored" data-anchor-id="what-this-is">What this is</h2>
-<p>Cribb Notes is Cliff’s Notes, by Cribb — short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side — what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.</p>
+<p>Cribb Notes is Cliff’s Notes, by Cribb: short, plain-language notes on the things everyone in tech pretends to already understand. AI, mostly. But also the broader enterprise: the systems we actually run companies on, the IT decisions that quietly cost millions, the way the movie business and higher ed are getting rewired in real time. And every so often, the human side: what coaching martial arts for thirty years, or chasing a drum fill I still can’t quite land, taught me about how people (and machines) actually learn.</p>
 <p>One idea per note. About a three-minute read. No homework, no prerequisites, no <em>“well, actually.”</em></p>
 </section>
 <section id="why-me" class="level2">
 <h2 class="anchored" data-anchor-id="why-me">Why me</h2>
 <p>Fair question. The internet is not short on AI takes. Most of the people writing them do exactly <strong>one</strong> of these three things. The reason I think this is worth your inbox is that I’m stubborn enough to do all three:</p>
 <ul>
-<li><strong>I build it.</strong> I ship real software — an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.</li>
+<li><strong>I build it.</strong> I ship real software, an enterprise platform and a stack of working systems, a lot of it on weekends, with AI riding shotgun.</li>
 <li><strong>I govern it.</strong> I wrote my company’s enterprise AI governance framework and chair the hard conversations about what we’re actually allowed to point this stuff at.</li>
 <li><strong>I teach it.</strong> I teach cloud and data to thousands of university students a year, and I’m grinding through a doctorate on the side because apparently I hate sleep.</li>
 </ul>
-<p>The interesting view is at the intersection — where the hype meets the budget meets the actual code. That’s the seat these notes are written from.</p>
+<p>The interesting view is at the intersection, where the hype meets the budget meets the actual code. That’s the seat these notes are written from.</p>
 </section>
 <section id="the-one-promise" class="level2">
 <h2 class="anchored" data-anchor-id="the-one-promise">The one promise</h2>
 <p>I will not waste your time, and I will not make you feel stupid.</p>
-<p>Every note has a single job: hand you one clear idea you can use in a meeting on Monday — whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.</p>
-<p>You won’t leave here an engineer. You’ll leave here <strong>un-foolable</strong> — able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one.</p>
+<p>Every note has a single job: hand you one clear idea you can use in a meeting on Monday, whether you’re an executive deciding where to place a bet, a student trying to break in, or just a curious human who’s tired of nodding along.</p>
+<p>You won’t leave here an engineer. You’ll leave here <strong>un-foolable</strong>, able to tell the real thing from the sales pitch, and to ask the next sharp question instead of the safe one.</p>
 </section>
 <section id="feels-like-magic-but-its-math" class="level2">
 <h2 class="anchored" data-anchor-id="feels-like-magic-but-its-math">“Feels like magic, but it’s math”</h2>
-<p>That line is on the front door for a reason. Almost everything that looks like sorcery in this field — a model that writes, a system that predicts, a chatbot that <em>seems</em> to understand — comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: <strong>seeing the gears doesn’t ruin the wonder. It upgrades it.</strong> Fear turns into judgment. Judgment is the thing this whole moment has been missing.</p>
+<p>That line is on the front door for a reason. Almost everything that looks like sorcery in this field (a model that writes, a system that predicts, a chatbot that <em>seems</em> to understand) comes apart into steps you can follow, once somebody bothers to show you the gears. And here’s the part nobody mentions: <strong>seeing the gears doesn’t ruin the wonder. It upgrades it.</strong> Fear turns into judgment. Judgment is the thing this whole moment has been missing.</p>
 <p>So that’s the deal. Every week: one idea, gears exposed.</p>
-<p>Pull up a chair. And if there’s something out there that’s been quietly confusing you — the thing you keep nodding along to in meetings — tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.</p>
+<p>Pull up a chair. And if there’s something out there that’s been quietly confusing you (the thing you keep nodding along to in meetings), tell me. Odds are you’re not the only one, and odds are it makes a better note than whatever I had planned.</p>
 <p><em>Feels like magic. It’s math. Let’s go.</em></p>
-<p>— Mark</p>
+<p>Mark</p>
 
 
 </section>

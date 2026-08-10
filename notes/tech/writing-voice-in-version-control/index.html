@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mark Cribb">
 <meta name="dcterms.date" content="2026-08-10">
-<meta name="description" content="My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.">
+<meta name="description" content="My writing rules live in a git repo that an AI loads before it drafts anything in my name. How it is wired, and the filing rule that keeps it from rotting.">
 
 <title>I Put My Writing Voice in Version Control – Cribb Notes</title>
 <style>
@@ -80,12 +80,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="I Put My Writing Voice in Version Control – Cribb Notes">
-<meta property="og:description" content="My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.">
+<meta property="og:description" content="My writing rules live in a git repo that an AI loads before it drafts anything in my name. How it is wired, and the filing rule that keeps it from rotting.">
 <meta property="og:image" content="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg">
 <meta property="og:site_name" content="Cribb Notes">
 <meta property="og:image:alt" content="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them.">
 <meta name="twitter:title" content="I Put My Writing Voice in Version Control – Cribb Notes">
-<meta name="twitter:description" content="My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.">
+<meta name="twitter:description" content="My writing rules live in a git repo that an AI loads before it drafts anything in my name. How it is wired, and the filing rule that keeps it from rotting.">
 <meta name="twitter:image" content="https://cribbnotes.ai/notes/tech/writing-voice-in-version-control/markos-rings.svg">
 <meta name="twitter:image:alt" content="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them.">
 <meta name="twitter:card" content="summary_large_image">
@@ -194,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    My writing rules are a git repo that an AI loads before it drafts anything in my name. Here is the architecture, and the one design decision that keeps it from rotting.
+    My writing rules live in a git repo that an AI loads before it drafts anything in my name. How it is wired, and the filing rule that keeps it from rotting.
   </div>
 </div>
 
@@ -223,12 +223,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I set up a new Mac this week. Homebrew, git, the usual afternoon of pulling things back down out of the cloud. One of the repos I cloned was me.</p>
+<p>I was deep in curriculum development when I went looking for a rule I knew I had already written down. I found it in the memory of a different machine, in a form that worked only there. The rules were real, earned one correction at a time. What they lacked was a structure, and any way to travel.</p>
+<p>They are a repo now. That repo is me.</p>
 <p>It is six skills that an AI coding assistant loads before it writes anything in my name. Two of them hold substrate: a record of what is verifiably true about my career, down to the phrasing I use for each claim, and a file describing what I optimize for when a decision comes down to judgment rather than rule. Above those sit nine writing voices, because the register for an incident report has almost nothing in common with the register for a keynote. Teaching gets a skill of its own. The sixth covers how I handle a live room.</p>
-<p>It caught me the same afternoon I installed it.</p>
+<p>It caught me that same afternoon.</p>
 <section id="the-one-idea" class="level2">
 <h2 class="anchored" data-anchor-id="the-one-idea">The one idea</h2>
-<p>Rules about a person are not a stack. They are rings.</p>
+<p>The mental model that works for me is concentric rings rather than a stack.</p>
 <p>The obvious build is a stack: general rules on the bottom, specific rules on top, later layers overriding earlier ones. I tried that first. It falls apart the moment a narrow context wants permission to do something the general rules forbid, because a stack has no way to say no. Override is the whole point of a stack, and override is exactly what you cannot allow.</p>
 <p><img src="markos-rings.svg" class="img-fluid" alt="Five concentric rings labeled ring 0 substrate through ring 4 context, with a gate and an output below them."></p>
 <p>Concentric works. Ring 0 is substrate. Ring 1 is a constitution of four rules. Ring 2 is method, ring 3 is craft, and ring 4 is the immediate context of audience and medium. Every step outward narrows and inherits everything inside it. A voice can add a rule about executive writing. It cannot grant itself an exemption from the requirement that claims be checkable.</p>
@@ -265,11 +266,11 @@ teaching/       doctrine, checklists, three context profiles
 speaking/       audience analysis, room handling, production</code></pre>
 <p>Each folder holds a <code>SKILL.md</code> that opens with a name and a description of when it applies. The assistant reads those descriptions, and when a task matches one it pulls that folder into context. Installing is a set of symlinks from these folders into the assistant’s skills directory, directory junctions on Windows, which means the repo stays the one copy that matters and an edit is live in the next session. Updating is <code>git pull</code>. There is nothing to reinstall, and no second copy to drift.</p>
 <p>Rule two of the constitution: no em dashes, in any document, in any voice. I consider it a tell, and I dislike it on its own terms.</p>
-<p>The assistant helping me set up the Mac had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo this machine had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.</p>
+<p>The assistant working through the course material with me had already written several long replies before it loaded the skill. Em dashes throughout. The rule existed the whole time, sitting in a private repo the machine in front of me had not yet cloned. The moment the symlinks resolved, the habit stopped mid-conversation.</p>
 <p>Small thing, and also the whole demonstration. The constraint was never in the model. It was in a file, and the file had not been mounted.</p>
 <p>There is one more piece, and it is the piece I would have left out if I had designed this instead of growing it. Following the rules while drafting turns out to be insufficient. Word-level rules are easy to obey sentence by sentence, and a draft can clear all of them and still read as machine-written, because the giveaways are structural: parallel bullets built on one identical template, or a final line that comments on the document rather than ending it. Those only become visible once the whole thing exists.</p>
 <p>The gate is therefore a separate file that runs over the finished draft in four passes. Literal string searches first. Then a structural read that ignores content and looks only at shape, counting the three-item lists and the balanced contrasts. Then a pass that stops at every sentence carrying a number and asks what document backs each word of it. Then a last look at the opening and closing paragraphs to check they still sound like the voice I asked for. This note went through all four before you read it.</p>
-<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. Consistency is not a personality you coax out of the model. It is a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
+<p>That is the part worth taking away if you are trying to get consistent output out of one of these systems. What I have found is that consistency is less a personality you coax out of the model than a lookup order you supply, evaluated inside out, with no path for a local preference to overwrite a global commitment.</p>
 </section>
 <section id="the-part-i-have-not-solved" class="level2">
 <h2 class="anchored" data-anchor-id="the-part-i-have-not-solved">The part I have not solved</h2>
