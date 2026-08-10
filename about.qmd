@@ -22,12 +22,13 @@ code) is where these notes are written from.
 
 Mark Cribb is a technology leader and educator with 25+ years in enterprise platform
 architecture and data strategy, now focused on driving enterprise AI adoption. He
-serves as AI Solutions and Applications Manager at Marcus Theatres, leading enterprise
-AI governance and AI-assisted development across the organization. He teaches Data
-Analysis at MSOE's Rader School of Business and cloud computing at Western Governors
+serves as AI Solutions and Applications Manager at The Marcus Corporation, where he
+authored the enterprise AI governance framework and built the AI-literacy training
+delivered to the Corporate and Theatres Accounting teams. He teaches Database
+Management at MSOE's Rader School of Business and cloud computing at Western Governors
 University, and has previously taught Business Law & Ethics at Bryant & Stratton
 College and technology leadership in UWM's Executive MBA program. He is working on a
-Doctorate of Information Technology, holds multiple Microsoft and AWS certifications
+Doctor of Business Administration, holds multiple Microsoft and AWS certifications
 (AI Engineer, Data Scientist, Solutions Architect), and speaks on AI governance,
 AI-assisted development, and quantum readiness. He serves as Co-Chair of United Way's
 Technology United Council, chairs the planning committee for the 2027 Milwaukee CIO
