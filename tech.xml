@@ -10,7 +10,86 @@
 <atom:link href="https://cribbnotes.ai/tech.xml" rel="self" type="application/rss+xml"/>
 <description>AI, the enterprise systems we actually run companies on, and the IT decisions that quietly cost millions, demystified.</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 10 Aug 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 10 Sep 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Story Is the Lesson</title>
+  <dc:creator>Mark Cribb</dc:creator>
+  <link>https://cribbnotes.ai/notes/tech/mariposa/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I have been learning Spanish on Duolingo for almost four years. The streak is alive at 1,456 days as I write this. The app’s Score puts me at 39 on its scale of 130, which it translates as “you can order food at a restaurant.” On the Common European Framework, the six-band scale most language exams use, that is A2, the second band, and it matches how it feels. I still enjoy it, and I am not stopping.</p>
+<p>The app does what it promises. Five minutes a day, a mix of exercises, and a streak counter that has gotten me to open it 1,456 mornings in a row. The research says the time counts. A study the company commissioned in 2012 found that about 34 hours in the app covered the material of a first college semester of Spanish, as measured by a university placement exam.<sup>1</sup> A larger 2021 study by Duolingo’s own researchers put learners who finished the beginning courses at Intermediate Low in reading, comparable to university students after four semesters.<sup>2</sup></p>
+<p>What I wanted, four years in, was something outside what the daily exercises are for: a page I could read. A sentence with no story around it does not stay with me the way a page does. The thing that has held my attention in Spanish lately is a book. I am partway through <em>El arquero</em>, Paulo Coelho’s short parable about an archer, in Spanish, and I keep opening it because I want to know what happens. Graded readers work like that. What they do not come with is the daily loop and the drill.</p>
+<p>I wanted both, in one place, and the streak keeps going alongside it. The story has to be good enough to open tomorrow, and the mechanics have to make the words stick. What follows is my experience and what has worked for me. I am one learner sharing it.</p>
+<section id="the-one-idea" class="level2">
+<h2 class="anchored" data-anchor-id="the-one-idea">The one idea</h2>
+<p>In 1968 an anthropologist at the University of Michigan named Robbins Burling published a paper with the title “Some Outlandish Proposals for the Teaching of Foreign Languages.”<sup>3</sup> One of the proposals was this: write the story in the learner’s own language, and swap in words from the target language a few at a time. The reader keeps the thread, because the sentence is mostly English. The foreign words arrive inside a context the reader already understands. Chapter by chapter the ratio shifts, until the reader is reading the other language and did not notice the crossing.</p>
+<p>Burling called it a diglot weave. He built a French reading course on it. It did not become a standard method, and I have not found a good account of why.</p>
+<p>Mariposa is my version. The name is the Spanish word for butterfly, and I picked it because it is my favorite Spanish word to say out loud, and because I like butterflies. It also happens to describe the mechanism. The English is the caterpillar. The Spanish is what it turns into.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cribbnotes.ai/notes/tech/mariposa/mariposa-gloss.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A phone screen showing a chapter of Mariposa. English prose with Spanish words set in red. One word, gobernador, has been tapped, and a small dark card beneath it reads: gobernador, governor. Spanish -dor is our -or: director, gobernador." width="320"></p>
+</figure>
+</div>
+</section>
+<section id="why-weaving-works" class="level2">
+<h2 class="anchored" data-anchor-id="why-weaving-works">Why weaving works</h2>
+<p>Here is where it stops being a nice idea and starts being arithmetic.</p>
+<p>Paul Nation, who has spent a career measuring vocabulary, worked out how many words a reader needs to know to read unassisted. His 2006 estimate is that you need to recognize about 98 percent of the running words on a page, and that reaching 98 percent coverage of ordinary written English takes a vocabulary of eight to nine thousand word families.<sup>4</sup> Below that line, reading turns into decoding, and decoding is not reading.</p>
+<p>A beginner in Spanish knows a few hundred words. There is no Spanish text on earth where a few hundred words give 98 percent coverage. That is the trap every beginner’s reader falls into: either the text is so simplified it has no plot, or it has a plot and the beginner cannot read it.</p>
+<p>The weave manufactures the 98 percent. The English supplies the coverage. The Spanish is the 2 percent, placed exactly where the reader can infer it from everything around it. Chapter one of Mariposa is 335 words of English with eleven Spanish words woven in, eight of them cognates like <em>expedición</em> and <em>gobernador</em>. The reader stays above the line, and the line moves a little each chapter.</p>
+<p>The rest of the mechanics come from the memory research, and none of it is exotic.</p>
+<p><strong>Words learned from context are real, and they need repetition.</strong> Nagy, Herman, and Anderson showed in 1985 that eighth graders picked up measurable knowledge of unfamiliar words from a single reading of a thousand-word passage. Small gains, reliably.<sup>5</sup> Horst, Cobb, and Meara found the same in adult second-language readers who worked through a whole simplified novel.<sup>6</sup> Stuart Webb’s 2007 study is the one I built a rule on: he varied how many times learners met a new word in context, and found sizeable gains by ten encounters, with something learned at every step from one to ten.<sup>7</sup> Every new word in a Mariposa chapter appears at least twice, and words from the previous three chapters have to come back.</p>
+<p><strong>A test does more than a reread.</strong> Roediger and Karpicke’s 2006 experiments had students study a passage and then either reread it or take a recall test. Five minutes later the rereaders did better. A week later the tested group remembered substantially more.<sup>8</sup> Each chapter ends with five or six short drills built only from that chapter. That is retrieval practice wearing a story.</p>
+<p><strong>Gaps help.</strong> Cepeda and colleagues reviewed 839 assessments of spaced practice across 317 experiments and found that the best gap between encounters grows with how long you want to remember something.<sup>9</sup> In Mariposa the spacing is the plot. A word you keep missing gets written into an upcoming chapter. The schedule is invisible because it looks like a story.</p>
+<p><strong>The weave itself has been tested against drill.</strong> A 2007 study at Brigham Young University compared a computer-based diglot reader with a sophisticated drill-and-practice program for second-language vocabulary. The reader produced the same vocabulary gains, the learners picked the words up incidentally from the story, and the authors report it lowered the affective barrier to the language.<sup>10</sup> A 2014 study of sixty Iranian high school students found a statistically significant advantage for the weave over teaching words through definitions and synonyms.<sup>11</sup> Small studies, and I would like to see bigger ones. They point the same direction.</p>
+</section>
+<section id="what-i-built-and-what-i-threw-away" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built-and-what-i-threw-away">What I built, and what I threw away</h2>
+<p>I built the app on a Sunday evening in September with an AI coding assistant. It is a progressive web app, which means it installs to a phone home screen and works offline. About 14 kilobytes of code with no framework and no backend. Progress lives in the browser, with no account behind it. Each chapter is a JSON file: the prose, the woven words with their English, a note that appears the first time you tap a word, and the drills.</p>
+<p>The first story was a night-desk mystery set in a Milwaukee hotel. I chose it because hotel vocabulary is dense with cognates. Then I asked the assistant how well it knew my reading, and it went through my own shelf and told me the truth: historical fiction, frontier survival, the Stoics, Tolkien, and nothing resembling a hotel procedural. The hotel lasted one chapter.</p>
+<p>The story is now <em>Naufragios</em>. In 1528 three hundred Spaniards landed on the coast of Florida looking for gold. Eight years later four men walked into Sinaloa, naked, and the Spanish slavers who found them could not make sense of them. One of the four, Álvar Núñez Cabeza de Vaca, wrote it down. His <em>Relación</em>, published in 1542, is in the public domain, and it is the kind of thing I would read anyway. Ninety chapters planned, one a day. Levels one through five are prose written for the weave, with the Spanish rising through it. Level six is the 1542 text itself, lightly modernized. The reader finishes by reading a 16th-century chronicle in the original, without ever having been thrown into the deep end.</p>
+<p>Chapter one is on the beach. Cabeza de Vaca’s name means “head of a cow,” which is the first two Spanish words the reader learns, and <em>vaca</em> comes back in chapter 57 when he sees his first bison and has no word for it but cow.</p>
+<p>One chapter is written. Eighty-nine are not. My test for the whole thing is whether I open it twenty days in a row.</p>
+</section>
+<section id="the-part-that-is-not-solved" class="level2">
+<h2 class="anchored" data-anchor-id="the-part-that-is-not-solved">The part that is not solved</h2>
+<p>The Spanish has to be correct. One wrong gender in a note costs more trust than ten features earn. The chapters are drafted by a model against a beat outline and reviewed by me, and I am the beginner here. That is the weak joint. The repo says so in plain words, and I am hoping a reader who knows Spanish better than I do sends a correction. <a href="https://github.com/Mierkoles/mariposa">The code</a> is public under MIT, the chapters are CC BY, <a href="https://mierkoles.github.io/mariposa/">the app</a> is live, and the method is documented well enough to fork for another book or another language. If you do, the one instruction I would give is the one I gave myself: pick a story you would read anyway. The mechanism does nothing for a plot you do not care about.</p>
+<p>The whole thing is a 1968 idea and a 1542 shipwreck, held together by memory research anyone can look up. It feels like magic. It’s math.</p>
+<p>Mark</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Vesselinov, R., and Grego, J. (2012). <em>Duolingo Effectiveness Study</em>. Commissioned by Duolingo. Mean gain on the WebCAPE placement exam implied about 34 hours of study to cover a first college semester, with a 95 percent confidence interval of 26 to 49 hours. <a href="https://theowlapp.health/wp-content/uploads/2022/04/DuolingoReport_Final-1.pdf">Report PDF</a>.↩︎</p></li>
+<li id="fn2"><p>Jiang, X., Rollinson, J., Plonsky, L., Gustafson, E., and Pajak, B. (2021). Evaluating the reading and listening outcomes of beginning-level Duolingo courses. <em>Foreign Language Annals</em>, 54(4), 974–1002. Authors are Duolingo researchers. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/flan.12600">Wiley</a>.↩︎</p></li>
+<li id="fn3"><p>Burling, R. (1968). Some outlandish proposals for the teaching of foreign languages. <em>Language Learning</em>, 18(1–2). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-1770.1987.tb00390.x">Wiley</a> · <a href="https://deepblue.lib.umich.edu/handle/2027.42/98107">University of Michigan Deep Blue</a>.↩︎</p></li>
+<li id="fn4"><p>Nation, I. S. P. (2006). How large a vocabulary is needed for reading and listening? <em>Canadian Modern Language Review</em>, 63(1), 59–82. <a href="https://www.lextutor.ca/cover/papers/nation_2006.pdf">PDF</a>.↩︎</p></li>
+<li id="fn5"><p>Nagy, W. E., Herman, P. A., and Anderson, R. C. (1985). Learning words from context. <em>Reading Research Quarterly</em>, 20(2), 233–253. <a href="https://www.semanticscholar.org/paper/Learning-Words-from-Context.-Nagy-Herman/2aecdf006c2e00606e8f139a4b80d8678d3f26dc">Semantic Scholar</a>.↩︎</p></li>
+<li id="fn6"><p>Horst, M., Cobb, T., and Meara, P. (1998). Beyond A Clockwork Orange: Acquiring second language vocabulary through reading. <em>Reading in a Foreign Language</em>, 11(2), 207–223. <a href="https://eric.ed.gov/?id=EJ577617">ERIC</a>.↩︎</p></li>
+<li id="fn7"><p>Webb, S. (2007). The effects of repetition on vocabulary knowledge. <em>Applied Linguistics</em>, 28(1), 46–65. <a href="https://academic.oup.com/applij/article-abstract/28/1/46/174744">Oxford Academic</a>.↩︎</p></li>
+<li id="fn8"><p>Roediger, H. L., and Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. <em>Psychological Science</em>, 17(3), 249–255. <a href="https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x">SAGE</a>.↩︎</p></li>
+<li id="fn9"><p>Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., and Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. <em>Psychological Bulletin</em>, 132(3), 354–380. <a href="https://augmentingcognition.com/assets/Cepeda2006.pdf">PDF</a>.↩︎</p></li>
+<li id="fn10"><p>Christensen, E., Merrill, P., and Yanchar, S. (2007). Second language vocabulary acquisition using a diglot reader or a computer-based drill and practice program. <em>Computer Assisted Language Learning</em>, 20(1), 67–77. <a href="https://www.tandfonline.com/doi/full/10.1080/09588220601118511">Taylor &amp; Francis</a>.↩︎</p></li>
+<li id="fn11"><p>Nemati, A., and Maleki, E. (2014). The effect of teaching vocabulary through the diglot-weave technique on vocabulary learning of Iranian high school students. <em>Procedia, Social and Behavioral Sciences</em>, 98, 1340–1345. <a href="https://www.sciencedirect.com/science/article/pii/S1877042814026421">ScienceDirect</a>.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Language</category>
+  <category>AI</category>
+  <category>Demystified</category>
+  <guid>https://cribbnotes.ai/notes/tech/mariposa/</guid>
+  <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>I Put Myself in Version Control</title>
   <dc:creator>Mark Cribb</dc:creator>

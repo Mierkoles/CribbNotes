@@ -2,6 +2,7 @@
   {
     "listing": "/tech.html",
     "items": [
+      "/notes/tech/mariposa/index.html",
       "/notes/tech/markos/index.html",
       "/notes/tech/welcome/index.html"
     ]
@@ -11,12 +12,10 @@
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/labs/index.html",
     "items": [
-      "/notes/tech/markos/index.html",
-      "/notes/culture/judge-a-film-by-its-size/index.html",
-      "/notes/culture/the-case-for-re-enchantment/index.html",
-      "/notes/tech/welcome/index.html"
+      "/labs/mine-the-room.html",
+      "/labs/nanogpt.html"
     ]
   },
   {
@@ -27,10 +26,13 @@
     ]
   },
   {
-    "listing": "/labs/index.html",
+    "listing": "/index.html",
     "items": [
-      "/labs/mine-the-room.html",
-      "/labs/nanogpt.html"
+      "/notes/tech/mariposa/index.html",
+      "/notes/tech/markos/index.html",
+      "/notes/culture/judge-a-film-by-its-size/index.html",
+      "/notes/culture/the-case-for-re-enchantment/index.html",
+      "/notes/tech/welcome/index.html"
     ]
   },
   {
