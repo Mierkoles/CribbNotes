@@ -53,7 +53,7 @@ The rest of the mechanics come from the memory research, and none of it is exoti
 
 I built the app on a Sunday evening in September with an AI coding assistant. It is a progressive web app, which means it installs to a phone home screen and works offline. About 14 kilobytes of code with no framework and no backend. Progress lives in the browser, with no account behind it. Each chapter is a JSON file: the prose, the woven words with their English, a note that appears the first time you tap a word, and the drills.
 
-The first story was a night-desk mystery set in a Milwaukee hotel. I chose it because hotel vocabulary is dense with cognates. Then I asked the assistant how well it knew my reading, and it went through my own shelf and told me the truth: historical fiction, frontier survival, the Stoics, Tolkien, and nothing resembling a hotel procedural. The hotel lasted one chapter.
+The first story was a night-desk mystery set in a Milwaukee hotel. I chose it because hotel vocabulary is dense with cognates. Then I asked the assistant how well it knew my reading. Because I track my books in a custom terminal app I wrote called `consumption`, the assistant just looked through that local repo and told me the truth: historical fiction, frontier survival, the Stoics, Tolkien, and nothing resembling a hotel procedural. The hotel lasted one chapter.
 
 The story is now *Naufragios*. In 1528 three hundred Spaniards landed on the coast of Florida looking for gold. Eight years later four men walked into Sinaloa, naked, and the Spanish slavers who found them could not make sense of them. One of the four, Álvar Núñez Cabeza de Vaca, wrote it down. His *Relación*, published in 1542, is in the public domain, and it is the kind of thing I would read anyway. Ninety chapters planned, one a day. Levels one through five are prose written for the weave, with the Spanish rising through it. Level six is the 1542 text itself, lightly modernized. The reader finishes by reading a 16th-century chronicle in the original, without ever having been thrown into the deep end.
 
@@ -63,7 +63,9 @@ One chapter is written. Eighty-nine are not. My test for the whole thing is whet
 
 ## The part that is not solved
 
-The Spanish has to be correct. One wrong gender in a note costs more trust than ten features earn. The chapters are drafted by a model against a beat outline and reviewed by me, and I am the beginner here. That is the weak joint. The repo says so in plain words, and I am hoping a reader who knows Spanish better than I do sends a correction. [The repo](https://github.com/Mierkoles/mariposa) is public under MIT, the chapters are CC BY, and the method is documented well enough to fork for another book or another language. If you do, the one instruction I would give is the one I gave myself: pick a story you would read anyway. The mechanism does nothing for a plot you do not care about.
+The Spanish has to be correct. One wrong gender in a note costs more trust than ten features earn. The chapters are drafted by a model against a beat outline and reviewed by me, and I am the beginner here. That is the weak joint. The repo says so in plain words, and I am hoping a reader who knows Spanish better than I do sends a correction. If you spot one, please reach out to me at mark.cribb@gmail.com. [The repo](https://github.com/Mierkoles/mariposa) is public under MIT, the chapters are CC BY, and the method is documented well enough to fork for another book or another language. If you do, the one instruction I would give is the one I gave myself: pick a story you would read anyway. The mechanism does nothing for a plot you do not care about.
+
+## The math
 
 The whole thing is a 1968 idea and a 1542 shipwreck, held together by memory research anyone can look up. It feels like magic. It's math.
 
