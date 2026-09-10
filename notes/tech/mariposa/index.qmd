@@ -7,6 +7,10 @@ categories: [Language, AI, Demystified]
 author: "Mark Cribb"
 ---
 
+::: {.callout-note appearance="simple" icon=false}
+**Mariposa** is a daily Spanish reader that starts in English and turns into Spanish, one chapter a day. [Try it](https://mierkoles.github.io/mariposa/), or [fork it and make it yours](https://github.com/Mierkoles/mariposa) for any book or language. MIT for the code, CC BY for the chapters.
+:::
+
 I have been learning Spanish on Duolingo for almost four years. The streak is alive at 1,456 days as I write this. The app's Score puts me at 39 on its scale of 130, which it translates as "you can order food at a restaurant." On the Common European Framework, the six-band scale most language exams use, that is A2, the second band, and it matches how it feels. I still enjoy it, and I am not stopping.
 
 The app does what it promises. Five minutes a day, a mix of exercises, and a streak counter that has gotten me to open it 1,456 mornings in a row. The research says the time counts. A study the company commissioned in 2012 found that about 34 hours in the app covered the material of a first college semester of Spanish, as measured by a university placement exam.[^vg] A larger 2021 study by Duolingo's own researchers put learners who finished the beginning courses at Intermediate Low in reading, comparable to university students after four semesters.[^jiang]
@@ -21,7 +25,7 @@ In 1968 an anthropologist at the University of Michigan named Robbins Burling pu
 
 Burling called it a diglot weave. He built a French reading course on it. It did not become a standard method, and I have not found a good account of why.
 
-Mariposa is my version. The name is the Spanish word for butterfly, and I picked it because it is my favorite Spanish word to say out loud, and because I like butterflies. It also happens to describe the mechanism. The English is the caterpillar. The Spanish is what it turns into.
+[Mariposa](https://mierkoles.github.io/mariposa/) is my version. The name is the Spanish word for butterfly, and I picked it because it is my favorite Spanish word to say out loud, and because I like butterflies. It also happens to describe the mechanism. The English is the caterpillar. The Spanish is what it turns into.
 
 ![](mariposa-gloss.png){fig-alt="A phone screen showing a chapter of Mariposa. English prose with Spanish words set in red. One word, gobernador, has been tapped, and a small dark card beneath it reads: gobernador, governor. Spanish -dor is our -or: director, gobernador." width=320 fig-align="center"}
 
@@ -59,7 +63,7 @@ One chapter is written. Eighty-nine are not. My test for the whole thing is whet
 
 ## The part that is not solved
 
-The Spanish has to be correct. One wrong gender in a note costs more trust than ten features earn. The chapters are drafted by a model against a beat outline and reviewed by me, and I am the beginner here. That is the weak joint. The repo says so in plain words, and I am hoping a reader who knows Spanish better than I do sends a correction. [The code](https://github.com/Mierkoles/mariposa) is public under MIT, the chapters are CC BY, [the app](https://mierkoles.github.io/mariposa/) is live, and the method is documented well enough to fork for another book or another language. If you do, the one instruction I would give is the one I gave myself: pick a story you would read anyway. The mechanism does nothing for a plot you do not care about.
+The Spanish has to be correct. One wrong gender in a note costs more trust than ten features earn. The chapters are drafted by a model against a beat outline and reviewed by me, and I am the beginner here. That is the weak joint. The repo says so in plain words, and I am hoping a reader who knows Spanish better than I do sends a correction. [The repo](https://github.com/Mierkoles/mariposa) is public under MIT, the chapters are CC BY, and the method is documented well enough to fork for another book or another language. If you do, the one instruction I would give is the one I gave myself: pick a story you would read anyway. The mechanism does nothing for a plot you do not care about.
 
 The whole thing is a 1968 idea and a 1542 shipwreck, held together by memory research anyone can look up. It feels like magic. It's math.
 
